@@ -1,0 +1,1684 @@
+<app-navigation></app-navigation>
+
+<div class="container-fluid match_odds">
+
+      <div class="row" style=" background-color: #f0ece1;">
+          <div class="col-md-9 col-9">
+              <div class="row">
+                  <div class="col-md-3 col-3">
+
+                    <div class="left-c">
+                    <div class="sub_path">
+                      <div class="left-top">
+                        <div class="left-top-text d-flex justify-content-between">
+                          <div class="col-md-3"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></div>
+                          <div class="col-md-9" style="display:flex;justify-content:end;">
+                          <div class="d-flex" id="top_nav"><li class="path-last node"><span class="menu_cricket">Warwickshire v Gloucestershire</span></li></div>
+                    </div>
+                        </div>
+                      </div>
+
+                      <ul id="path-pop" class="path-pop" style="display: none;"><li class="path-last node"><a id="navi_4" menuobjtype="EVENT_TYPE">Warwickshire v Gloucestershire</a></li><li class="node" onclick="loadMatches(12602958)"><a href="#" id="navi_4" menuobjtype="EVENT_TYPE">Metro Bank One Day Cup</a></li><li class="node" onclick="loadSeries(4)"><a href="#" id="navi_4" menuobjtype="EVENT_TYPE">Cricket</a></li><li><a id="pathPopHome" href="/exchange/Matches/MultiMarkets">Sports</a></li></ul>
+
+                      <ul id="listBoardLoading" class="loading" style="display: none;">
+                        <li><img src="../../assets/desktopfile/img/loading40.gif"></li>
+                        <li>Loading...</li>
+                      </ul>
+
+
+                      <ul class="left-ul" id="data_list"><li><a href="/exchange/Match/Inner/4/32539167" id="name" style="cursor: pointer" type="MARKET"><img class="icon-no_play" src="/adminfiles/img/transparent.gif"> Match Odds</a></li></ul>
+                    </div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-9 col-9 center-multi">
+                    <!-- marquee -->
+
+                  <!-- marquee start  -->
+                  <div class="marquee-box container" style="display: flex;" id="main_News">
+                  <h4><i class="fa fa-microphone" aria-hidden="true"></i>
+                      News</h4>
+                    <div class="marquee">
+                        <div style="" class="js-marquee-wrapper">
+                            <div class="js-marquee" style="margin-right: 0px; float: left;width:100%">
+                            <marquee width="100%" direction="left">
+                            <span id="news_data" style="display: -webkit-inline-box;"><a href="/exchange/Announcements/All/1/20" target="_blank"><span>26 Jul 2023</span>Notice :- Welcome </a><a href="/exchange/Announcements/All/1/20" target="_blank"><span>24 Jul 2023</span>Notice :- West Indies v India 2nd Innings 25 Over Run India  me 1 Over West Indies ki 2nd Innings ka count hokar Result Declare Hoga 183 </a><a href="/exchange/Announcements/All/1/20" target="_blank"><span>16 Jul 2023</span>Notice :- Welcome </a><a href="/exchange/Announcements/All/1/20" target="_blank"><span>14 Jul 2023</span>Notice :- West Indies vs India 1st innings india 155 over session me 2 over west indies ke 2nd innings ke count hokar result dlenga </a><a href="/exchange/Announcements/All/1/20" target="_blank"><span>20 Jan 2023</span>নোটিশ  :- একবার জালিয়াতি টিকিট সহ প্লেয়ার অ্যাকাউন্ট পাওয়া গেলে, সংশ্লিষ্ট বাজার বাতিল হয়ে যাবে এবং প্লেয়ার অ্যাকাউন্ট লক করা হবে, জড়িত এডমিন, সাব এডমিন, সুপার এজেন্ট, মাস্টার সকলের আইডি সাসপেন্ড করা হবে।  </a></span>
+                          </marquee>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- marquee end  -->
+
+                      <div class="center-m">
+                      <div class="row score_area" style="width: 100%; margin: 0px; display: none;">
+                        <span class="matchScore" id="cricketScore" style="background: rgba(0, 0, 0, 0.6);padding:0">
+                            <div class="score-main">
+                                <div class="col-md-12 batsmanscorecard" style="padding: 0; margin-bottom: 0px; background: rgba(0, 0, 0, 0.6);">
+                                    <div class="score-footer col-md-12">
+                                        <div class="col-md-8" style="padding:0;height:45px;float:left">
+                                            <div class="item-score batsman" style="display: table; text-align: left; width: 100%;">
+                                                <div class="col-md-12 teamtype" style="display:-webkit-inline-box;padding-left:3px;margin-top:3px">
+                                                <p class="matchName" id="team1" style="padding:0;text-align:left;color:#fff">-</p>
+                                                <span style="color: #ffff00;">
+                                                    &nbsp;:-<span class="currunt_sc" id="score">0-0 (0)</span> <span style="display: none;" class="currunt_over" id="over"></span>
+                                                    <span id="scorei1"></span>
+                                                </span>
+                                            </div>
+                                            <div class="col-md-12 teamtype" style="display: -webkit-inline-box; padding-left: 3px;">
+                                                <p class="matchName" id="team2" style="text-align:left;color:#fff">-</p>
+                                                <span style="color: #ffff00;">
+                                                    &nbsp;:-<span class="currunt_sc" id="score1">0-0 (0)</span> <span class="currunt_over" id="over1"></span>
+                                                    <span id="scorei2"></span>
+                                                </span>
+                                            </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4" style="float:left;">
+                                          <div class="item-score score-over-fter col-md-12" style="display:flex;text-align:left;padding:0;place-content:end;">
+                                                <div class="over-status">
+                                                    <div class="score-over">
+                                                        <ul style="display: table; margin: 0; width: 100%; padding: 0;">
+                                                            <li class="-color ball_4"><span id="ovball1">-</span></li>
+                                                            <li class="-color ball_2"><span id="ovball2">-</span></li>
+                                                            <li class="-color ball_2"><span id="ovball3">-</span></li>
+                                                            <li class="-color ball_2"><span id="ovball4">-</span></li>
+                                                            <li class="-color ball_4"><span id="ovball5">-</span></li>
+                                                            <li class="-color ball_2"><span id="ovball6">-</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-12" style="display:flex;text-align:left;padding-right:3px;place-content:end;">
+                                                <span id="crrrate">CRR 0.00</span> / <span id="rrrate">RR 0.00</span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12" style="padding: 3px; text-align: left; background: #243a4870;display:table;text-align:center">
+                                        <div class="teamtype">
+                                            <span class="match_name" style="line-height: 20px; color: #fff;" id="need">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                      </div>
+                      <div class="row" id="animScore">
+
+
+                    <iframe id="myIframe" allowfullscreen="true" style="width: 100%; border:none; height:282px" src="https://score.365cric.com/#/score1/32539167"></iframe>
+                      </div>
+                          <div class="match-white">
+                              <ul>
+                                  <li class="left-svg" id="multiMarketOddsIcon32539167" onclick="addMultimarket('32539167')"><i class="fas fa-thumbtack"></i></li>
+                                  <li class="right-svg"><i class="far fa-redo-alt" onclick="location.reload()"></i></li>
+                              </ul>
+                              <ul class="odds">
+                                  <div class="odd-li-left d-flex">
+
+                                      <li class="odds-li">match odds</li>
+                                      <li class="img-li"><img src="../../assets/desktopfile/img/alarm.png"><span>In Play</span></li>
+                                  </div>
+                                  <li class="max-li max-li-center"><span>min/max 1.0/200.0</span></li>
+                                  <li class="mat-li mat-li-right">
+
+                                    <a id="lmtOpenStreaming" onclick="checkIframe()" class="open-tv-wrap" style="">Live</a>
+                                  </li>
+
+
+                              </ul>
+
+                          </div>
+
+    <div id="tv-wrap" class="game-streaming-wrap dflex" style="display: none;">
+      <div id="tv" class="tv">
+
+
+
+
+        <iframe allowfullscreen="true" id="tvFrame" style="width:100%;height:100%;border:none" src="https://ss247.life/api/97bef780da2b6a17ace2e366225eeb3b962fe743/Nstreamapi.php?chid=6001"></iframe>
+        <ul class="tv-control">
+          <li><a class="close" onclick="checkIframe()" id="lmtOpenStreaming_in" style="display: flex;">Close</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+                          <div id="fullMarketBetsWrap" class="bets-wrap" eventtype="4" eventid="31112059" marketid="1.192010272">
+
+                              <h3 id="lineMarketName" class="line_market-name" style="display:none;">
+                                  <span>1st Innings 10 Over Line</span>
+                              </h3>
+
+                              <span id="selectionCounts" class="refer_only">2 selections</span>
+
+                              <table id="fullMarketBoard" class="bets text-center">
+                                  <tbody>
+                                      <tr class="bet-all">
+                                          <td></td>
+                                          <td id="backPercent" class="refer-bet" colspan="2" style="text-align:left">101.5%</td>
+                                          <td><a id="backAll" class="back-all"><img src="../../assets/desktopfile/img/transparent.gif"><span>Back all</span></a></td>
+                                          <td><a id="layAll" class="lay-all"><img src="../../assets/desktopfile/img/transparent.gif"><span>Lay all</span></a></td>
+                                          <td id="layPercent" class="refer-book" colspan="2" style="text-align:right">98.6%</td>
+                                      </tr>
+
+                                      <tr id="fullSelectionTemplate" style="display: none;">
+                                          <th>
+
+                                              <dl id="horseInfo" class="horse-info" style="display: none;">
+                                                  <dt>
+                                                      <a id="marketDepthBtn" href="#"><img class="icon-predict" src="../../assets/desktopfile/img/transparent.gif"></a>
+                                                      <ul id="horseBox" class="horse-box">
+                                                          <li id="clothNumberAlpha"></li>
+                                                          <li id="stallDraw"></li>
+                                                      </ul>
+                                                      <div id="uniform" class="uniform"><img src=""></div>
+                                                  </dt>
+                                                  <dd>
+                                                      <ul id="horseName" class="horse-name">
+                                                          <li id="runnerName"></li>
+                                                          <li id="jockyName"></li>
+                                                      </ul>
+                                                      <dl id="horseInfoHover" class="horse_info-hover">
+                                                          <dt>Trainer:</dt>
+                                                          <dd id="trainerName"></dd>
+                                                          <dt>Age/Weight:</dt>
+                                                          <dd id="ageWeight"></dd>
+                                                          <dt>Form:</dt>
+                                                          <dd id="form"></dd>
+                                                          <dt>Days since last run:</dt>
+                                                          <dd id="daysSinceLastRun"></dd>
+                                                          <dt>Jockey claim:</dt>
+                                                          <dd id="jockeyClam"></dd>
+                                                          <dt>Wearning:</dt>
+                                                          <dd id="wearing"></dd>
+                                                      </dl>
+                                                  </dd>
+                                              </dl>
+
+                                              <p></p>
+                                              <span id="withoutBet" style="display: none;" class="win">0</span>
+                                              <span id="lossWithoutBet" class="win" style="display: none;"></span>
+                                              <span id="withBet" style="" class="to-lose">0</span>
+                                              <span id="lossWithBet" class="win" style="display: none;"></span>
+                                              <span id="zeroProfit" class="win" style="display: none;"></span>
+                                              <span id="zeroLiability" class="win" style="display: none;"></span>
+                                              <span id="zeroProfitWithBet" class="win" style="display: none;"></span>
+                                              <span id="zeroLiabilityWithBet" class="win" style="display: none;"></span>
+                                          </th>
+                                          <td id="suspend" colspan="6" class="suspend" style="display: none;">
+                                              <span>Suspend</span>
+                                          </td>
+                                          <td id="closed" colspan="6" class="suspend" style="display: none;">
+                                              <span>Closed</span>
+                                          </td>
+                                          <td id="nonRunner" colspan="6" class="suspend" style="display: none;">
+                                              <span>Non Runner</span>
+                                          </td>
+                                          <td id="back_3" class="back-3" side="Back"><a><span></span></a></td>
+                                          <td id="back_2" class="back-2" side="Back"><a><span></span></a></td>
+                                          <td id="back_1" class="back-1" side="Back"><a><span></span></a></td>
+                                          <td id="lay_1" class="lay-1" side="Lay"><a><span></span></a></td>
+                                          <td id="lay_2" class="lay-2" side="Lay"><a><span></span></a></td>
+                                          <td id="lay_3" class="lay-3" side="Lay"><a><span></span></a></td>
+                                          <td id="horseGreyOut" colspan="3" class="suspend" style="display: none;">
+                                          </td>
+                                      </tr>
+                                      <tr id="fullSelection2120" style="display: table-row;" eventtype="4" eventid="31112059" marketid="1_192010272" selectionid="349" eventname="South Africa v India" status="1" sortpriority="1">
+                                          <th>
+
+                                              <dl id="horseInfo" class="horse-info" style="display: none;">
+                                                  <dt>
+                                                      <a id="marketDepthBtn" href="#"><img class="icon-predict" src="../../assets/desktopfile/img/transparent.gif"></a>
+                                                      <ul id="horseBox" class="horse-box">
+                                                          <li id="clothNumberAlpha"></li>
+                                                          <li id="stallDraw"></li>
+                                                      </ul>
+                                                      <div id="uniform" class="uniform"><img src=""></div>
+                                                  </dt>
+                                                  <dd>
+                                                      <ul id="horseName" class="horse-name">
+                                                          <li id="runnerName"></li>
+                                                          <li id="jockyName"></li>
+                                                      </ul>
+                                                      <dl id="horseInfoHover" class="horse_info-hover">
+                                                          <dt>Trainer:</dt>
+                                                          <dd id="trainerName"></dd>
+                                                          <dt>Age/Weight:</dt>
+                                                          <dd id="ageWeight"></dd>
+                                                          <dt>Form:</dt>
+                                                          <dd id="form"></dd>
+                                                          <dt>Days since last run:</dt>
+                                                          <dd id="daysSinceLastRun"></dd>
+                                                          <dt>Jockey claim:</dt>
+                                                          <dd id="jockeyClam"></dd>
+                                                          <dt>Wearning:</dt>
+                                                          <dd id="wearing"></dd>
+                                                      </dl>
+                                                  </dd>
+                                              </dl>
+
+                                              <p><a onclick="window.open('market/marketDepth.jsp?eventId=31112059&amp;marketId=1.192010272&amp;selectionId=349','_blank','resizable=no,width=920,height=600')"><img class="icon-predict" src="../../assets/desktopfile/img/transparent.gif"></a>Warwickshire</p>
+                                              <span id="withoutBet2120" style="display: none;" class="win">0</span>
+                                              <span id="lossWithoutBet" class="win" style="display: none;"></span>
+                                              <span id="withBet2120" style="" class="to-lose">0</span>
+                                              <span id="lossWithBet" class="win" style="display: none;"></span>
+                                              <span id="zeroProfit" class="win" style="display: none;"></span>
+                                              <span id="zeroLiability" class="win" style="display: none;"></span>
+                                              <span id="zeroProfitWithBet" class="win" style="display: none;"></span>
+                                              <span id="zeroLiabilityWithBet" class="win" style="display: none;"></span>
+                                          </th>
+                                          <td id="suspend" colspan="6" class="suspend" style="display: none;">
+                                              <span>Suspend</span>
+                                          </td>
+                                          <td id="closed" colspan="6" class="suspend" style="display: none;">
+                                              <span>Closed</span>
+                                          </td>
+                                          <td id="nonRunner" colspan="6" class="suspend" style="display: none;">
+                                              <span>Non Runner</span>
+                                          </td>
+                                          <td class="back-3 back32120" onclick="betSlipPageLoad(`Warwickshire`,'2120','back','Odds',3)"><a><strong id="back3Odds2120">1.76</strong><span id="back3Price2120">154.5</span></a></td>
+                                          <td class="back-2 back22120" onclick="betSlipPageLoad(`Warwickshire`,'2120','back','Odds',2)"><a><strong id="back2Odds2120">1.78</strong><span id="back2Price2120">23.21</span></a></td>
+                                          <td class="back-1 back12120 select" onclick="betSlipPageLoad(`Warwickshire`,'2120','back','Odds',1)"><a><strong id="back1Odds2120">1.79</strong><span id="back1Price2120">116.57</span></a></td>
+                                          <td class="lay-1 lay12120" onclick="betSlipPageLoad(`Warwickshire`,'2120','lay','Odds',1)"><a><strong id="lay1Odds2120">1.8</strong><span id="lay1Price2120">124.95</span></a></td>
+                                          <td class="lay-2 lay22120" onclick="betSlipPageLoad(`Warwickshire`,'2120','lay','Odds',2)"><a><strong id="lay2Odds2120">1.82</strong><span id="lay2Price2120">18.1</span></a></td>
+                                          <td class="lay-3 lay32120" onclick="betSlipPageLoad(`Warwickshire`,'2120','lay','Odds',3)"><a><strong id="lay3Odds2120">1.86</strong><span id="lay3Price2120">2.58</span></a></td>
+                                          <td id="horseGreyOut" colspan="3" class="suspend" style="display: none;">
+                                          </td>
+                                      </tr>
+                                      <tr id="fullSelection2219" style="display: table-row;" eventtype="4" eventid="31112059" marketid="1_192010272" selectionid="414464" eventname="South Africa v India" status="1" sortpriority="2">
+                                          <th>
+
+                                              <dl id="horseInfo" class="horse-info" style="display: none;">
+                                                  <dt>
+                                                      <a id="marketDepthBtn" href="#"><img class="icon-predict" src="../../assets/desktopfile/img/transparent.gif"></a>
+                                                      <ul id="horseBox" class="horse-box">
+                                                          <li id="clothNumberAlpha"></li>
+                                                          <li id="stallDraw"></li>
+                                                      </ul>
+                                                      <div id="uniform" class="uniform"><img src=""></div>
+                                                  </dt>
+                                                  <dd>
+                                                      <ul id="horseName" class="horse-name">
+                                                          <li id="runnerName"></li>
+                                                          <li id="jockyName"></li>
+                                                      </ul>
+                                                      <dl id="horseInfoHover" class="horse_info-hover">
+                                                          <dt>Trainer:</dt>
+                                                          <dd id="trainerName"></dd>
+                                                          <dt>Age/Weight:</dt>
+                                                          <dd id="ageWeight"></dd>
+                                                          <dt>Form:</dt>
+                                                          <dd id="form"></dd>
+                                                          <dt>Days since last run:</dt>
+                                                          <dd id="daysSinceLastRun"></dd>
+                                                          <dt>Jockey claim:</dt>
+                                                          <dd id="jockeyClam"></dd>
+                                                          <dt>Wearning:</dt>
+                                                          <dd id="wearing"></dd>
+                                                      </dl>
+                                                  </dd>
+                                              </dl>
+
+                                              <p><a onclick="window.open('market/marketDepth.jsp?eventId=31112059&amp;marketId=1.192010272&amp;selectionId=414464','_blank','resizable=no,width=920,height=600')"><img class="icon-predict" src="../../assets/desktopfile/img/transparent.gif"></a>Gloucestershire</p>
+                                              <span id="withoutBet2219" style="display: none;" class="win">0</span>
+                                              <span id="lossWithoutBet" class="win" style="display: none;"></span>
+                                              <span id="withBet2219" style="" class="to-lose">0</span>
+                                              <span id="lossWithBet" class="win" style="display: none;"></span>
+                                              <span id="zeroProfit" class="win" style="display: none;"></span>
+                                              <span id="zeroLiability" class="win" style="display: none;"></span>
+                                              <span id="zeroProfitWithBet" class="win" style="display: none;"></span>
+                                              <span id="zeroLiabilityWithBet" class="win" style="display: none;"></span>
+                                          </th>
+                                          <td id="suspend" colspan="6" class="suspend" style="display: none;">
+                                              <span>Suspend</span>
+                                          </td>
+                                          <td id="closed" colspan="6" class="suspend" style="display: none;">
+                                              <span>Closed</span>
+                                          </td>
+                                          <td id="nonRunner" colspan="6" class="suspend" style="display: none;">
+                                              <span>Non Runner</span>
+                                          </td>
+                                          <td class="back-3 back32219" onclick="betSlipPageLoad(`Gloucestershire`,'2219','back','Odds',3)"><a><strong id="back3Odds2219">2.16</strong><span id="back3Price2219">89.09</span></a></td>
+                                          <td class="back-2 back22219" onclick="betSlipPageLoad(`Gloucestershire`,'2219','back','Odds',2)"><a><strong id="back2Odds2219">2.22</strong><span id="back2Price2219">14.84</span></a></td>
+                                          <td class="back-1 back12219" onclick="betSlipPageLoad(`Gloucestershire`,'2219','back','Odds',1)"><a><strong id="back1Odds2219">2.24</strong><span id="back1Price2219">100.41</span></a></td>
+                                          <td class="lay-1 lay12219" onclick="betSlipPageLoad(`Gloucestershire`,'2219','lay','Odds',1)"><a><strong id="lay1Odds2219">2.26</strong><span id="lay1Price2219">92.33</span></a></td>
+                                          <td class="lay-2 lay22219" onclick="betSlipPageLoad(`Gloucestershire`,'2219','lay','Odds',2)"><a><strong id="lay2Odds2219">2.3</strong><span id="lay2Price2219">117.96</span></a></td>
+                                          <td class="lay-3 lay32219" onclick="betSlipPageLoad(`Gloucestershire`,'2219','lay','Odds',3)"><a><strong id="lay3Odds2219">2.32</strong><span id="lay3Price2219">18.07</span></a></td>
+                                          <td id="horseGreyOut" colspan="3" class="suspend" style="display: none;">
+                                          </td>
+                                      </tr>
+
+                                  </tbody>
+                              </table>
+
+                          </div>
+
+
+
+                          <div class="bookmaker bookMakerWrap">
+                              <h3>
+                                  bookmaker market <span>zero commission</span>
+                              </h3>
+                              <p><span>min</span> 1.0 <span>max</span>500.0</p>
+                          </div>
+                          <table class="table bg-book bookMakerWrap">
+                              <tbody>
+                                  <tr>
+                                      <td colspan="3"></td>
+                                      <td class="back">back</td>
+                                      <td class="lay">lay</td>
+                                      <td colspan="2"></td>
+                                  </tr>
+
+                <tr class="fancy-suspend-tr">
+                    <th colspan=""></th>
+                    <td class="fancy-suspend-td" id="bookSuspendedDiv2120" colspan="6">
+                      <div id="suspendClass" class="fancy-suspend">
+                        <span id="bookSuspendedDivInfo2120">Suspend</span>
+                      </div>
+                    </td>
+                </tr>
+
+                                  <tr style="display: table-row;">
+
+                                      <td>
+                                      <p>Warwickshire</p>
+                                        <span id="withoutBetBook2120" style="" class="win">0</span>
+                                        <span id="withBetBook2120" style="display: none;"></span>
+                                      </td>
+                                      <td colspan="3" class="back-gradient">
+                                          <dl class="">
+                                              <dd id="book3back2120" onclick="bookmakerbetSlipPageLoad(`Warwickshire`,'2120','back','book',1)"></dd>
+                                              <dd id="book2back2120" onclick="bookmakerbetSlipPageLoad(`Warwickshire`,'2120','back','book',1)"></dd>
+                                              <dd class="back1grad" id="book1back2120" onclick="bookmakerbetSlipPageLoad(`Warwickshire`,'2120','back','book',1)"></dd>
+                                          </dl>
+                                      </td>
+                                      <td colspan="3" class="lay-gradient">
+                                          <dl>
+                                              <dd class="lay1grad" id="book1lay2120" onclick="bookmakerbetSlipPageLoad(`Warwickshire`,'2120','lay','book',1)"></dd>
+                                              <dd id="book2lay2120" onclick="bookmakerbetSlipPageLoad(`Warwickshire`,'2120','lay','book',1)"></dd>
+                                              <dd id="book3lay2120" onclick="bookmakerbetSlipPageLoad(`Warwickshire`,'2120','lay','book',1)"></dd>
+                                          </dl>
+                                      </td>
+
+                                  </tr>
+<tr id="bookMakerBetBoard2120" class="fancy-quick-tr" style="display: none;"></tr>
+                <tr class="fancy-suspend-tr">
+                    <th colspan=""></th>
+                    <td class="fancy-suspend-td" id="bookSuspendedDiv2219" colspan="6">
+                        <div id="suspendClass" class="fancy-suspend">
+                          <span id="bookSuspendedDivInfo2219">Suspend</span>
+                        </div>
+                    </td>
+                </tr>
+
+                                  <tr style="display: table-row;">
+                                      <td style="    width: 40%;">
+                                          <p>Gloucestershire</p>
+                                        <span id="withoutBetBook2219" style="" class="win">0</span>
+                                        <span id="withBetBook2219" style="display: none;"></span>
+                                      </td>
+                                      <td colspan="3" class="back-gradient">
+                                          <dl class="">
+                                              <dd id="book3back2219" onclick="bookmakerbetSlipPageLoad(`Gloucestershire`,'2219','back','book',1)"></dd>
+                                              <dd id="book2back2219" onclick="bookmakerbetSlipPageLoad(`Gloucestershire`,'2219','back','book',1)"></dd>
+                                              <dd class="back1grad" id="book1back2219" onclick="bookmakerbetSlipPageLoad(`Gloucestershire`,'2219','back','book',1)"></dd>
+                                          </dl>
+                                      </td>
+                                      <td colspan="3" class="lay-gradient">
+                                          <dl>
+                                              <dd class="lay1grad" id="book1lay2219" onclick="bookmakerbetSlipPageLoad(`Gloucestershire`,'2219','lay','book',1)"></dd>
+                                              <dd id="book2lay2219" onclick="bookmakerbetSlipPageLoad(`Gloucestershire`,'2219','lay','book',1)"></dd>
+                                              <dd id="book3lay2219" onclick="bookmakerbetSlipPageLoad(`Gloucestershire`,'2219','lay','book',1)"></dd>
+                                          </dl>
+                                      </td>
+                                  </tr>
+                                  <tr id="bookMakerBetBoard2219" class="fancy-quick-tr" style="display: none;"></tr>
+
+                              </tbody>
+                          </table>
+                          <div class="bets-wrap cooldown1 cooldowns" id="tossfancy">
+</div>
+
+
+                          <div class="bets-wrap cooldown1 cooldowns" id="tiedMatchDiv" style="display: none;">
+  <span id="selectionCounts" class="refer_only">2 selections - <b>Tied Match</b></span>
+  <table id="fullMarketBoard" class="bets">
+      <thead>
+          <tr class="bet-all">
+              <td></td>
+              <td id="backPercent" colspan="2" class="refer-bet"></td>
+              <td>
+                  <a id="backAll" class="back-all">
+                      <img src="../../assets/desktopfile/img/transparent.gif">
+                      <span>Back all</span>
+                  </a>
+              </td>
+              <td>
+                  <a id="layAll" class="lay-all">
+                      <img src="../../assets/desktopfile/img/transparent.gif">
+                      <span>Lay all</span>
+                  </a>
+              </td>
+              <td id="layPercent" colspan="2" class="refer-book"></td>
+          </tr>
+          </thead>
+          <tbody id="tiedMatchDivBody">
+
+      <tr style="display:table-row" id="selection_1193214644_37302"><th><p><a><img src="../../assets/desktopfile/img/transparent.gif" class="icon-predict"></a>Yes</p><span id="lossWithoutBet" class="win" style="display:none"></span> <span id="otherBook21682275537302" class="win" style="display:none"></span> <span id="zeroProfit" class="win" style="display:none"></span> <span id="zeroLiability" class="win" style="display:none"></span> <span id="zeroProfitWithBet" class="win" style="display:none"></span> <span id="zeroLiabilityWithBet" class="win" style="display:none"></span></th><td id="back_3" class="back-3 back321682275537302"><a onclick="marketbetSlipPageLoad('1.216822755','Yes','37302',`back`,`Tied`,3)"><strong id="back321682275537302">6</strong><span id="back3P21682275537302">6.29</span></a></td><td id="back_2" class="back-2 back221682275537302"><a onclick="marketbetSlipPageLoad('1.216822755','Yes','37302',`back`,`Tied`,2)"><strong id="back221682275537302">50</strong><span id="back2P21682275537302">13.96</span></a></td><td id="back_1" class="back-1 back121682275537302"><a onclick="marketbetSlipPageLoad('1.216822755','Yes','37302',`back`,`Tied`,1)"><strong id="back121682275537302">55</strong><span id="back1P21682275537302">2.25</span></a></td><td id="lay_1" class="lay-1 lay121682275537302"><a onclick="marketbetSlipPageLoad('1.216822755','Yes','37302',`lay`,`Tied`,1)"><strong id="lay121682275537302">95</strong><span id="lay1P21682275537302">1</span></a></td><td id="lay_2" class="lay-2 lay221682275537302"><a onclick="marketbetSlipPageLoad('1.216822755','Yes','37302',`lay`,`Tied`,2)"><strong id="lay221682275537302">0</strong><span id="lay2P21682275537302">0</span></a></td><td id="lay_3" class="lay-3 lay321682275537302"><a onclick="marketbetSlipPageLoad('1.216822755','Yes','37302',`lay`,`Tied`,3)"><strong id="lay321682275537302">0</strong><span id="lay3P21682275537302">0</span></a></td></tr><tr style="display:table-row" id="selection_1193214644_37302"><th><p><a><img src="../../assets/desktopfile/img/transparent.gif" class="icon-predict"></a>No</p><span id="lossWithoutBet" class="win" style="display:none"></span> <span id="otherBook21682275537303" class="win" style="display:none"></span> <span id="zeroProfit" class="win" style="display:none"></span> <span id="zeroLiability" class="win" style="display:none"></span> <span id="zeroProfitWithBet" class="win" style="display:none"></span> <span id="zeroLiabilityWithBet" class="win" style="display:none"></span></th><td id="back_3" class="back-3 back321682275537303"><a onclick="marketbetSlipPageLoad('1.216822755','No','37303',`back`,`Tied`,3)"><strong id="back321682275537303">0</strong><span id="back3P21682275537303">0</span></a></td><td id="back_2" class="back-2 back221682275537303"><a onclick="marketbetSlipPageLoad('1.216822755','No','37303',`back`,`Tied`,2)"><strong id="back221682275537303">0</strong><span id="back2P21682275537303">0</span></a></td><td id="back_1" class="back-1 back121682275537303"><a onclick="marketbetSlipPageLoad('1.216822755','No','37303',`back`,`Tied`,1)"><strong id="back121682275537303">1.01</strong><span id="back1P21682275537303">99.22</span></a></td><td id="lay_1" class="lay-1 lay121682275537303"><a onclick="marketbetSlipPageLoad('1.216822755','No','37303',`lay`,`Tied`,1)"><strong id="lay121682275537303">1.02</strong><span id="lay1P21682275537303">805.51</span></a></td><td id="lay_2" class="lay-2 lay221682275537303"><a onclick="marketbetSlipPageLoad('1.216822755','No','37303',`lay`,`Tied`,2)"><strong id="lay221682275537303">1.2</strong><span id="lay2P21682275537303">31.43</span></a></td><td id="lay_3" class="lay-3 lay321682275537303"><a onclick="marketbetSlipPageLoad('1.216822755','No','37303',`lay`,`Tied`,3)"><strong id="lay321682275537303">1.63</strong><span id="lay3P21682275537303">32.59</span></a></td></tr></tbody>
+  </table>
+</div>
+
+<div class="bets-wrap cooldown1 cooldowns" id="completedMatchDiv" style="display:none;">
+  <span id="selectionCounts" class="refer_only">2 selections - <b>Completed Match</b></span>
+  <table id="fullMarketBoard" class="bets">
+      <thead>
+          <tr class="bet-all">
+              <td></td>
+              <td id="backPercent" colspan="2" class="refer-bet"></td>
+              <td>
+                  <a id="backAll" class="back-all">
+                      <img src="../../assets/desktopfile/img/transparent.gif">
+                      <span>Back all</span>
+                  </a>
+              </td>
+              <td>
+                  <a id="layAll" class="lay-all">
+                      <img src="../../assets/desktopfile/img/transparent.gif">
+                      <span>Lay all</span>
+                  </a>
+              </td>
+              <td id="layPercent" colspan="2" class="refer-book"></td>
+          </tr>
+          </thead>
+          <tbody id="completedMatchDivBody">
+
+      </tbody>
+  </table>
+</div>
+<div class="row">
+<div id="fullMarketEventRightOverUnderLeft" class="event-left" style="display: none;">
+
+</div>
+<div id="fullMarketEventRightOverUnder" class="event-right" style="display: none;">
+
+</div>
+</div>
+
+                          <div id="fancyBetTableDiv" class="bets-wrap fancy_bet" style="" name="multiMarketItem">
+
+
+                              <div id="fancyBetHead" class="fancy-head">
+                                  <h4 class="">
+                                      <span id="headerName"> Fancy Bet</span>
+
+
+                                      <a class="btn-fancybet_rules"></a>
+
+                                  </h4>
+                                  <a id="showSportsBookBtn" class="other-tab">
+                                      <span class="tag-new">New</span>
+                                      Premium Cricket
+                                  </a>
+
+
+                                  <div id="fancyBetRulesWrap" class="rules-wrap" style="display: none;">
+<h3 id="fancyBetHeader">Rules of Fancy Bets</h3>
+<h3 id="electionHeader" style="display: none;">Rules of Election Fancy Bets</h3>
+<div class="rules-content">
+  <ol id="fancyBetRules" name="fancyBetRules">
+  <li>Once all session/fancy bets are completed and settled there will be no reversal even if the Match is Tied or is Abandoned.</li>
+  <li>Advance Session or Player Runs and all Fancy Bets are only valid for 20/50 overs full match each side. (Please Note this condition is applied only in case of Advance Fancy Bets only).</li>
+  <li>All advance fancy bets market will be suspended 60 mins prior to match and will be settled.</li>
+  <li>Under the rules of Session/Fancy Bets if a market gets Suspended for any reason whatsoever and does not resume then all previous Bets will remain Valid and become HAAR/JEET bets.</li><li>Incomplete Session/Fancy Bet will be cancelled but Complete Session will be settled.</li><li>In the case of Running Match getting Cancelled/ No Result/ Abandoned but the session is complete it will still be settled. Player runs / fall of wicket will be also settled at the figures where match gets stopped due to rain for the inning (D/L) , cancelled , abandoned , no result.</li>
+  <li>If a player gets Retired Hurt and one ball is completed after you place your bets then all the betting till then is and will remain valid.</li><li>Should a Technical Glitch in Software occur, we will not be held responsible for any losses.</li>
+  <li>Should there be a power failure or a problem with the Internet connection at our end and session/fancy market does not get suspended then our decision on the outcome is final.</li><li>All decisions relating to settlement of wrong market being offered will be taken by management. Management will consider all actual facts and decision taken will be full in final.</li>
+  <li>Any bets which are deemed of being suspicious, including bets which have been placed from the stadium or from a source at the stadium maybe voided at anytime. The decision of whether to void the particular bet in question or to void the entire market will remain at the discretion of Company. The final decision of whether bets are suspicious will be taken by Company and that decision will be full and final.</li>
+  <li>Any sort of cheating bet , any sort of Matching (Passing of funds), Court Siding (Ghaobaazi on commentary), Sharpening, Commission making is not allowed in Company, If any company User is caught in any of such act then all the funds belonging that account would be seized and confiscated. No argument or claim in that context would be entertained and the decision made by company management will stand as final authority.</li>
+  <li>Fluke hunting/Seeking is prohibited in Company , All the fluke bets will be reversed. Cricket commentary is just an additional feature and facility for company user but company is not responsible for any delay or mistake in commentary.</li>
+  <li>Valid for only 1st inning.
+    <ul> Highest Inning Run :- This fancy is valid only for first inning of the match.</ul>
+    <ul> Lowest Inning Run :- This fancy is valid only for first inning of the match.</ul>
+  </li>
+  <li>If any fancy value gets passed, we will settle that market after that match gets over. For example :- If any market value is ( 22-24 ) and incase the result is 23 than that market will be continued, but if the result is 24 or above then we will settle that market. This rule is for the following market.<ul> Total Sixes In Single Match</ul>
+    <ul> Total Fours In Single Match</ul>
+    <ul> Highest Inning Run</ul>
+    <ul> Highest Over Run In Single Match</ul>
+    <ul> Highest Individual Score By Batsman</ul>
+    <ul> Highest Individual Wickets By Bowler</ul>
+  </li>
+  <li>If any fancy value gets passed, we will settle that market after that match gets over. For example :- If any market value is ( 22-24 ) and incase the result is 23 than that market will be continued, but if the result is 22 or below then we will settle that market. This rule is for the following market.
+    <ul> Lowest Inning Run</ul>
+    <ul> Fastest Fifty</ul>
+    <ul> Fastest Century</ul>
+  </li>
+  <li>If any case wrong rate has been given in fancy ,that particular bets will be cancelled (Wrong Commentary).</li>
+  <li>In case customer make bets in wrong fancy we are not liable to delete, no changes will be made and bets will be considered as confirm bet.</li><li>Dot Ball Market Rules<ul>Wides Ball - Not Count</ul><ul>No Ball - Not Count</ul><ul>Leg Bye - Not Count as A Dot Ball</ul><ul>Bye Run - Not Count as A Dot Ball</ul><ul>Run Out - On 1st Run Count as A Dot Ball</ul><ul>Run Out - On 2nd n 3rd Run Not Count as a Dot Ball</ul><ul>Out - Catch Out, Bowled, Stumped n LBW Count as A Dot Ball</ul></li>
+  <li>Bookmaker Rules<ul> Due to any reason any team will be getting advantage or disadvantage we are not concerned.</ul>
+    <ul> We will simply compare both teams 25 overs score higher score team will be declared winner in ODI.</ul>
+    <ul> We will simply compare both teams 10 overs higher score team will be declared winner in T20 matches.</ul>
+  </li>
+  <li>Penalty Runs - Any Penalty Runs Awarded in the Match (In Any Running Fancy or ADV Fancy) Will Not be Counted While Settling in our Exchange.</li><li>LIVE STREAMING OF ALL VIRTUAL CRICKET MATCHES IS AVAILABLE HERE https://www.youtube.com/channel/UCd837ZyyiO5KAPDXibynq_Q/featured</li><li>CHECK SCORE OF VIRTUAL CRICKET ON https://sportcenter.sir.sportradar.com/simulated-reality/cricket</li><li>Comparison Market<ul>In Comparison Market We Don't Consider Tie or Equal Runs on Both the Innings While Settling . Second Batting Team Must need to Surpass 1st Batting's team Total to win otherwise on Equal Score or Below We declare 1st Batting Team as Winner .</ul></li><li>Player Boundaries Fancy:- We will only consider Direct Fours and Sixes hit by BAT.</li><li>BOWLER RUN SESSION RULE :-<ul>IF BOWLER BOWL 1.1 OVER,THEN VALID ( FOR BOWLER 2 OVER RUNS SESSION )</ul><ul>IF BOWLER BOWL 2.1 OVER,THEN VALID ( FOR BOWLER 3 OVER RUNS SESSION )</ul><ul>IF BOWLER BOWL 3.1 OVER,THEN VALID ( FOR BOWLER 4 OVER RUNS SESSION )</ul><ul>IF BOWLER BOWL 4.1 OVER,THEN VALID ( FOR BOWLER 5 OVER RUNS SESSION )</ul><ul>IF BOWLER BOWL 9.1 OVER,THEN VALID ( FOR BOWLER 10 OVER RUNS SESSION )</ul></li><li>Total Match Playing Over ADV :- We Will Settle this Market after Whole Match gets Completed<ul>Criteria :- We Will Count Only Round- Off Over For Both the Innings While Settling (For Ex :- If 1st Batting team gets all out at 17.3 , 18.4 or 19.5 we Will Count Such Overs as 17, 18 and 19 Respectively and if Match gets Ended at 17.2 , 18.3 or 19.3 Overs then we will Count that as 17 , 18 and 19 Over Respectively... and this Will Remain Same For Both the Innings ..</ul><ul>In Case Of Rain or if Over gets Reduced then this Market will get Voided</ul></li><li>3 WKT OR MORE BY BOWLER IN MATCH ADV :-<ul>We Will Settle this Market after Whole Match gets Completed .</ul><ul>In Case Of Rain or if Over Gets Reduced then this Market Will get Voided</ul></li><li>KHADDA :-<ul>ADV Khadda Fancy is Valid Only for First Innings of the Match</ul><ul>In Case of Rain or If Over Gets Reduced then this Market Will get Voided</ul><ul>Incomplete Session Bet will be Cancelled but Complete Session Will be Settled</ul></li><li>LOTTERY :-<ul>In Case of Rain or If Over Gets Reduced then this Market Will get Voided</ul><ul>Incomplete Session Bet will be Cancelled but Complete Session Will be Settled</ul><ul>Criteria :- We will Only Count Last Digit of Sessions Total while settling ..For Example if in 6 Overs Market the Score is 37 ...so we will Settle the Market for 6 Over Lottery @ 7</ul></li><li>Any cricket event which is being held behind closed doors in that if any players found to be taking advantage of groundline in fancy bets in such cases bets can be voided after the market ends . Company decision to be final .</li><li>IPL 2021 RULES :-<ul>If Over Reduced in Match, we will not count the actual scores of the Over Reduced Matches instead we will count the Market's Average Scores.</ul><ul>If Match is Abandoned, we will not count the actual scores of the Abandoned Matches instead we will count the Market's Average Scores.</ul><ul>NOTE: -. These rules are for the following Markets of ENTIRE IPL 2021 : -</ul><ul>Total Match 1st Over Run :- Average 6 Runs will be given if the match is abandoned or over reduced, But If 1st Over is Completed then it will not be counted as Average Score instead we will count the Actual Score if Over is Reduced after completion of 1st Over.</ul><ul>Total Fours: - Average 26 Fours will be given if the match is abandoned or over reduced.</ul><ul>Total Sixes: - Average 13 Sixes will be given if the match is abandoned or over reduced.</ul><ul>Total Wide: - Average 8 Wide's will be given if the match is abandoned or over reduced.</ul><ul>Total Extras: - Average 14 Extras will be given if the match is abandoned or over reduced.</ul><ul>Total No Ball: - Average 1 No Ball will be given if the match is abandoned or over reduced.</ul><ul>Total Duck: - Average 1 Duck will be given if the match is abandoned or over reduced.</ul><ul>Total Fifties: - Average 2 Fifties will be given if the match is abandoned or over reduced.</ul><ul>Total Century: -Average 0 Century will be given if the match is abandoned or over reduced.</ul><ul>Total Run Out: - Average 1 Run Out will be given if the match is abandoned or over reduced.</ul><ul>Total Wickets: - Average 12 Wickets will be given if the match is abandoned or over reduced.</ul><ul>Total Caught out: - Average 8 Caught Out will be given if the match is abandoned or over reduced.</ul><ul>Total Maiden Over: - Average 0 Maiden Over will be given if the match is abandoned or over reduced.</ul><ul>Total LBW: - Average 1 LBW will be given if the match is abandoned or over reduced.</ul><ul>Total Bowled: - Average 2 Bowled will be given if the match is abandoned or over reduced.</ul>
+  <ul> In case IPL Matches Gets Stopped or Interrupted Due to "COVID-19" or Any "ACT OF GOD" Reasons, Under 45 Matches then All IPL 2021 Tournament Fancy Markets will be Voided, But if 45 or Above Matches are Being Played then we will Settle all the Fancy Markets and Also If there are NON Played Matches Above 45 then we will settle the markets as per our Markets Average.</ul><ul>* If IPL 2021 gets stopped due to "Covid-19" or Any "Act of God" reason then We will wait till 45 days from the day IPL gets stopped , and if IPL Matches gets Resumed before 45th day then we will continue as Usual Score Countation but if IPL 2021 does not resumes until 45th day then we will settle the markets according to our above mentioned Markets Averages and In case of Void, We will Void the under 45 matches on 45th day from the day IPL 2021 stopped.</ul></li><li>Session Odd-Even Rule:-<ul>We Will Settle the Session ODD-EVEN Market only if the Over is Completed, But If that Over is Not Completed then we will Void that "Session Total Odd" Market.</ul></li><li>Company reserves the right to void any bets (only winning bets) of any event at any point of the match if the company believes there is any cheating/wrong doing in that particular event by the players (either batsman/bowler)</li></ol>
+  <ol id="electionRules" style="display: none;">
+    <li>Election result declared by Election Commission of India will be valid in our Exchange.</li>
+    <li>Accidental issues in Election will Not Be counted in our Exchange.</li>
+  </ol>
+</div>
+<ul class="btn-wrap break">
+  <li><a class="btn">OK</a></li>
+</ul>
+</div>
+                              </div>
+
+                              <div id="fancyBetTabWrap" class="fancy_bet_tab-wrap" style="">
+                                  <ul class="special_bets-tab">
+                                      <li class="select" id="fancyTab"><a fancybettabtype="1" onclick="changeFancyView('fancy')">All</a></li>
+                                      <li class="" id="fancy1Tab"><a fancybettabtype="2" onclick="changeFancyView('fancy1')">Fancy 1</a></li>
+<!--                                         <li class="" id="bbbTab"><a fancybettabtype="6" onclick="changeFancyView('bbb')">Ball by Ball</a></li>
+                                      <li class="" id="khaddaTab"><a fancybettabtype="3" onclick="changeFancyView('khadda')">Khadda</a></li>
+                                      <li class="" id="lotteryTab"><a fancybettabtype="4" onclick="changeFancyView('lottery')">Lottery</a></li>
+                                      <li class="" id="oddevenTab"><a fancybettabtype="5" onclick="changeFancyView('oddeven')">Odd/Even</a></li> -->
+                                  </ul>
+                              </div>
+
+                              <p id="fancyBetNoBet" class="no_bet" style="display: none;">has no markets</p>
+
+                              <table id="fancy_table_own" class="bets" >
+<colgroup>
+    <col span="1" width="320">
+    <col span="1" width="70">
+    <col span="1" width="70">
+    <col span="1" width="70">
+    <col span="1" width="70">
+    <col span="1" width="70">
+    <col span="1" width="70">
+  </colgroup>
+                                  <tbody>
+                                      <tr class="colgroup-adjust">
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                      </tr>
+                                      <tr id="fancyBetSpecialBet" class="special_bet">
+                                          <td colspan="7">
+                                              <h3 style="line-height:25px;padding-left:5px;">
+                                                  Fancy Bet
+                                              </h3>
+                                          </td>
+                                      </tr>
+                                      <tr class="bet-all">
+                                          <td></td>
+                                          <td class="refer-bet" colspan="2"></td>
+                                          <td>No</td>
+                                          <td>Yes</td>
+                                          <td class="refer-book" colspan="2"></td>
+                                      </tr>
+<tr class="fancy-suspend-tr" style="display: table-row;">
+                                          <th></th>
+                                          <td colspan="2"></td>
+                                          <td class="fancy-suspend-td" colspan="2">
+                                              <div id="fancyStatus1" class="fancy-suspend" style="display: none;"><span id="info">Suspend</span></div>
+                                          </td>
+                                          <td colspan="2"></td>
+                                      </tr>
+                                      <tr id="fancyBetMarket_397039" style="display: table-row;">
+                                          <th colspan="3">
+                                              <dl class="fancy-th-layout">
+                                                  <dt>
+                                                      <p id="marketName">10 over run GLO</p>
+                                                      <span id="fancyBook1"></span>
+                                                  </dt>
+                                                  <dd class="dd-tips">
+                                                      <ul class="fancy-tips">
+                                                          <li id="remarkFirstRow" style="display: none;"></li>
+                                                          <li id="remarkSecondRow" style="display: none;"></li>
+                                                      </ul>
+                                                      <a id="fancyBetBookBtn1" style="display:none;" class="btn-book">Book</a>
+                                                  </dd>
+                                              </dl>
+                                          </th>
+                                          <td colspan="2" class="multi_select ">
+                                              <ul style="text-align: center;">
+                                                  <li class="lay-1 fancylay1" id="lay_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`10 over run GLO`,1,'lay','Fancy',1)"><strong id="fancylay1">50</strong><span id="fancylaysize1">100.00</span></a>
+                                                  </li>
+
+                                                  <li class="back-1 fancyback1" id="back_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`10 over run GLO`,1,'back','Fancy',1)"><strong id="fancyback1">52</strong><span id="fancybacksize1">100.00</span></a>
+                                                  </li>
+                                              </ul>
+                                          </td>
+                                          <td class="td-fancy_merge" colspan="2">
+                                              <dl class="fancy-info">
+                                                  <dt>Min/Max</dt>
+                                                  <dd class="minMaxvalue">1/500</dd>
+                                              </dl>
+                                              <dl class="fancy-info">
+                                                  <dt id="rebateName" style="display: none;">Rebate</dt>
+                                                  <dd id="rebate" style="display: none;"></dd>
+                                              </dl>
+                                          </td>
+                                      </tr>
+<tr id="fancyBetBoard1" class="fancy-quick-tr" style="display: none;"></tr>
+<tr class="fancy-suspend-tr" style="display: table-row;">
+                                          <th></th>
+                                          <td colspan="2"></td>
+                                          <td class="fancy-suspend-td" colspan="2">
+                                              <div id="fancyStatus11" class="fancy-suspend"><span id="info">Suspend</span></div>
+                                          </td>
+                                          <td colspan="2"></td>
+                                      </tr>
+                                      <tr id="fancyBetMarket_397039" style="display: table-row;">
+                                          <th colspan="3">
+                                              <dl class="fancy-th-layout">
+                                                  <dt>
+                                                      <p id="marketName">1st wkt pship boundaries GLO</p>
+                                                      <span id="fancyBook11"></span>
+                                                  </dt>
+                                                  <dd class="dd-tips">
+                                                      <ul class="fancy-tips">
+                                                          <li id="remarkFirstRow" style="display: none;"></li>
+                                                          <li id="remarkSecondRow" style="display: none;"></li>
+                                                      </ul>
+                                                      <a id="fancyBetBookBtn11" style="display:none;" class="btn-book">Book</a>
+                                                  </dd>
+                                              </dl>
+                                          </th>
+                                          <td colspan="2" class="multi_select ">
+                                              <ul style="text-align: center;">
+                                                  <li class="lay-1 fancylay11" id="lay_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`1st wkt pship boundaries GLO`,11,'lay','Fancy',1)"><strong id="fancylay11">0</strong><span id="fancylaysize11">0</span></a>
+                                                  </li>
+
+                                                  <li class="back-1 fancyback11" id="back_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`1st wkt pship boundaries GLO`,11,'back','Fancy',1)"><strong id="fancyback11">0</strong><span id="fancybacksize11">0</span></a>
+                                                  </li>
+                                              </ul>
+                                          </td>
+                                          <td class="td-fancy_merge" colspan="2">
+                                              <dl class="fancy-info">
+                                                  <dt>Min/Max</dt>
+                                                  <dd class="minMaxvalue">1/500</dd>
+                                              </dl>
+                                              <dl class="fancy-info">
+                                                  <dt id="rebateName" style="display: none;">Rebate</dt>
+                                                  <dd id="rebate" style="display: none;"></dd>
+                                              </dl>
+                                          </td>
+                                      </tr>
+<tr id="fancyBetBoard11" class="fancy-quick-tr" style="display: none;"></tr>
+<tr class="fancy-suspend-tr" style="display: table-row;">
+                                          <th></th>
+                                          <td colspan="2"></td>
+                                          <td class="fancy-suspend-td" colspan="2">
+                                              <div id="fancyStatus16" class="fancy-suspend"><span id="info">Suspend</span></div>
+                                          </td>
+                                          <td colspan="2"></td>
+                                      </tr>
+                                      <tr id="fancyBetMarket_397039" style="display: table-row;">
+                                          <th colspan="3">
+                                              <dl class="fancy-th-layout">
+                                                  <dt>
+                                                      <p id="marketName">Fall of 1st wkt GLO</p>
+                                                      <span id="fancyBook16"></span>
+                                                  </dt>
+                                                  <dd class="dd-tips">
+                                                      <ul class="fancy-tips">
+                                                          <li id="remarkFirstRow" style="display: none;"></li>
+                                                          <li id="remarkSecondRow" style="display: none;"></li>
+                                                      </ul>
+                                                      <a id="fancyBetBookBtn16" style="display:none;" class="btn-book">Book</a>
+                                                  </dd>
+                                              </dl>
+                                          </th>
+                                          <td colspan="2" class="multi_select ">
+                                              <ul style="text-align: center;">
+                                                  <li class="lay-1 fancylay16" id="lay_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`Fall of 1st wkt GLO`,16,'lay','Fancy',1)"><strong id="fancylay16">0</strong><span id="fancylaysize16">0</span></a>
+                                                  </li>
+
+                                                  <li class="back-1 fancyback16" id="back_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`Fall of 1st wkt GLO`,16,'back','Fancy',1)"><strong id="fancyback16">0</strong><span id="fancybacksize16">0</span></a>
+                                                  </li>
+                                              </ul>
+                                          </td>
+                                          <td class="td-fancy_merge" colspan="2">
+                                              <dl class="fancy-info">
+                                                  <dt>Min/Max</dt>
+                                                  <dd class="minMaxvalue">1/500</dd>
+                                              </dl>
+                                              <dl class="fancy-info">
+                                                  <dt id="rebateName" style="display: none;">Rebate</dt>
+                                                  <dd id="rebate" style="display: none;"></dd>
+                                              </dl>
+                                          </td>
+                                      </tr>
+<tr id="fancyBetBoard16" class="fancy-quick-tr" style="display: none;"></tr>
+<tr class="fancy-suspend-tr" style="display: table-row;">
+                                          <th></th>
+                                          <td colspan="2"></td>
+                                          <td class="fancy-suspend-td" colspan="2">
+                                              <div id="fancyStatus2" class="fancy-suspend"><span id="info">Suspend</span></div>
+                                          </td>
+                                          <td colspan="2"></td>
+                                      </tr>
+                                      <tr id="fancyBetMarket_397039" style="display: table-row;">
+                                          <th colspan="3">
+                                              <dl class="fancy-th-layout">
+                                                  <dt>
+                                                      <p id="marketName">50 over run GLO</p>
+                                                      <span id="fancyBook2"></span>
+                                                  </dt>
+                                                  <dd class="dd-tips">
+                                                      <ul class="fancy-tips">
+                                                          <li id="remarkFirstRow" style="display: none;"></li>
+                                                          <li id="remarkSecondRow" style="display: none;"></li>
+                                                      </ul>
+                                                      <a id="fancyBetBookBtn2" style="display:none;" class="btn-book">Book</a>
+                                                  </dd>
+                                              </dl>
+                                          </th>
+                                          <td colspan="2" class="multi_select ">
+                                              <ul style="text-align: center;">
+                                                  <li class="lay-1 fancylay2" id="lay_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`50 over run GLO`,2,'lay','Fancy',1)"><strong id="fancylay2">0</strong><span id="fancylaysize2">0</span></a>
+                                                  </li>
+
+                                                  <li class="back-1 fancyback2" id="back_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`50 over run GLO`,2,'back','Fancy',1)"><strong id="fancyback2">0</strong><span id="fancybacksize2">0</span></a>
+                                                  </li>
+                                              </ul>
+                                          </td>
+                                          <td class="td-fancy_merge" colspan="2">
+                                              <dl class="fancy-info">
+                                                  <dt>Min/Max</dt>
+                                                  <dd class="minMaxvalue">1/500</dd>
+                                              </dl>
+                                              <dl class="fancy-info">
+                                                  <dt id="rebateName" style="display: none;">Rebate</dt>
+                                                  <dd id="rebate" style="display: none;"></dd>
+                                              </dl>
+                                          </td>
+                                      </tr>
+<tr id="fancyBetBoard2" class="fancy-quick-tr" style="display: none;"></tr>
+<tr class="fancy-suspend-tr" style="display: table-row;">
+                                          <th></th>
+                                          <td colspan="2"></td>
+                                          <td class="fancy-suspend-td" colspan="2">
+                                              <div id="fancyStatus21" class="fancy-suspend"><span id="info">Suspend</span></div>
+                                          </td>
+                                          <td colspan="2"></td>
+                                      </tr>
+                                      <tr id="fancyBetMarket_397039" style="display: table-row;">
+                                          <th colspan="3">
+                                              <dl class="fancy-th-layout">
+                                                  <dt>
+                                                      <p id="marketName">C Dent run</p>
+                                                      <span id="fancyBook21"></span>
+                                                  </dt>
+                                                  <dd class="dd-tips">
+                                                      <ul class="fancy-tips">
+                                                          <li id="remarkFirstRow" style="display: none;"></li>
+                                                          <li id="remarkSecondRow" style="display: none;"></li>
+                                                      </ul>
+                                                      <a id="fancyBetBookBtn21" style="display:none;" class="btn-book">Book</a>
+                                                  </dd>
+                                              </dl>
+                                          </th>
+                                          <td colspan="2" class="multi_select ">
+                                              <ul style="text-align: center;">
+                                                  <li class="lay-1 fancylay21" id="lay_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`C Dent run`,21,'lay','Fancy',1)"><strong id="fancylay21">0</strong><span id="fancylaysize21">0</span></a>
+                                                  </li>
+
+                                                  <li class="back-1 fancyback21" id="back_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`C Dent run`,21,'back','Fancy',1)"><strong id="fancyback21">0</strong><span id="fancybacksize21">0</span></a>
+                                                  </li>
+                                              </ul>
+                                          </td>
+                                          <td class="td-fancy_merge" colspan="2">
+                                              <dl class="fancy-info">
+                                                  <dt>Min/Max</dt>
+                                                  <dd class="minMaxvalue">1/500</dd>
+                                              </dl>
+                                              <dl class="fancy-info">
+                                                  <dt id="rebateName" style="display: none;">Rebate</dt>
+                                                  <dd id="rebate" style="display: none;"></dd>
+                                              </dl>
+                                          </td>
+                                      </tr>
+<tr id="fancyBetBoard21" class="fancy-quick-tr" style="display: none;"></tr>
+<tr class="fancy-suspend-tr" style="display: table-row;">
+                                          <th></th>
+                                          <td colspan="2"></td>
+                                          <td class="fancy-suspend-td" colspan="2">
+                                              <div id="fancyStatus22" class="fancy-suspend"><span id="info">Suspend</span></div>
+                                          </td>
+                                          <td colspan="2"></td>
+                                      </tr>
+                                      <tr id="fancyBetMarket_397039" style="display: table-row;">
+                                          <th colspan="3">
+                                              <dl class="fancy-th-layout">
+                                                  <dt>
+                                                      <p id="marketName">C Dent boundaries</p>
+                                                      <span id="fancyBook22"></span>
+                                                  </dt>
+                                                  <dd class="dd-tips">
+                                                      <ul class="fancy-tips">
+                                                          <li id="remarkFirstRow" style="display: none;"></li>
+                                                          <li id="remarkSecondRow" style="display: none;"></li>
+                                                      </ul>
+                                                      <a id="fancyBetBookBtn22" style="display:none;" class="btn-book">Book</a>
+                                                  </dd>
+                                              </dl>
+                                          </th>
+                                          <td colspan="2" class="multi_select ">
+                                              <ul style="text-align: center;">
+                                                  <li class="lay-1 fancylay22" id="lay_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`C Dent boundaries`,22,'lay','Fancy',1)"><strong id="fancylay22">0</strong><span id="fancylaysize22">0</span></a>
+                                                  </li>
+
+                                                  <li class="back-1 fancyback22" id="back_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`C Dent boundaries`,22,'back','Fancy',1)"><strong id="fancyback22">0</strong><span id="fancybacksize22">0</span></a>
+                                                  </li>
+                                              </ul>
+                                          </td>
+                                          <td class="td-fancy_merge" colspan="2">
+                                              <dl class="fancy-info">
+                                                  <dt>Min/Max</dt>
+                                                  <dd class="minMaxvalue">1/500</dd>
+                                              </dl>
+                                              <dl class="fancy-info">
+                                                  <dt id="rebateName" style="display: none;">Rebate</dt>
+                                                  <dd id="rebate" style="display: none;"></dd>
+                                              </dl>
+                                          </td>
+                                      </tr>
+<tr id="fancyBetBoard22" class="fancy-quick-tr" style="display: none;"></tr>
+<tr class="fancy-suspend-tr" style="display: table-row;">
+                                          <th></th>
+                                          <td colspan="2"></td>
+                                          <td class="fancy-suspend-td" colspan="2">
+                                              <div id="fancyStatus3" class="fancy-suspend"><span id="info">Suspend</span></div>
+                                          </td>
+                                          <td colspan="2"></td>
+                                      </tr>
+                                      <tr id="fancyBetMarket_397039" style="display: table-row;">
+                                          <th colspan="3">
+                                              <dl class="fancy-th-layout">
+                                                  <dt>
+                                                      <p id="marketName">50 over run GLO 2</p>
+                                                      <span id="fancyBook3"></span>
+                                                  </dt>
+                                                  <dd class="dd-tips">
+                                                      <ul class="fancy-tips">
+                                                          <li id="remarkFirstRow" style="display: none;"></li>
+                                                          <li id="remarkSecondRow" style="display: none;"></li>
+                                                      </ul>
+                                                      <a id="fancyBetBookBtn3" style="display:none;" class="btn-book">Book</a>
+                                                  </dd>
+                                              </dl>
+                                          </th>
+                                          <td colspan="2" class="multi_select ">
+                                              <ul style="text-align: center;">
+                                                  <li class="lay-1 fancylay3" id="lay_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`50 over run GLO 2`,3,'lay','Fancy',1)"><strong id="fancylay3">0</strong><span id="fancylaysize3">0</span></a>
+                                                  </li>
+
+                                                  <li class="back-1 fancyback3" id="back_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`50 over run GLO 2`,3,'back','Fancy',1)"><strong id="fancyback3">0</strong><span id="fancybacksize3">0</span></a>
+                                                  </li>
+                                              </ul>
+                                          </td>
+                                          <td class="td-fancy_merge" colspan="2">
+                                              <dl class="fancy-info">
+                                                  <dt>Min/Max</dt>
+                                                  <dd class="minMaxvalue">1/500</dd>
+                                              </dl>
+                                              <dl class="fancy-info">
+                                                  <dt id="rebateName" style="display: none;">Rebate</dt>
+                                                  <dd id="rebate" style="display: none;"></dd>
+                                              </dl>
+                                          </td>
+                                      </tr>
+<tr id="fancyBetBoard3" class="fancy-quick-tr" style="display: none;"></tr>
+<tr class="fancy-suspend-tr" style="display: table-row;">
+                                          <th></th>
+                                          <td colspan="2"></td>
+                                          <td class="fancy-suspend-td" colspan="2">
+                                              <div id="fancyStatus5" class="fancy-suspend" style="display: none;"><span id="info">Suspend</span></div>
+                                          </td>
+                                          <td colspan="2"></td>
+                                      </tr>
+                                      <tr id="fancyBetMarket_397039" style="display: table-row;">
+                                          <th colspan="3">
+                                              <dl class="fancy-th-layout">
+                                                  <dt>
+                                                      <p id="marketName">Only 1 over run GLO</p>
+                                                      <span id="fancyBook5"></span>
+                                                  </dt>
+                                                  <dd class="dd-tips">
+                                                      <ul class="fancy-tips">
+                                                          <li id="remarkFirstRow" style="display: none;"></li>
+                                                          <li id="remarkSecondRow" style="display: none;"></li>
+                                                      </ul>
+                                                      <a id="fancyBetBookBtn5" style="display:none;" class="btn-book">Book</a>
+                                                  </dd>
+                                              </dl>
+                                          </th>
+                                          <td colspan="2" class="multi_select ">
+                                              <ul style="text-align: center;">
+                                                  <li class="lay-1 fancylay5" id="lay_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`Only 1 over run GLO`,5,'lay','Fancy',1)"><strong id="fancylay5">4</strong><span id="fancylaysize5">100.00</span></a>
+                                                  </li>
+
+                                                  <li class="back-1 fancyback5" id="back_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`Only 1 over run GLO`,5,'back','Fancy',1)"><strong id="fancyback5">5</strong><span id="fancybacksize5">100.00</span></a>
+                                                  </li>
+                                              </ul>
+                                          </td>
+                                          <td class="td-fancy_merge" colspan="2">
+                                              <dl class="fancy-info">
+                                                  <dt>Min/Max</dt>
+                                                  <dd class="minMaxvalue">1/500</dd>
+                                              </dl>
+                                              <dl class="fancy-info">
+                                                  <dt id="rebateName" style="display: none;">Rebate</dt>
+                                                  <dd id="rebate" style="display: none;"></dd>
+                                              </dl>
+                                          </td>
+                                      </tr>
+<tr id="fancyBetBoard5" class="fancy-quick-tr" style="display: none;"></tr>
+<tr class="fancy-suspend-tr" style="display: table-row;">
+                                          <th></th>
+                                          <td colspan="2"></td>
+                                          <td class="fancy-suspend-td" colspan="2">
+                                              <div id="fancyStatus7" class="fancy-suspend" style="display: none;"><span id="info">Suspend</span></div>
+                                          </td>
+                                          <td colspan="2"></td>
+                                      </tr>
+                                      <tr id="fancyBetMarket_397039" style="display: table-row;">
+                                          <th colspan="3">
+                                              <dl class="fancy-th-layout">
+                                                  <dt>
+                                                      <p id="marketName">1 over run GLO</p>
+                                                      <span id="fancyBook7"></span>
+                                                  </dt>
+                                                  <dd class="dd-tips">
+                                                      <ul class="fancy-tips">
+                                                          <li id="remarkFirstRow" style="display: none;"></li>
+                                                          <li id="remarkSecondRow" style="display: none;"></li>
+                                                      </ul>
+                                                      <a id="fancyBetBookBtn7" style="display:none;" class="btn-book">Book</a>
+                                                  </dd>
+                                              </dl>
+                                          </th>
+                                          <td colspan="2" class="multi_select ">
+                                              <ul style="text-align: center;">
+                                                  <li class="lay-1 fancylay7" id="lay_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`1 over run GLO`,7,'lay','Fancy',1)"><strong id="fancylay7">4</strong><span id="fancylaysize7">100.00</span></a>
+                                                  </li>
+
+                                                  <li class="back-1 fancyback7" id="back_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`1 over run GLO`,7,'back','Fancy',1)"><strong id="fancyback7">5</strong><span id="fancybacksize7">100.00</span></a>
+                                                  </li>
+                                              </ul>
+                                          </td>
+                                          <td class="td-fancy_merge" colspan="2">
+                                              <dl class="fancy-info">
+                                                  <dt>Min/Max</dt>
+                                                  <dd class="minMaxvalue">1/500</dd>
+                                              </dl>
+                                              <dl class="fancy-info">
+                                                  <dt id="rebateName" style="display: none;">Rebate</dt>
+                                                  <dd id="rebate" style="display: none;"></dd>
+                                              </dl>
+                                          </td>
+                                      </tr>
+<tr id="fancyBetBoard7" class="fancy-quick-tr" style="display: none;"></tr>
+<tr class="fancy-suspend-tr" style="display: table-row;">
+                                          <th></th>
+                                          <td colspan="2"></td>
+                                          <td class="fancy-suspend-td" colspan="2">
+                                              <div id="fancyStatus8" class="fancy-suspend" style="display: none;"><span id="info">Suspend</span></div>
+                                          </td>
+                                          <td colspan="2"></td>
+                                      </tr>
+                                      <tr id="fancyBetMarket_397039" style="display: table-row;">
+                                          <th colspan="3">
+                                              <dl class="fancy-th-layout">
+                                                  <dt>
+                                                      <p id="marketName">1.3 over run GLO</p>
+                                                      <span id="fancyBook8"></span>
+                                                  </dt>
+                                                  <dd class="dd-tips">
+                                                      <ul class="fancy-tips">
+                                                          <li id="remarkFirstRow" style="display: none;"></li>
+                                                          <li id="remarkSecondRow" style="display: none;"></li>
+                                                      </ul>
+                                                      <a id="fancyBetBookBtn8" style="display:none;" class="btn-book">Book</a>
+                                                  </dd>
+                                              </dl>
+                                          </th>
+                                          <td colspan="2" class="multi_select ">
+                                              <ul style="text-align: center;">
+                                                  <li class="lay-1 fancylay8" id="lay_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`1.3 over run GLO`,8,'lay','Fancy',1)"><strong id="fancylay8">6</strong><span id="fancylaysize8">100.00</span></a>
+                                                  </li>
+
+                                                  <li class="back-1 fancyback8" id="back_1">
+                                                      <a id="runsInfo" style="cursor: pointer" onclick="fancybetSlipPageLoad(`1.3 over run GLO`,8,'back','Fancy',1)"><strong id="fancyback8">7</strong><span id="fancybacksize8">100.00</span></a>
+                                                  </li>
+                                              </ul>
+                                          </td>
+                                          <td class="td-fancy_merge" colspan="2">
+                                              <dl class="fancy-info">
+                                                  <dt>Min/Max</dt>
+                                                  <dd class="minMaxvalue">1/500</dd>
+                                              </dl>
+                                              <dl class="fancy-info">
+                                                  <dt id="rebateName" style="display: none;">Rebate</dt>
+                                                  <dd id="rebate" style="display: none;"></dd>
+                                              </dl>
+                                          </td>
+                                      </tr>
+<tr id="fancyBetBoard8" class="fancy-quick-tr" style="display: none;"></tr>
+                                  </tbody>
+
+<colgroup>
+    <col span="1" width="320">
+    <col span="1" width="70">
+    <col span="1" width="70">
+    <col span="1" width="70">
+    <col span="1" width="70">
+    <col span="1" width="70">
+    <col span="1" width="70">
+  </colgroup>
+
+                                  <tbody>
+                                      <tr class="colgroup-adjust">
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                      </tr>
+                                      <tr id="fancyBetSpecialBet" class="special_bet">
+                                          <td colspan="7">
+                                              <h3 style="line-height:25px;padding-left:5px;">
+                                                  Fancy 1
+                                              </h3>
+                                          </td>
+                                      </tr>
+                                      <tr class="bet-all">
+                                          <td></td>
+                                          <td class="refer-bet" colspan="2"></td>
+                                          <td>Back</td>
+                                          <td>Lay</td>
+                                          <td class="refer-book" colspan="2"></td>
+                                      </tr>
+                                  </tbody>
+</table>
+                          </div>
+
+
+
+
+<div id="sportsBookWrap" class="bets-wrap sportsbook_bet" style="display:none">
+
+  <div id="sportsBookHead" class="sportsbook-head">
+
+      <h4 class="in-play">
+          <span id="sportsBookName">Premium Cricket</span>
+          <a id="sportsBookRules" class="btn-sportsbook_rules">Rules</a>
+      </h4>
+      <a id="showFancyBetBtn" class="other-tab">Fancy Bet</a>
+      <div id="sportsBookRulesWrap_2" class="rules-wrap" style="display: none;">
+    <h3 id="sportsbookRulesTitle">Rules of Premium Cricket</h3>
+    <div id="sportradarCricketRules" class="rules-content">
+      <dl class="download-list">
+        <dt class="icon-pdf"><a>Pre Match Market Details</a></dt>
+        <dd><a>download</a></dd>
+      </dl>
+      <dl class="download-list">
+        <dt class="icon-pdf"><a>In Play Market Details</a></dt>
+        <dd><a>download</a></dd>
+      </dl>
+    </div>
+    <div id="sportradarTennisRules" class="rules-content" style="display: none;">
+      <p>General Rules:</p>
+      <ol>
+        <li>In case of default, retirement or walkover of any player, all undecided bets are considered void.</li>
+        <li>In case of any delay (rain, darkness...) all markets remain unsettled and the trading will be continued as soon as the match continues.</li>
+        <li>If penalty point(s) are awarded by the umpire, all bets on that game will stand.</li>
+        <li>In case of a match is finished before certain points/games were finished, all affected point/game related markets are considered void.</li>
+      </ol>
+      <p>Settlement and Cancellation Rules:</p>
+      <ol>
+        <li>If markets remain open with an incorrect score which has a significant impact on the prices, we reserve the right to void betting.</li>
+        <li>If the players/teams are displayed incorrectly, we reserve the right to void betting.</li>
+        <li>If a player retires all undecided markets are considered void.</li>
+        <li>If a match tie-break is played as a deciding set in Bo3 format, it will be considered as the 3rd set</li>
+        <li>Every tie-break or Match tie-break counts as 1 game</li>
+      </ol>
+    </div>
+    <div id="sportradarSoccerRules" class="rules-content" style="display: none;">
+      <dl class="download-list">
+        <dt class="icon-pdf"><a>Market Details</a></dt>
+        <dd><a>download</a></dd>
+      </dl>
+    </div>
+    <div id="sportradarKabaddiRules" class="rules-content" style="display: none;">
+    </div>
+    <ul class="btn-wrap break">
+      <li><a class="btn">OK</a></li>
+    </ul>
+  </div>
+      <dl id="minMaxWrap_1" class="fancy-info" style="display: none;">
+          <dt><span>Min/Max</span></dt>
+          <dd id="minMaxInfo_1">0</dd>
+          <dt id="rebateName_1">Rebate</dt>
+          <dd id="rebateRatio_1">0.00%</dd>
+      </dl>
+      <dl id="minMaxWrap_2" class="fancy-info" style="display: none;">
+          <dt><span>Min</span></dt>
+          <dd id="minMaxInfo_2"> 1.0</dd>
+          <dt id="rebateName_2" style="display: none;">Rebate</dt>
+          <dd id="rebateRatio_2" style="display: none;">0.00%</dd>
+      </dl>
+  </div>
+
+  <div id="sportsBookTab_2_4" class="special_bets-tab-wrap">
+      <ul class="special_bets-tab">
+          <li><a id="tab_All" class="tabname">All</a></li>
+          <li><a id="tab_Popular" class="tabname">Popular</a></li>
+          <li><a id="tab_Match" class="tabname">Match</a></li>
+          <li><a id="tab_Innings" class="tabname">Innings</a></li>
+          <li><a id="tab_Over" class="tabname">Over</a></li>
+          <li class="tab_more_drop">
+              <a id="moreDropBtn" class="tabname">More</a>
+              <ul id="moreDropList" class="more_drop-list">
+                  <li><a id="tab_Batsman">Batsman</a></li>
+                  <li><a id="tab_Partnership">Partnership</a></li>
+                  <li><a id="tab_Group">Group</a></li>
+                  <li><a id="tab_Range">Range</a></li>
+                  <li><a id="tab_HeadtoHead">Head-to-Head</a></li>
+                  <li><a id="tab_Player">Player</a></li>
+              </ul>
+          </li>
+      </ul>
+  </div>
+
+  <div id="sportsBookTab_2_2" class="special_bets-tab-wrap" style="display: none">
+      <ul class="special_bets-tab">
+          <li><a id="tab_All">All</a></li>
+          <li><a id="tab_Main">Main</a></li>
+          <li><a id="tab_Total">Total</a></li>
+          <li><a id="tab_Others">Others</a></li>
+      </ul>
+  </div>
+
+  <div id="sportsBookTab_2_1" class="special_bets-tab-wrap" style="display: none">
+      <ul class="special_bets-tab">
+          <li><a id="tab_All">All</a></li>
+          <li><a id="tab_Popular">Popular</a></li>
+          <li><a id="tab_Half">Half</a></li>
+          <li><a id="tab_Goals">Goals</a></li>
+          <li><a id="tab_FastMarkets">Fast Markets</a></li>
+          <li><a id="tab_Specials">Specials</a></li>
+          <li><a id="tab_Corners">Corners</a></li>
+          <li><a id="tab_Cards">Cards</a></li>
+          <li><a id="tab_Players">Players</a></li>
+          <li><a id="tab_Others">Others</a></li>
+      </ul>
+  </div>
+
+  <div id="sportsBookTab_2_138" class="special_bets-tab-wrap" style="display: none">
+      <ul class="special_bets-tab">
+          <li><a id="tab_All">All</a></li>
+          <li><a id="tab_Main">Main</a></li>
+          <li><a id="tab_Half">Half</a></li>
+          <li><a id="tab_Others">Others</a></li>
+      </ul>
+  </div>
+
+  <div id="sportsBookTab_1" class="special_bets-tab-wrap" style="display: none">
+      <ul class="special_bets-tab"></ul>
+  </div>
+
+
+
+<div id="premiumFancyList">
+</div>
+</div>
+
+
+
+
+                      </div>
+                          <div class="one_click-wrap">
+
+            <div class="overlay" name="oneClickBetDialog" style="display:none;"></div>
+
+
+            <div id="oneClickBetDialog" class="dialog-wrap white-halo" name="oneClickBetDialog" style=" display:none; ">
+              <h4>One Click Bet ON</h4>
+              <div class="dialog-content">
+                <p>Stake selected will be placed immediately once you click on the market odds.
+                  <br>
+                  <span class="attention">
+                    Attention: Back/Lay at your own risk</span>
+                </p>
+              </div>
+              <ul class="btn-wrap break">
+
+                <li>
+                  <a id="ok" class="btn-send" style="cursor:pointer;">OK</a>
+                </li>
+              </ul>
+              <img class="arrow-dialog" src="../../assets/desktopfile/img/transparent.gif">
+            </div>
+
+
+            <div id="oneClickBetStakeBox" class="one_click-setting dnone" style="display:none;" name="oneClickBetStakeBox">
+              <h4>	</h4>
+              <ul class="one_click-stake">
+                <li><a class="btn select" id="onebet1" onclick="selectOneClickAmount('onebet1')" name="onclickbetStake" index="0" style="cursor:pointer;">1000</a></li>
+                <li><a class="btn" id="onebet2" onclick="selectOneClickAmount('onebet2')" name="onclickbetStake" index="1" style="cursor:pointer;">10000</a></li>
+                <li><a class="btn" id="onebet3" onclick="selectOneClickAmount('onebet3')" name="onclickbetStake" index="2" style="cursor:pointer;">30000</a></li>
+                <li><a class="btn" id="onebet4" onclick="selectOneClickAmount('onebet4')" name="onclickbetStake" index="3" style="cursor:pointer;">50000</a></li>
+              </ul>
+              <a id="edit" onclick="doEditOnEditButtton()" class="a-edit" style="cursor:pointer;">Edit<img src="../../assets/desktopfile/img/transparent.gif"></a>
+            </div>
+
+
+            <div id="editOneClickBetStakeBox" class="one_click-setting dnone" name="oneClickBetStakeBox">
+              <h4 style="color:#fff">Edit One Click Bet Stake</h4>
+              <ul class="one_click-stake">
+                <li><input type="text" id="bet1" name="editBetStake" index="0" value="1000"></li>
+                <li><input type="text" id="bet2" name="editBetStake" index="1" value="2000"></li>
+                <li><input type="text" id="bet3" name="editBetStake" index="2" value="5000"></li>
+                <li><input type="text" id="bet4" name="editBetStake" index="3" value="10000"></li>
+              </ul>
+              <a id="save" class="btn-send a-edit" style="cursor:pointer;line-height:10px" onclick="saveNewValues()">Save</a>
+            </div>
+          </div>
+
+
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 col-3 right-side">
+            <div class="white-right">
+              <h2 style="cursor:pointer;">
+                  <a class="to-expand">Bet Slip</a>
+              </h2>
+
+
+              <div class="slip-wrap no-open-bet_slip">
+
+
+                  <ul id="loadingMsg" class="loading" style="display: none">
+                      <li><img src="../../assets/desktopfile/img/loading40.gif"></li>
+                      <li id="countDownTime">Bet Place Processing......</li>
+                  </ul>
+
+
+
+                  <div class="message-bet">
+                      <h4 id="errorMsg" class="error" style="display: none;"></h4>
+                      <p id="betMsg" class="warning" style="display: none"></p>
+                  </div>
+
+
+
+                  <p id="noBetSlipInfo" style="display: none;">Click on the odds to add selections to the betslip.</p>
+
+
+                  <div id="betSlipBoard" class="bet_slip" style="">
+            <ul id="backSlipHeader" class="slip-head" name="slipHeader" style="display: block">
+                <li class="col-bet">Back (Bet For)</li>
+                <li id="oddsHeader" class="col-odd">Odds</li>
+                <li id="runsHeader" class="col-odd" style="display: none">Unit:Runs</li>
+                <li class="col-stake">Stake</li>
+                <li class="col-profit">Profit</li>
+              </ul>
+            <div id="header_Back_31162032" style="display: block;" count="1">
+                  <h4 id="matchName"><img class="icon-in_play" src="../../assets/desktopfile/img/transparent.gif">Warwickshire v Gloucestershire</h4>
+                <dl id="bet_31162032_1_193101213_9350385_1" class="slip-back" style="display: block;" marketid="1_193101213" selectionid="9350385" eventtype="2" eventid="31162032" sidetype="1" markettype="MATCH_ODDS">
+                  <dt>
+                    <a id="delete" class="delete cancelAll" style="cursor:pointer;">delete</a><span class="short-amount" id="betTeamName">Warwickshire</span>
+                    <span id="bet_category">Odds</span>
+                  </dt>
+                  <dd class="col-odd">
+                    <input id="ShowBetPrice" type="text" maxlength="6" tabindex="0">
+
+                    <ul class="odd-add">
+                      <li><a id="oddsUp" class="up" style="cursor:pointer;">up</a></li>
+                      <li><a id="oddsDown" class="down" style="cursor:pointer;">down</a></li>
+                    </ul>
+
+                    <ul id="oddsTipsPoint"></ul>
+
+                  </dd>
+                  <dd class="col-stake">
+                    <input id="stakeValue" type="text" value="" maxlength="7" tabindex="0">
+                    <ul id="listPoint"></ul>
+                  </dd>
+                  <dd class="col-profit" id="profitData">0</dd><dd id="stakePopupList" class="col-stake_list" stakepopuplisttype="extended" style="display: block;" bet="bet_31162032_1_193101213_9350385_1">
+                <ul>
+                  <li><a class="btn stakeInput" id="stake1" stake="30000" style="cursor:pointer;">10</a></li>
+                  <li><a class="btn stakeInput" id="stake2" stake="50000" style="cursor:pointer;">30</a></li>
+                  <li><a class="btn stakeInput" id="stake3" stake="100000" style="cursor:pointer;">50</a></li>
+                  <li><a class="btn stakeInput" id="stake4" stake="150000" style="cursor:pointer;">100</a></li>
+                  <li><a class="btn stakeInput" id="stake5" stake="300000" style="cursor:pointer;">200</a></li>
+                  <li><a class="btn stakeInput" id="stake6" stake="500000" style="cursor:pointer;">500</a></li>
+                </ul>
+                <p id="totalStakeP" style="display: none;">Total Stake: <strong id="totalStake"></strong></p>
+              </dd>
+                  <!-- dynamic min bet for match odds -->
+                  <dd class="keep-option">
+                      <p class="dynamic-min-bet">Min Bet: <strong id="dynamicMinBet">1</strong></p>
+                  </dd>
+
+                  <dd id="inningsRuns" class="inn_runs" style="display: none;">
+                    <dl>
+                      <dt id="ifRuns"></dt>
+                      <dd><span id="runsPL" class="green"></span></dd>
+                      <dt id="ifLess"></dt>
+                      <dd><span id="lessPL" class="green"></span></dd>
+                    </dl>
+                  </dd>
+
+
+                </dl></div>
+            <div id="betSlipFullBtn" class="full_btn">
+                <dl class="sum">
+                  <dt>Liability</dt>
+                  <dd>
+                    <span id="liabilityBet" class="red">0.00</span>
+                  </dd>
+                </dl>
+
+                <ul class="btn-wrap">
+                  <li><a id="cancelAll" class="btn cancelAll" style="cursor:pointer;" tabindex="0">Cancel All</a></li>
+                  <li><button id="placeBetButton" onclick="placeBet();" class="btn-send " style="cursor:pointer;" tabindex="0">Place Bets</button></li>
+                </ul>
+
+                <ul class="slip-option">
+                  <li><input id="comfirmBets" type="checkbox"><label for="comfirmBets">Please confirm your bets.</label></li>
+                </ul>
+              </div>
+            </div>
+
+
+                  <div id="confirmBetList" class="slip-list" style="max-height: calc(100% - 96px); display: none">
+
+                      <div class="message-bet">
+                          <h4 class="warning">Please confirm your bets.</h4>
+                          <p>A commission is charged on your net profit from each market.</p>
+                      </div>
+
+                      <ul id="backSlipHeader" class="slip-head" style="display: none">
+                          <li class="col-bet">Back (Bet For)</li>
+                          <li class="col-odd">Odds</li>
+                          <li class="col-stake">Stake</li>
+                          <li class="col-profit">Profit</li>
+                      </ul>
+
+                      <ul id="laySlipHeader" class="slip-head" style="display: none">
+                          <li class="col-bet">Lay (Bet Against)</li>
+                          <li class="col-odd">Odds</li>
+                          <li class="col-stake">Stake</li>
+                          <li class="col-profit">Liability</li>
+                      </ul>
+
+
+                      <div id="confirmHeader" style="display: none">
+                          <h4>
+                              <img class="icon-in_play" src="../../assets/desktopfile/img/transparent.gif">
+                          </h4>
+                      </div>
+
+
+
+                      <dl id="confirmBetTemplate" class="slip-back" style="display: none">
+                          <dt>
+                              <span id="slipType" class="slip-type">--</span>
+                              <span id="selectionName">--</span>
+                              <span id="marketName">--</span>
+                          </dt>
+                          <dd id="price" class="col-odd">--</dd>
+                          <dd id="size" class="col-stake">--</dd>
+                          <dd id="profitLiability" class="col-profit">--</dd>
+                      </dl>
+
+
+                  </div>
+
+                  <div id="confirmBetFullBtn" class="full_btn" style="display: none">
+                      <dl class="sum">
+                          <dt></dt>
+                          <dd>
+                              <span></span>
+                          </dd>
+                      </dl>
+
+                      <ul class="btn-wrap">
+                          <li><a id="editBets" class="btn" style="cursor:pointer;">Edit Bets</a></li>
+                          <li><a id="submitBets" class="btn-send" style="cursor:pointer;">Confirm Bets</a></li>
+                      </ul>
+
+                      <ul class="slip-option">
+                          <li><input id="comfirmBets" type="checkbox" checked="checked"><label>Confirm bets before placing</label>
+                          </li>
+                      </ul>
+                  </div>
+
+              </div>
+
+
+            </div>
+            <div class="matched-wrap" id="betsDataDiv" style="height: calc(100% - 301px);">
+
+              <h3>
+                  <a id="openBetsRefresh" onclick="getLiabsList()" class="slip_refresh" style="cursor:pointer;">Refresh</a>
+                  <a class="to-expand" style="cursor:pointer;">Open Bets</a>
+              </h3>
+
+
+              <div class="message-bet">
+                  <h4 id="oneClickMsg" class="" style="display: none"></h4>
+              </div>
+
+
+              <div id="oneClickLoadingWrap" class="one_click-loading" style="display: none">
+                  <div id="loadPending" class="load-pending" style="display: none">
+                      <strong id="pendingNum"></strong>
+                      pending...
+                  </div>
+                  <ul class="loading">
+                      <li><img src="../../assets/desktopfile/img/loading40.gif"></li>
+                      <li id="oneClickTime">Place Bets</li>
+                  </ul>
+              </div>
+
+
+              <div class="message-bet">
+                  <h4 id="editErrorMsg" class="error" style="display: none"></h4>
+                  <p id="editBetMsg" class="warning" style="display: none"></p>
+              </div>
+
+
+
+              <ul id="processingImg" class="loading" style="display: none;">
+                  <li><img src="../../assets/desktopfile/img/loading40.gif"></li>
+                  <li>Processing...</li>
+              </ul>
+
+
+              <div id="matchSection" style="height: calc(100% - 25px)">
+
+
+                  <div id="openBetSelectionBox" class="slip-sort">
+
+                      <select id="selectMenuBets" name=""><option id="option0" value="" eventid="0" marketid="0" style="display: block;" eventtype="0" date="-1">-- Select -- </option></select>
+
+
+                      <option id="optionTemplate" value="" eventid="" marketid="" style="display: none;"></option>
+
+
+                  </div>
+
+
+                  <div id="openBetSlip" class="bet_slip over-wrap" style="height: calc(100% - 35px); display: block;">
+
+
+
+
+
+
+                      <ul id="stakePopupList" class="stake-popup" stakepopuplisttype="template" style="display: none;">
+                          <li><a id="selectStake_1" stake="10" style="cursor:pointer;">10</a></li>
+                          <li><a id="selectStake_2" stake="30" style="cursor:pointer;">30</a></li>
+                          <li><a id="selectStake_3" stake="50" style="cursor:pointer;">50</a></li>
+                          <li><a id="selectStake_4" stake="200" style="cursor:pointer;">200</a></li>
+                          <li><a id="selectStake_5" stake="500" style="cursor:pointer;">500</a></li>
+                          <li><a id="selectStake_6" stake="1000" style="cursor:pointer;">1000</a></li>
+                      </ul>
+
+
+                      <div id="oddsTipsPopup" class="tips-popup" style="display: none">min 1.01</div>
+
+
+                      <div id="stakeTipsPopup" class="tips-popup" style="display: none">Min 4.00</div>
+
+                      <div id="editUnMatchedList" class="slip-list" style="display: none;">
+
+
+
+                          <dd id="stakePopupList" class="col-stake_list" stakepopuplisttype="template" style="display: none;">
+                              <ul>
+                                  <li><a class="btn" id="selectStake_1" stake="10" style="cursor:pointer;">10</a></li>
+                                  <li><a class="btn" id="selectStake_2" stake="30" style="cursor:pointer;">30</a></li>
+                                  <li><a class="btn" id="selectStake_3" stake="50" style="cursor:pointer;">50</a></li>
+                                  <li><a class="btn" id="selectStake_4" stake="200" style="cursor:pointer;">200</a></li>
+                                  <li><a class="btn" id="selectStake_5" stake="500" style="cursor:pointer;">500</a></li>
+                                  <li><a class="btn" id="selectStake_6" stake="1000" style="cursor:pointer;">1000</a></li>
+                              </ul>
+                          </dd>
+
+
+                          <ul id="backSlipHeader" class="matched-head" style="display: none">
+                              <li class="col-bet">Back (Bet For)</li>
+                              <li class="col-odd">Odds</li>
+                              <li class="col-stake">Stake</li>
+                              <li class="col-profit">Profit</li>
+                          </ul>
+
+                          <ul id="laySlipHeader" class="matched-head" style="display: none">
+                              <li class="col-bet">Lay (Bet Against)</li>
+                              <li class="col-odd">Odds</li>
+                              <li class="col-stake">Stake</li>
+                              <li class="col-profit">Liability</li>
+                          </ul>
+
+
+                          <dl id="editUnMatchedTemplate" class="slip-lay" style="display: none;">
+                              <dd id="betInfo" class="refer" style="display: none;">
+                                  <span id="betId">Ref: --</span>
+                                  <span id="placeDate">xx-xx-2016 --:--</span>
+                              </dd>
+                              <dt id="marketNameDt">
+                                  <a id="delete" class="delete" style="cursor:pointer;">delete</a>
+                                  <span id="slipType" class="slip-type">--</span>
+                                  <span id="marketName">--</span>
+                              </dt>
+                              <dd id="price" class="col-odd">
+                                  <input id="odds" type="text" maxlength="6">
+                                  <ul class="odd-add">
+                                      <li><a id="oddsUp" class="up" style="cursor:pointer;">up</a></li>
+                                      <li><a id="oddsDown" class="down" style="cursor:pointer;">down</a></li>
+                                  </ul>
+                                  <ul id="oddsTipsPoint"></ul>
+
+                              </dd>
+                              <dd id="size" class="col-stake">
+                                  <input id="inputStake" type="text" value="" maxlength="10">
+                                  <ul id="listPoint"></ul>
+
+                              </dd>
+                              <dd id="profitLiability" class="col-profit">--</dd>
+
+
+                              <dd id="inningsRuns" class="inn_runs" style="display: none;">
+                                  <dl>
+                                      <dt id="ifRuns"></dt>
+                                      <dd><span id="runsPL" class="green">$0.00</span></dd>
+                                      <dt id="ifLess"></dt>
+                                      <dd><span id="lessPL" class="green">$0.00</span></dd>
+                                  </dl>
+                              </dd>
+
+
+                              <dd id="keepOptionBox" class="keep-option" style="display: none;">
+                                  At In-Play
+                                  <input name="keepOption" id="cancel" type="checkbox"><label for="cancel">cancel</label>
+                                  <input name="keepOption" id="keep" type="checkbox"><label for="keep">keep</label>
+                                  <p class="dynamic-min-bet">Min Bet: <strong id="dynamicMinBet"></strong></p>
+                              </dd>
+                          </dl>
+                      </div>
+
+
+                      <div id="editUnMatchFullBtn" class="full_btn" style="display: none;">
+                          <dl class="sum">
+
+                          </dl>
+
+                          <ul class="btn-wrap">
+                              <li>
+                                  <a id="cancelAllUnMatch" class="btn" style="cursor:pointer;" tabindex="0">Cancel All Bets</a>
+                              </li>
+                              <li class="edit-function">
+                                  <a id="okBtn" class="btn-send" style="cursor:pointer;" tabindex="0">OK</a>
+                                  <a id="resetBtn" class="btn" style="cursor:pointer;" tabindex="0">Reset</a>
+                              </li>
+                          </ul>
+                      </div>
+
+
+                      <ul id="txnHead" class="slip-head" style="">
+                          <li class="col-bet"><strong>Matched</strong></li>
+                      </ul>
+
+                      <div id="betData">
+
+                      </div>
+
+
+                      <div class="full_btn">
+                          <ul class="slip-option">
+                              <li><input id="showBetInfo" type="checkbox" name="openOption"><label for="showBetInfo">Bet
+                                      Info</label></li>
+                              <li name="txnOption"><input id="consolidate" type="checkbox" name="openOption"><label for="consolidate">Consolidate</label></li>
+                              <li name="txnOption"><input id="averageOdds" type="checkbox" name="openOption"><label for="averageOdds">Average Odds</label></li>
+                          </ul>
+                      </div>
+
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+</div>

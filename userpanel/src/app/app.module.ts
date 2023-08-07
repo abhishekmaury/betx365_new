@@ -10,6 +10,7 @@ import { InplayComponent } from './inplay/inplay.component';
 import { MultimarketsComponent } from './multimarkets/multimarkets.component';
 import { HighlightsComponent } from './highlights/highlights.component';
 import { ChecksportwiseresultComponent } from './checksportwiseresult/checksportwiseresult.component';
+import { MatchComponent } from './match/match.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ChecksportwiseresultComponent } from './checksportwiseresult/checksport
     InplayComponent,
     MultimarketsComponent,
     HighlightsComponent,
-    ChecksportwiseresultComponent
+    ChecksportwiseresultComponent,
+    MatchComponent
   ],
   imports: [
     BrowserModule,

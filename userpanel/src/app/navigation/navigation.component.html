@@ -1,4 +1,6 @@
-<div class="top-haeder">
+<!-- <span>Before Login Code</span> -->
+
+<!-- <div class="top-haeder">
       <div class="container-fluid top">
           <div class="left">
               <h1><a href="/exchange/UserHome"><img src="../../assets/desktopfile/img/logo.png"></a></h1>
@@ -14,7 +16,7 @@
                 </div>
               </div>
             </div>
-          <!-- top right  -->
+
           <form name="loginForm" onsubmit="return validateForm()" action="/exchange/Account/Loggedin" method="post" accept-charset="utf-8" autocomplete="off">
           <div class="right right-signup">
               <i class="fa fa-user"></i>
@@ -31,21 +33,15 @@
               <button type="submit" class="login">Login
                   <i class="fa fa-arrow-right" aria-hidden="true"></i>
               </button>
-             <!--  <a class="sign" style="cursor:pointer">
-                  Agent List
-              </a>  -->
+
               <br>
              <span class="error" style="position:absolute;margin-left:20px;background:none;color:#d0021b" id="dheaderError"></span>
-              <!-- <a href="#" class="sign">
-                  Sign up
-              </a> -->
-          <!-- top right end  -->
+
           <h6 style="color:#fff;font-weight:bold;text-align:center;" id="loginMessage">Note - This Website is not for Indian Territories.</h6>
         </div>
         </form>
       </div>
 
-      <!-- menu bar start -->
       <div class="container-fluid">
           <div class="row top-two">
               <div class="col-md-8 col-8" style="padding:0">
@@ -115,7 +111,7 @@
                           <a href="#" id="setting-drop" onclick="checkLogin()" class="dropdown-toggle">setting
                               <i class="fa fa-cog" aria-hidden="true"></i>
                           </a>
-                          <!-- setting toggle start  -->
+
                           <div id="set_pop" class="dropdown-menu slip_set-pop" style="margin: 6px; padding-top: 0; padding-bottom: 0;">
                               <div id="coinList" class="set-content">
                                   <dl class="odds-set">
@@ -179,6 +175,282 @@
                                   </ul>
                               </div>
                           </div>
+
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div id="loginBox" class="overlay" style="display:none;">
+          <div class="dialog-wrap-w login_to_go">
+              <div class="kv"></div>
+              <form name="loginModalForm" onsubmit="return validateModalForm()" action="/exchange/Account/Loggedin" method="post" accept-charset="utf-8" autocomplete="off">
+              <dl class="login-panel">
+                  <dt>Please login to continue</dt>
+            <dd><input id="loginBoxLoginName" type="text" name="userid" placeholder="userid">
+            <input type="text" class="input" id="addressBox" style="display:none;" placeholder="ip" name="adminId"></dd>
+            <dd><input id="loginBoxPassword" type="password" name="password" placeholder="Password"></dd>
+            <dd class="valid-code"><input name="codeModal" type="number" placeholder="Validation Code" maxlength="4">
+            <canvas id="canvas2" style="position:absolute;width:70px;right:-15px;top:7px;" width="100" height="40"></canvas></dd>
+            <dd><input id="loginBoxValid" type="hidden" value="f4e0146b-e657-437b-b66c-7056f103f6fb" maxlength="4"></dd>
+            <dd><button id="loginBoxLoginBtn" style="cursor: pointer" type="submit" class="btn-send">Login <img class="icon-login" src="/desktopfile/img/transparent.gif"></button></dd>
+                  <dd id="loginBoxErrorMsg" class="error"></dd>
+              </dl>
+              </form>
+          <a id="closeLoginForm" style="cursor: pointer" class="close"></a>
+          </div>
+      </div>
+
+</div> -->
+
+
+<!-- <span>After Login Code</span> -->
+
+<div class="top-haeder">
+
+      <div class="container-fluid top">
+          <div class="left">
+              <h1><a href="/"><img src="../../assets/desktopfile/img/logo.png"></a></h1>
+       <div id="searchWrap" class="search-wrap" style="">
+        <div>
+          <input id="searchInput" class="search-input" type="text" onkeyup="searchEvent()" placeholder="Search Events">
+          <button id="searchClear" class="search-clear" onclick="clearSearch()" style="display:none;"></button>
+        </div>
+        <div id="searchResult" class="suggestion-wrap" style="display:none;">
+          <ul id="searchList">
+
+          </ul>
+        </div>
+      </div>
+          </div>
+
+          <div class="right right-login" style="display:flex">
+          <li class="main-wallet" style="display:flex">
+              <a routerLink="#" class="balance dropdown-toggle" id="main_Bal" data-bs-toggle="dropdown">
+                  main balance <span>PBU <span class="mainBalance">69.46</span></span>
+                  exposure <span id="exposure" style="">0.00</span>
+                  <span class="four-d">+4</span>
+              </a>
+
+              <p class="loading-bar" id="menuRefreshLoading" style="display:none;">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </p>
+              <a class="img-cricle balance" id="menuRefresh" onclick="loadBalance()">
+                  <img src="../../assets/desktopfile/img/transparent.gif">
+              </a>
+              </li>
+
+              <div class="dropdown-menu wallet-detail" id=" top_menu_popup multiBalancePop">
+                  <div class="wallet-detail-group">
+                      <dl class="wallet-detail-content">
+                          <dt>Main Balance</dt>
+                          <dd class="wallet-balance-num"> <span class="badge-currency" id="currency">PBU</span><span id="mainBalanceD1">69.46</span></dd>
+                          <dd class="wallet-exposure">Exposure <span id="mainExposureD1" style="">0.00</span></dd>
+                      </dl>
+                  </div>
+                  <div id="walletContent" class="wallet-detail-group">
+                      <dl id="tempDl" class="wallet-detail-content">
+                          <dt id="vendorTitle_1">Casino Balance</dt>
+                          <dd class="wallet-balance-num"> <span class="badge-currency" id="vendorCurrency_1">PBU</span><span id="vendorBalance_1">0.00</span></dd>
+                          <dd class="wallet-recall"><button class="btn-recall" id="recall_1" onclick="TopMenuHandler.recall('1')">Recall</button></dd>
+                      </dl>
+                      <dl id="tempDl" class="wallet-detail-content">
+                          <dt id="vendorTitle_5">SABA Balance</dt>
+                          <dd class="wallet-balance-num"> <span class="badge-currency" id="vendorCurrency_5">PBU</span><span id="vendorBalance_5">0.00</span></dd>
+                          <dd class="wallet-recall"><button class="btn-recall" id="recall_5" onclick="TopMenuHandler.recall('5')">Recall</button></dd>
+                      </dl>
+                      <dl id="tempDl" class="wallet-detail-content">
+                          <dt id="vendorTitle_3">BPoker Balance</dt>
+                          <dd class="wallet-balance-num"> <span class="badge-currency" id="vendorCurrency_3">PBU</span><span id="vendorBalance_3">0.00 Points</span></dd>
+                          <dd class="wallet-recall"><button class="btn-recall" id="recall_3" onclick="TopMenuHandler.recall('3')">Recall</button></dd>
+                      </dl>
+                      <dl id="tempDl" class="wallet-detail-content">
+                          <dt id="vendorTitle_4">MT5 Balance</dt>
+                          <dd class="wallet-balance-num"> <span class="badge-currency" id="vendorCurrency_4">PBU</span><span id="vendorBalance_4">0.00</span></dd>
+                          <dd class="wallet-recall"><button class="btn-recall" id="recall_4" onclick="TopMenuHandler.recall('4')">Recall</button></dd>
+                      </dl>
+                      <dl id="recallAllDl" class="wallet-detail-content">
+                          <dd class="align-R"><button class="btn-recall" id="recallAll" onclick="TopMenuHandler.recall('1,5,3')">Recall All</button></dd>
+                      </dl>
+                  </div>
+                  <div id="walletTemp" class="wallet-detail-group" style="display: none;">
+                      <dl id="tempDl" class="wallet-detail-content">
+                          <dt id="vendorTitle">Housie Balance</dt>
+                          <dd class="wallet-balance-num"> <span class="badge-currency" id="vendorCurrency">USD</span><span id="vendorBalance">$ 0.00</span></dd>
+                          <dd class="wallet-recall"><button class="btn-recall" id="recall">Recall</button></dd>
+                      </dl>
+                      <dl id="recallAllDl" class="wallet-detail-content">
+                          <dd class="align-R"><button class="btn-recall" id="recallAll">Recall All</button></dd>
+                      </dl>
+                  </div>
+                  <div class="btn-box">
+                      <button class="btn">Close</button>
+                  </div>
+              </div>
+
+              <a style="border:1px solid rgb(255 255 255 / 30%) !important;margin-left:2%" href="#" class="login1 balance  dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                  <i class="fa fa-user"></i>my account
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="padding: 0;">
+                  <li class="li-hover pro-span"><a class="dropdown-item" href="#">demo3</a><span id="timeZoneViewAccount">GMT+5:30</span></li>
+                  <li class="li-hover"><a class="dropdown-item" routerLink="/exchange/Details">my profile</a></li>
+                  <li class="li-hover"><a class="dropdown-item" routerLink="/exchange/Account/BalanceOverView">balance overview</a></li>
+                  <li class="li-hover"><a class="dropdown-item" routerLink="/exchange/Account/Statement/1">account statement</a></li>
+                  <li class="li-hover"><a class="dropdown-item" routerLink="/exchange/Account/Bets">my bets</a></li>
+                  <li class="li-hover"><a class="dropdown-item" routerLink="/exchange/Account/OldBets">bets history</a></li>
+                  <li class="li-hover"><a class="dropdown-item" routerLink="/exchange/Account/ProfitAndLoss">profit loss</a></li>
+                  <li class="li-hover"><a class="dropdown-item" routerLink="/exchange/Account/ActivityLogs/1">activity log</a></li>
+                  <li class="li-hover"><a class="dropdown-item" routerLink="/exchange/Account/Dchecksportwiseresult">Check Sport Wise Result</a></li>
+                  <li class="li-hover"><a class="dropdown-item" routerLink="/balanceTransfer">Balance Transfer</a></li>
+                  <li class="li-hover"><a class="dropdown-item" routerLink="/exchange/Account/Dviewwinners">Check Lottery Winners</a></li>
+                  <li class="logout-li"><a class="logout" routerLink="/exchange/Account/Logout">logout
+                          <img src="">
+                      </a></li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="container-fluid">
+          <div class="row top-two">
+              <div class="col-md-8 col-8" style="padding:0">
+                  <ul class="menu" id="desktopHeaderMenu">
+                      <li><a id="menu_user_d_home" routerLink="/" class="">home</a></li>
+                      <li><a id="menu_user_d_inplay" routerLink="/inplay">In-Play</a></li>
+                      <li><a id="menu_user_d_mm" routerLink="/multimarkets">multi markets</a></li>
+                      <li>
+                          <a id="menu_user_d_cr_inplay" routerLink="/highlights">cricket
+                              <span id="tagLive" class="tag-live">
+                                  <strong>
+                                      <svg width="14" height="8" xmlns="http://www.w3.org/2000/svg">
+                                          <g fill="rgb(255,0,0)" fill-rule="evenodd">
+                                              <path d="M12.012 0l-.698.727c1.734 1.808 1.734 4.738 0 6.546l.698.727c2.117-2.207 2.117-5.79 0-8zM10.3 1.714l-.7.735c.967 1.014.967 2.66 0 3.673l.7.735c1.352-1.418 1.352-3.721 0-5.143zM1.588 0l.698.727c-1.734 1.808-1.734 4.738 0 6.546L1.588 8c-2.117-2.207-2.117-5.79 0-8zM3.3 1.714l.7.735c-.967 1.014-.967 2.66 0 3.673l-.7.735c-1.352-1.418-1.352-3.721 0-5.143z"></path>
+                                              <circle cx="6.8" cy="4.4" r="1.6"></circle>
+                                          </g>
+                                      </svg>
+                                  </strong><span id="cricketInplayCount">17</span>
+                              </span>
+                          </a>
+                      </li>
+                      <li><a id="menu_user_d_sc_inplay" routerLink="/highlights">soccer
+                              <span id="tagLive" class="tag-live2">
+                                  <strong>
+                                      <svg width="14" height="8" xmlns="http://www.w3.org/2000/svg">
+                                          <g fill="rgb(255,0,0)" fill-rule="evenodd">
+                                              <path d="M12.012 0l-.698.727c1.734 1.808 1.734 4.738 0 6.546l.698.727c2.117-2.207 2.117-5.79 0-8zM10.3 1.714l-.7.735c.967 1.014.967 2.66 0 3.673l.7.735c1.352-1.418 1.352-3.721 0-5.143zM1.588 0l.698.727c-1.734 1.808-1.734 4.738 0 6.546L1.588 8c-2.117-2.207-2.117-5.79 0-8zM3.3 1.714l.7.735c-.967 1.014-.967 2.66 0 3.673l-.7.735c-1.352-1.418-1.352-3.721 0-5.143z"></path>
+                                              <circle cx="6.8" cy="4.4" r="1.6"></circle>
+                                          </g>
+                                      </svg>
+                                  </strong>
+                                  <span id="soccerInplayCount">48</span>
+                              </span>
+                          </a>
+                      </li>
+                      <li><a id="menu_user_d_tn_inplay" routerLink="/highlights">tennis
+                              <span id="tagLive" class="tag-live3">
+                                  <strong>
+                                      <svg width="14" height="8" xmlns="http://www.w3.org/2000/svg">
+                                          <g fill="rgb(255,0,0)" fill-rule="evenodd">
+                                              <path d="M12.012 0l-.698.727c1.734 1.808 1.734 4.738 0 6.546l.698.727c2.117-2.207 2.117-5.79 0-8zM10.3 1.714l-.7.735c.967 1.014.967 2.66 0 3.673l.7.735c1.352-1.418 1.352-3.721 0-5.143zM1.588 0l.698.727c-1.734 1.808-1.734 4.738 0 6.546L1.588 8c-2.117-2.207-2.117-5.79 0-8zM3.3 1.714l.7.735c-.967 1.014-.967 2.66 0 3.673l-.7.735c-1.352-1.418-1.352-3.721 0-5.143z"></path>
+                                              <circle cx="6.8" cy="4.4" r="1.6"></circle>
+                                          </g>
+                                      </svg>
+                                  </strong>
+                                  <span id="tennisInplayCount">40</span>
+                              </span>
+                          </a>
+                      </li>
+
+                      <li><a style="color:#222" id="menu_user_d_casino" routerLink="/#">casino</a></li>
+
+                      <li><a style="color:#222" id="menu_user_d_casino" routerLink="/checksportwiseresult">Result</a></li>
+
+                      <li><a style="color:#222" routerLink="#">The Hundred</a></li></ul>
+              </div>
+              <div class="col-md-4 col-4 right">
+                  <ul>
+                  <li class="time_zone" id="timeZoneView"><span>Time Zone :</span> GMT+5:30</li>
+                      <li>
+                          <a id="one_click_bet" class="bet one_click">
+                             <img src="../../assets/desktopfile/img/transparent.gif">
+                              one click bet
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#" id="setting-drop" onclick="checkLogin()" class="dropdown-toggle">setting
+                              <i class="fa fa-cog" aria-hidden="true"></i>
+                          </a>
+                          <!-- setting toggle start  -->
+                          <div id="set_pop" class="dropdown-menu slip_set-pop" style="margin: 6px; padding-top: 0; padding-bottom: 0;">
+                              <div id="coinList" class="set-content">
+                                  <dl class="odds-set">
+                                      <dd class="col-defult">
+                                          <label for="defult_stake"><strong>Default stake</strong></label>
+                                          <input id="userCoin" class="stake-input" type="text" maxlength="7" value="">
+                                      </dd>
+                                  </dl>
+                                  <dl id="stakeSet" class="stake-set">
+                                      <dt>Stake</dt>
+                                      <dd><a id="coin_1" onclick="addStakes('1')" style="cursor:pointer;" class="btn select">10</a></dd>
+                                      <dd><a id="coin_2" onclick="addStakes('2')" style="cursor:pointer;" class="btn select">30</a></dd>
+                                      <dd><a id="coin_3" onclick="addStakes('3')" style="cursor:pointer;" class="btn select">50</a></dd>
+                                      <dd><a id="coin_4" onclick="addStakes('4')" style="cursor:pointer;" class="btn select">100</a></dd>
+                                      <dd><a id="coin_5" onclick="addStakes('5')" style="cursor:pointer;" class="btn select">200</a></dd>
+                                      <dd><a id="coin_6" onclick="addStakes('6')" style="cursor:pointer;" class="btn select">500</a></dd>
+                                      <dd><a id="coin_7" onclick="addStakes('7')" style="cursor:pointer;" class="btn">1000</a></dd>
+                                      <dd><a id="coin_8" onclick="addStakes('8')" style="cursor:pointer;" class="btn">2000</a></dd>
+                                      <dd class="col-edit"><a id="editStakeButton" class="btn-edit">Edit<i class="fas fa-pencil-alt"></i></a></dd>
+                                  </dl>
+                                  <dl id="editCustomizeStakeList" class="stake-set" style="display: none;">
+                                      <dt>Stake</dt>
+                                      <dd><input id="stakeEdit_1" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                      <dd><input id="stakeEdit_2" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                      <dd><input id="stakeEdit_3" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                      <dd><input id="stakeEdit_4" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                      <dd><input id="stakeEdit_5" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                      <dd><input id="stakeEdit_6" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                      <dd><input id="stakeEdit_7" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                      <dd><input id="stakeEdit_8" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
+                                      <dd class="col-edit"><a id="setStakeButton" onclick="setStakes()" class="btn-send">OK</a></dd>
+                                  </dl>
+                                  <dl class="odds-set">
+                                      <dt>Odds</dt>
+                                      <dd>
+                                          <input id="enableSparkCheck" checked="" type="checkbox"><label for="enableSparkCheck">Highlight when odds change</label>
+                                      </dd>
+                                  </dl>
+                                  <dl class="odds-set">
+                                      <dt>FancyBet</dt>
+                                      <dd>
+                                          <input id="fancyBetAcceptAnyOddsCheckBox" type="checkbox"><label for="fancy_odd">Accept Any Odds</label>
+                                      </dd>
+                                  </dl>
+                                  <dl class="odds-set">
+                                      <dt>SportsBook</dt>
+                                      <dd>
+                                          <input id="sportsBookAcceptAnyOddsCheckBox" type="checkbox"><label>Accept Any Odds</label>
+                                      </dd>
+                                  </dl>
+                                  <dl class="odds-set">
+                                      <dt>Binary</dt>
+                                      <dd>
+                                          <input id="financialAcceptAnyOddsCheckBox" type="checkbox"><label>Accept Any Price</label>
+                                      </dd>
+                                  </dl>
+
+                                  <ul class="btn-wrap">
+                                      <li><a id="closeSet" class="cancel cancel" style="cursor:pointer;">Cancel</a></li>
+                                      <li class="col-send"><a id="coinSave" class="btn-send save" onclick="setStakes()" style="cursor:pointer;">Save</a></li>
+                                  </ul>
+                              </div>
+                          </div>
                           <!-- setting toggle end  -->
                       </li>
                   </ul>
@@ -195,7 +467,7 @@
         <input type="text" class="input" id="addressBox" style="display:none;" placeholder="ip" name="adminId"></dd>
         <dd><input id="loginBoxPassword" type="password" name="password" placeholder="Password"></dd>
         <dd class="valid-code"><input name="codeModal" type="number" placeholder="Validation Code" maxlength="4">
-        <canvas id="canvas2" style="position:absolute;width:70px;right:-15px;top:7px;" width="100" height="40"></canvas></dd>
+        <canvas id="canvas2" style="position:absolute;width:70px;right:-15px;top:7px;"></canvas></dd>
         <dd><input id="loginBoxValid" type="hidden" value="f4e0146b-e657-437b-b66c-7056f103f6fb" maxlength="4"></dd>
         <dd><button id="loginBoxLoginBtn" style="cursor: pointer" type="submit" class="btn-send">Login <img class="icon-login" src="/desktopfile/img/transparent.gif"></button></dd>
               <dd id="loginBoxErrorMsg" class="error"></dd>
@@ -206,3 +478,6 @@
   </div>
 
   </div>
+
+
+
