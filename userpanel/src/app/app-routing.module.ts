@@ -6,6 +6,7 @@ import { MultimarketsComponent } from './multimarkets/multimarkets.component';
 import { HighlightsComponent } from './highlights/highlights.component';
 import { ChecksportwiseresultComponent } from './checksportwiseresult/checksportwiseresult.component';
 import { MatchComponent } from './match/match.component';
+import { MyprofileComponent } from './myprofile/myprofile.component';
 
 const routes: Routes = [
   { path:'', component:HomeComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path:'multimarkets', component:MultimarketsComponent },
   { path:'highlights', component:HighlightsComponent },
   { path:'checksportwiseresult', component:ChecksportwiseresultComponent },
-  { path:'match', component:MatchComponent }
+  { path:'match', component:MatchComponent },
+  { path:'myprofile', component:MyprofileComponent }
 ];
 
 @NgModule({

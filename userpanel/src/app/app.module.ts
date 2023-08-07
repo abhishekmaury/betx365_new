@@ -11,6 +11,7 @@ import { MultimarketsComponent } from './multimarkets/multimarkets.component';
 import { HighlightsComponent } from './highlights/highlights.component';
 import { ChecksportwiseresultComponent } from './checksportwiseresult/checksportwiseresult.component';
 import { MatchComponent } from './match/match.component';
+import { MyprofileComponent } from './myprofile/myprofile.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatchComponent } from './match/match.component';
     MultimarketsComponent,
     HighlightsComponent,
     ChecksportwiseresultComponent,
-    MatchComponent
+    MatchComponent,
+    MyprofileComponent
   ],
   imports: [
     BrowserModule,
