@@ -1,0 +1,212 @@
+/*cricket page start*/
+.slip-wrap, .matched-wrap, .live-wrap, .tv-wrap, .game-wrap, .game-highlight-wrap, .game-wrap-horse, .favor-wrap, .sub_path
+{
+	border-bottom:none;
+}
+.cricket .right-side .white-right {
+    background: #fff;
+    height: 300px;
+    border: 1px solid #fff;
+}
+
+.cricket .right-side .white-right h2 {
+    background: #243a48;
+    color: #fff;
+    height: 25px;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.cricket .right-side .white-right h2 i.fas.fa-minus {
+    float: right;
+    font-size: 7px;
+    border: 1px solid #fff;
+    padding: 1px 1px 0px 1px;
+    border-radius: 3px;
+    margin: 3px;
+}
+
+.cricket .right-side .white-right p {
+    font-size: 13px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.cricket .center-c {
+    overflow-y: scroll;
+    height: 625px;
+    padding-top: 0;
+}
+
+.cricket .left-c {
+    background: #fff;
+    height: 650px;
+    overflow-y: scroll;
+}
+
+.cricket .left-c .left-ul li {
+    border-bottom: 1px solid #EFE1C1;
+    margin-left: -33px;
+    padding-left: 15px;
+    height: 27px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.cricket .left-c .left-ul li:hover {
+    background: #EFE1C1;
+}
+
+.cricket .left-c .left-ul li a {
+    font-size: 11px;
+    text-transform: capitalize;
+}
+
+.cricket .left-c .left-ul li i.fa.fa-angle-right {
+    float: right;
+    font-size: 11px;
+    margin-right: 7px;
+    border-radius: 4px;
+    margin-top: 6px;
+    font-weight: bolder;
+}
+
+.cricket .center-c h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.cricket .center-c p {
+    font-size: 10px;
+    margin-top: 0px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.cricket .right-side {
+    padding-left: 0;
+}
+
+.cricket .cricket-center {
+    padding-left: 0;
+}
+
+/* cricket page end */
+
+.over-wrap {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.kv-wrap {
+    margin-bottom: 15px;
+}
+
+.kv-wrap img {
+    width: 100%;
+}
+
+.cricket .center-c .hi-cri {
+    background: #dddcd6;
+}
+
+.cricket .center-c .hi-cri h2 {
+    background: #ffbf19;
+    line-height: 2;
+    font-size: 12px;
+    padding-left: 11px;
+}
+
+.cricket .center-c .hi-cri table tbody {
+    background-color: #fff;
+}
+
+.cricket .center-c .hi-cri table tbody tr th {
+    padding: 0px 0px 0px 10px;
+        line-height: 29px;
+
+}
+
+.cricket .center-c .hi-cri table thead tr th {
+    border: none;
+    border: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: unset;
+    padding: 2px 0px 2px 0px;
+}
+.cricket .center-c .hi-cri table tbody tr td:last-child {
+	padding: 2px 3px;
+}
+
+.cricket .center-c .hi-cri table tbody tr th a {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.cricket .center-c .hi-cri table tbody tr th a span {
+    font-size: 10px;
+}
+
+.cricket .center-c .hi-cri table tbody tr th a .play {
+    color: #2da20f;
+    padding-left: 9px;
+    font-size: 12px;
+}
+
+.cricket .center-c .hi-cri table tbody tr td .blue {
+    height: 22px;
+    width: 43px;
+    border: none;
+    background: #72bbef;
+    margin-right: 1px;
+    font-size: 11px;
+}
+
+.cricket .center-c .hi-cri table tbody tr td .pink {
+    height: 22px;
+    width: 43px;
+    border: none;
+    margin-right: 1px;
+    font-size: 11px;
+    background: #faa9ba;
+}
+
+.cricket .center-c .hi-cri table tbody tr td {
+    padding: 0;
+}
+
+.cricket .center-c .hi-cri table tbody tr td .col-div {
+    display: flex;
+    margin-right: -9px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+i.fas.fa-alarm-clock {
+    color: #ffffff;
+    float: right;
+    font-size: 12px;
+    border: 1px solid #72dd48;
+    border-radius: 4px;
+    background: #72dd48;
+    padding: 3px;
+    font-size: 11px;
+}
+
+.cricket .center-c .hi-cri table tbody tr td i.fas.fa-thumbtack {
+    font-size: 9px;
+    color: #7e97a7;
+    border: 1px solid #7e97a7;
+    border-radius: 50%;
+    padding: 3px 3px 0px 3px;
+    margin: 6px 0px 0px 0px;
+}
+
+i.fa.fa-circle {
+    font-size: 5px;
+    color: #228516;
+}

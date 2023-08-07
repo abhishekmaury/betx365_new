@@ -8,6 +8,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
 import { InplayComponent } from './inplay/inplay.component';
 import { MultimarketsComponent } from './multimarkets/multimarkets.component';
+import { HighlightsComponent } from './highlights/highlights.component';
+import { ChecksportwiseresultComponent } from './checksportwiseresult/checksportwiseresult.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { MultimarketsComponent } from './multimarkets/multimarkets.component';
     NavigationComponent,
     FooterComponent,
     InplayComponent,
-    MultimarketsComponent
+    MultimarketsComponent,
+    HighlightsComponent,
+    ChecksportwiseresultComponent
   ],
   imports: [
     BrowserModule,
