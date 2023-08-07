@@ -1,0 +1,268 @@
+/*soccer page start*/
+
+.soccer .right-side .white-right {
+    background: #fff;
+    height: 650px;
+    border: 1px solid #fff;
+}
+
+.soccer .right-side .white-right h2 {
+    background: #243a48;
+    color: #fff;
+    height: 25px;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.soccer .right-side .white-right h2 i.fa.fa-minus-square-o {
+    float: right;
+    padding-top: 1px;
+}
+
+.soccer .right-side .white-right p {
+    font-size: 13px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.soccer .center-s {
+    overflow-y: scroll;
+    height: 650px;
+    padding-top: 13px;
+}
+
+.soccer .left-s .left-top a span:first-child {
+    left: 150px !important;
+}
+
+.soccer .left-s .left-top a span {
+    left: 200px !important;
+}
+
+.soccer .left-s ul li {
+    border-bottom: 1px solid #EFE1C1;
+    margin-left: -33px;
+    padding-left: 15px;
+    height: 27px;
+}
+
+.soccer .left-s ul li:hover {
+    background: #EFE1C1;
+}
+
+.soccer .left-s ul li a {
+    font-size: 11px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.soccer .left-s ul li i.fa.fa-angle-right {
+    float: right;
+    padding: 3px 4px 1px 4px;
+    background: #ffbd15;
+    font-size: 11px;
+    margin-right: 7px;
+    border-radius: 4px;
+    margin-top: 6px;
+    font-weight: bolder;
+}
+
+.soccer .center-s h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.soccer .center-s p {
+    font-size: 13px;
+    margin-top: 8px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.soccer .center-s {
+    overflow-y: scroll;
+    height: 625px;
+    padding-top: 0;
+}
+
+.soccer .left-s {
+    background: #fff;
+    height: 650px;
+    overflow-y: scroll;
+}
+
+.soccer .left-s ul li {
+    border-bottom: 1px solid #EFE1C1;
+    margin-left: -33px;
+    padding-left: 15px;
+    height: 27px;
+}
+
+.soccer .left-s ul li:hover {
+    background: #EFE1C1;
+}
+
+.soccer .left-s ul li a {
+    font-size: 11px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.soccer .left-s ul li i.fa.fa-angle-right {
+    float: right;
+    padding: 3px 4px 1px 4px;
+    background: #ffbd15;
+    font-size: 11px;
+    margin-right: 7px;
+    border-radius: 4px;
+    margin-top: 6px;
+    font-weight: bolder;
+}
+
+.soccer .center-s h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.soccer .center-s p {
+    font-size: 10px;
+    margin-top: 0px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.soccer .right-side {
+    padding-left: 0;
+}
+
+.soccer .soccer-center {
+    padding-left: 0;
+}
+
+/* cricket page end */
+
+.over-wrap {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.kv-wrap {
+    margin-bottom: 15px;
+}
+
+.kv-wrap img {
+    width: 100%;
+}
+
+.soccer .center-s .hi-cri {
+    background: #dddcd6;
+}
+
+.soccer .center-s .hi-cri h2 {
+    background: #ffbf19;
+    line-height: 2;
+    font-size: 12px;
+    padding-left: 11px;
+}
+
+.soccer .center-s .hi-cri table tbody {
+    background-color: #fff;
+}
+
+.soccer .center-s .hi-cri table tbody tr th {
+    padding: 0px 0px 0px 10px;
+}
+
+.soccer .center-s .hi-cri table thead tr th {
+    border: none;
+    border: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: unset;
+    padding: 2px 0px 2px 0px;
+}
+
+.soccer .center-s .hi-cri table tbody tr th a {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.soccer .center-s .hi-cri table tbody tr th a span {
+    font-size: 10px;
+}
+
+.soccer .center-s .hi-cri table tbody tr th a .game-list-time {
+    font-size: 11px;
+    color: #b0b0b0;
+    font-weight: lighter;
+}
+
+.soccer .center-s .hi-cri table tbody tr th a .play {
+    color: #2da20f;
+    padding-left: 9px;
+    font-size: 12px;
+}
+
+.soccer .center-s .hi-cri table tbody tr td .blue {
+    height: 22px;
+    width: 50px;
+    border: none;
+    background: #72bbef;
+    margin-right: 1px;
+    font-size: 11px;
+}
+
+.soccer .center-s .hi-cri table tbody tr td .pink {
+    height: 22px;
+    width: 50px;
+    border: none;
+    margin-right: 1px;
+    font-size: 11px;
+    background: #faa9ba;
+}
+
+.soccer .center-s .hi-cri table tbody tr td {
+    padding: 0;
+}
+
+.soccer .center-s .hi-cri table tbody tr td .col-div {
+    display: flex;
+    margin-right: -40px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+i.fas.fa-alarm-clock {
+    color: #ffffff;
+    float: right;
+    font-size: 12px;
+    border: 1px solid #72dd48;
+    border-radius: 4px;
+    background: #72dd48;
+    padding: 3px;
+    font-size: 11px;
+}
+
+.soccer .center-s .hi-cri table tbody tr td i.fas.fa-thumbtack {
+    font-size: 10px;
+    color: #7e97a7;
+    border: 1px solid #7e97a7;
+    border-radius: 50%;
+    padding: 3px 3px 0px 3px;
+    margin: 0px 4px 0px 4px;
+}
+
+.soccer .right-side .white-right h2 i.fas.fa-minus {
+    float: right;
+    font-size: 7px;
+    border: 1px solid #fff;
+    padding: 1px 1px 0px 1px;
+    border-radius: 3px;
+    margin: 3px;
+}

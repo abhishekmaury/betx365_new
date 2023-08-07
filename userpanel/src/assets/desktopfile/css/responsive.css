@@ -1,0 +1,38 @@
+ @media (max-width:1440px) {
+     .suspend-div {
+         left: 22.6rem;
+     }
+     .match_odds .flex-match .col-send a {
+         padding: 10px 27px 10px 27px;
+     }
+ }
+
+ @media (max-width:1349px) {
+     .suspend-div {
+         left: 21.3rem;
+         /* width: 25.6rem;
+        left: 37rem; */
+     }
+     .special_bets-tab {
+         /* width: 63%; */
+     }
+ }
+
+ @media (max-width:1200px) {}
+
+ @media (max-width:1024px) {
+     .wallet-detail {
+         width: 33%;
+     }
+     .in-play .hi-cri table tbody tr td i.fas.fa-thumbtack {
+         font-size: 12px;
+         color: #7e97a7;
+         border: 1px solid #7e97a7;
+         border-radius: 50%;
+         padding: 2px 3px 0px 3px;
+     }
+ }
+
+ @media (max-width:1000px) {}
+
+ @media (max-width:768px) {}

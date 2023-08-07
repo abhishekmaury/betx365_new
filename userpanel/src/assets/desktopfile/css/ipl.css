@@ -1,0 +1,318 @@
+.Winner .right-side .white-right {
+    background: #fff;
+    height: 300px;
+    border-top: 1px solid #fff;
+}
+
+.matched-wrap.close,
+.white-right.close {
+    height: 27px !important;
+    overflow: hidden;
+}
+
+.Winner .right-side .white-right h2 {
+    background: #243a48;
+    color: #fff;
+    height: 25px;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.Winner .right-side .white-right h2 i.fa.fa-minus-square-o {
+    float: right;
+    padding-top: 1px;
+}
+
+.Winner .right-side .white-right p {
+    font-size: 13px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.Winner .center-w {
+    overflow-y: scroll;
+    height: 536px;
+    margin-top: 15px;
+    overflow-x: hidden;
+}
+
+.Winner .left-w {
+    background: #fff;
+    height: 650px;
+    overflow-y: scroll;
+}
+
+.Winner .left-ipl {
+    padding-right: 7px;
+}
+
+.Winner .left-w .left-top a span {
+    left: 178px !important;
+    width: max-content;
+}
+
+.Winner .left-w .left-top a span:first-child {
+    left: 77px !important;
+}
+
+.Winner .left-w .left-top a span:nth-of-type(2) {
+    left: 130px !important;
+}
+
+.Winner .left-w ul li {
+    border-bottom: 1px solid #EFE1C1;
+    margin-left: -33px;
+    padding-left: 15px;
+    height: 27px;
+}
+
+.Winner .left-w ul li:hover {
+    background: #EFE1C1;
+}
+
+.Winner .left-w ul li a {
+    font-size: 11px;
+    text-transform: capitalize;
+    color: #000;
+    line-height: 26px;
+}
+
+.Winner .left-w ul li i.fa.fa-angle-right {
+    float: right;
+    padding: 3px 4px 1px 4px;
+    background: #ffbd15;
+    font-size: 11px;
+    margin-right: 7px;
+    border-radius: 4px;
+    margin-top: 6px;
+    font-weight: bolder;
+}
+
+.Winner .center-w h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.Winner .center-w p {
+    font-size: 13px;
+    margin-top: 8px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.Winner .center-top {
+    background: #243a48;
+    height: 42px;
+    width: 100%;
+}
+
+.Winner .center-top h2 img {
+    height: 25px;
+    width: 25px;
+    float: right;
+    margin: 7px;
+}
+
+.Winner .center-top h2 {
+    font-size: 17px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 900;
+    line-height: 39px;
+    padding-left: 10px;
+}
+
+.Winner .center-top h2 i.fa.fa-thumb-tack {
+    font-size: 16px;
+    color: #c3ced5;
+    background: #3b5160;
+    padding: 4px;
+    border-radius: 100%;
+    margin-right: 6px;
+}
+
+.Winner .center-top h2 span {
+    font-size: 14px;
+    background: white;
+    color: #243a48;
+    padding: 2px 9px 2px 9px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.Winner .center-top h2 i.fas.fa-redo-alt {
+    font-size: 15px;
+    float: right;
+    padding: 13px;
+    font-weight: normal;
+}
+
+.Winner .top-white ul {
+    background: white;
+    height: 30px;
+    border-bottom: 1px solid #93a3ae;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Winner .top-white ul li {
+    font-size: 13px;
+    text-transform: capitalize;
+    color: #626260;
+    line-height: 2;
+    padding-right: 15px;
+}
+
+.Winner .top-white ul li img {
+    height: 18px;
+    background: #5ea70e;
+    padding: 3px;
+    border-radius: 4px;
+    width: 18px;
+    margin-right: 5px;
+    margin-left: -19px;
+}
+
+.Winner .top-white ul .li-max span {
+    background: #bed5d8;
+    border-radius: 4px;
+    padding: 0px 5px 0px 5px;
+    margin: 5px 0px 3px 0px;
+    font-size: 12px;
+    color: #094c76;
+    font-weight: unset;
+}
+
+.Winner .top-white ul li span {
+    font-weight: bold;
+    color: #000;
+}
+
+.Winner .center-w table {
+    width: 100%;
+}
+
+.Winner .center-w table tr th {
+    font-size: 10px;
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: unset;
+    padding: 2px 4px 5px 4px;
+    text-align: center;
+}
+
+.Winner .center-w table tr td {
+    background: white;
+    font-size: 13px;
+    text-transform: capitalize;
+    text-align: center;
+    border-bottom: 1px solid #5e7787;
+    height: 50px;
+    width: 10%;
+    border-right: 1px solid #fff;
+}
+
+.Winner .center-w table tr td a img {
+    height: 13px;
+    width: 16px;
+    margin-right: 7px;
+}
+
+.Winner .center-w table tr .left-text {
+    width: 300px;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.Winner .center-w table tr .th-first {
+    text-align: left;
+}
+
+.Winner .center-w table tr td a {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.Winner .center-w table tr td a span {
+    font-weight: normal;
+}
+
+.Winner .center-w table tr .light-b {
+    background-color: #b6c4cd;
+}
+
+.Winner .center-w table tr .gray-b {
+    background-color: #9cb4c6;
+}
+
+.Winner .center-w table tr .blue {
+    background-color: #65a0c9;
+}
+
+.Winner .center-w table tr .pink {
+    background-color: #d2919f;
+}
+
+.Winner .center-w table tr .light-p {
+    background-color: #c9b3b8;
+}
+
+.Winner .center-w table tr .gray-p {
+    background-color: #ccbfc2;
+}
+
+.Winner .center-w table tr .blue-back {
+    background-color: #65a0c9;
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    padding: 5px;
+    clip-path: polygon(100% 0%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0 100%, 11% 0%);
+}
+
+.Winner .center-w table tr .pink-lay {
+    background-color: #d2919f;
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    padding: 5px;
+    clip-path: polygon(50% 0%, 88% 0%, 100% 100%, 100% 100%, 0 100%, 0% 60%, 0 0);
+}
+
+.Winner .center-winner {
+    padding-left: 0;
+}
+
+.Winner .right-side {
+    padding-left: 0;
+}
+
+.Winner .center-w table .tr-border {
+    border-bottom: 2px solid #b6c4cd;
+}
+
+.Winner .right-side .white-right h2 i.fas.fa-minus {
+    float: right;
+    font-size: 7px;
+    border: 1px solid #fff;
+    padding: 1px 1px 0px 1px;
+    border-radius: 3px;
+    margin: 3px;
+}
+
+.Winner .left-w .left-top a .ipl_span::before {
+    content: "";
+    text-align: right;
+    position: absolute;
+    left: -24px;
+    background: #818181;
+    font-weight: bold;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 70% 100%, 96% 51%, 71% 0);
+    width: 20px;
+    height: 24px;
+}
+
+/* IPL Winner page end */
