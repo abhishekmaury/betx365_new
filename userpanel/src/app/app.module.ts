@@ -12,6 +12,14 @@ import { HighlightsComponent } from './highlights/highlights.component';
 import { ChecksportwiseresultComponent } from './checksportwiseresult/checksportwiseresult.component';
 import { MatchComponent } from './match/match.component';
 import { MyprofileComponent } from './myprofile/myprofile.component';
+import { BalanceoverviewComponent } from './balanceoverview/balanceoverview.component';
+import { AccountstatementComponent } from './accountstatement/accountstatement.component';
+import { MybetsComponent } from './mybets/mybets.component';
+import { BetshistoryComponent } from './betshistory/betshistory.component';
+import { ProfitlossComponent } from './profitloss/profitloss.component';
+import { ActivitylogsComponent } from './activitylogs/activitylogs.component';
+import { BalancetransferComponent } from './balancetransfer/balancetransfer.component';
+import { ViewwinnersComponent } from './viewwinners/viewwinners.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +32,15 @@ import { MyprofileComponent } from './myprofile/myprofile.component';
     HighlightsComponent,
     ChecksportwiseresultComponent,
     MatchComponent,
-    MyprofileComponent
+    MyprofileComponent,
+    BalanceoverviewComponent,
+    AccountstatementComponent,
+    MybetsComponent,
+    BetshistoryComponent,
+    ProfitlossComponent,
+    ActivitylogsComponent,
+    BalancetransferComponent,
+    ViewwinnersComponent
   ],
   imports: [
     BrowserModule,
