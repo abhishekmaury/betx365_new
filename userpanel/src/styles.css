@@ -604,7 +604,7 @@ h4 .delete-pin,
 }
 
 .path-pop a {
-  background-image: url(/desktopfile/img/left-s010cd08d64.png);
+  /* background-image: url(../src/assets/desktopfile/img/left-s010cd08d64.png); */
   background-repeat: no-repeat;
 }
 
@@ -635,7 +635,7 @@ h4 .delete-pin,
 /* open bets right */
 
 .matched-wrap h3 {
-  background-image: url(/desktopfile/img/bg-sbdc950abeb.png);
+  /* background-image: url(../src/assets/desktopfile/img/bg-sbdc950abeb.png); */
   background-repeat: no-repeat;
 }
 
@@ -720,7 +720,7 @@ h4 .delete-pin,
 .betbarter .matched-wrap .to-expand,
 .betbarter .matched-wrap.close .to-expand,
 .betbarter .slip_refresh {
-  background-image: url(/desktopfile/img/right-sdc390e89c4.png);
+  /* background-image: url(/desktopfile/img/right-sdc390e89c4.png); */
   background-repeat: no-repeat;
 }
 
@@ -1653,7 +1653,7 @@ h4 .delete-pin,
 .shambhu9 .one_click-setting .a-edit img,
 .shambhu9 .one_click-stake,
 .sairamexch .one_click-stake {
-  background-image: url(/desktopfile/img/main-s56e8305f6b.png);
+  background-image: url(../src/assets/desktopfile/img/main-s56e8305f6b.png);
   background-repeat: no-repeat;
 }
 
@@ -2427,7 +2427,7 @@ p.dynamic-min-bet {
 
 .btn-wrap .btn-send,
 .nova88exch .total_all .search-but {
-  background: #ffa00c url(/desktopfile/img/bg-send.gif) repeat-x;
+  background: #ffa00c;
   border-color: #cb8009;
 }
 
@@ -2652,7 +2652,7 @@ p.dynamic-min-bet {
 .white-right .to-expand {
   color: #fff;
   text-decoration: none;
-  background-image: url(/desktopfile/img/main-s0ecd36cf33.png);
+  background-image: url(../src/assets/desktopfile/img/main-s0ecd36cf33.png);
   background-repeat: no-repeat;
   background-position: 100% -1794px;
 }
