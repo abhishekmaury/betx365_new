@@ -1,1 +1,279 @@
-<p>betshistory works!</p>
+<app-navigation></app-navigation>
+
+<div class="main_wrap skyexchange ">
+  <!-- Left Column -->
+  <div class="col-left">
+      <!-- Sub Menu and Path -->
+      <div class="sub_path">
+          <!-- Path -->
+          <div class="path">
+              <a href="#path-pop" class="path-back"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+              <ul>
+                  <li class="path-last"><a href="#">My Account</a></li>
+              </ul>
+          </div>
+          <!-- Path Pop Up-->
+          <ul id="path-pop" class="path-pop">
+          </ul>
+          <!-- Sub Menu -->
+         <ul class="menu-list">
+              <li><a id="sub_menu_detail" href="/exchange/Details" class="select">My Profile</a></li>
+              <li><a id="sub_menu_summary" href="/exchange/Account/BalanceOverView">Balance Overview</a></li>
+              <li><a id="sub_menu_accountCashStatement_log" href="/exchange/Account/Statement/1">Account Statement</a></li>
+              <li class="active-li"><a id="sub_menu_my_bets" href="/exchange/Account/Bets">My Bets</a></li>
+              <li><a id="sub_menu_activity_log" href="/exchange/Account/ActivityLogs/1">Activity Log</a></li>
+          </ul>
+      </div>
+  </div>
+  <!-- Center Column -->
+  <div class="col-center report">
+      <!-- Loading Wrap -->
+      <div id="loading" class="loading-wrap" style="display: none;">
+          <ul class="loading">
+              <li><img src="../../assets/desktopfile/images/loading40.gif"></li>
+              <li>Loading...</li>
+          </ul>
+      </div>
+      <!-- Message -->
+      <div id="message" class="message-wrap success">
+          <a class="btn-close">Close</a>
+          <p></p>
+      </div>
+      <h2 class="act-details">My Bets</h2>
+      <ul class="tab col3">
+          <li><a href="/exchange/Account/Bets">Current Bets</a></li>
+          <li style="margin-left:-4px;"><a class="select" href="/exchange/Account/OldBets">Bets History</a></li>
+          <li style="margin-left:-4px;"><a href="/exchange/Account/ProfitAndLoss">Profit &amp; Loss</a></li>
+      </ul>
+      <!-- Tab -->
+      <ul class="report-tab-wrap" style="display:block">
+         <li class="report-tab  select" onclick="setNewBets('Odds')" id="reportType_Odds" data-reporttabtype="0">
+              Exchange
+          </li>
+          <li class="report-tab " onclick="setNewBets('Fancy')" id="reportType_Fancy" data-reporttabtype="7">
+              FancyBet
+          </li>
+          <li class="report-tab " onclick="setNewBets('Fancy1')" id="reportType_Fancy1" data-reporttabtype="7">
+              Fancy1Bet
+          </li>
+          <li class="report-tab " onclick="setNewBets('Toss')" id="reportType_Toss" data-reporttabtype="7">
+              TossBet
+          </li>
+          <li class="report-tab " onclick="setNewBets('Casino')" id="reportType_Casino" data-reporttabtype="7">
+              Casino Bet
+          </li>
+          <li class="report-tab " onclick="setNewBets('virtualsports')" id="reportType_virtualsports" data-reporttabtype="2">
+              Virtual Sports
+          </li>
+          <li class="report-tab " onclick="setNewBets('BooKMaker')" id="reportType_BooKMaker" data-reporttabtype="3">
+              BookMaker
+          </li>
+          <li class="report-tab " onclick="setNewBets('Premium')" id="reportType_Premium" data-reporttabtype="5">
+              Premium
+          </li>
+          <li class="report-tab " onclick="setNewBets('Other')" id="reportType_Other" data-reporttabtype="5">
+              Other
+          </li>
+          <li class="report-tab " onclick="setNewBets('SABA')" id="reportType_SABA" data-reporttabtype="5">
+              SABA SPORTS
+          </li>
+      </ul>
+      <!-- function -->
+      <!-- function end-->
+      <!-- bets history start  -->
+      <div class="function-wrap">
+          <ul class="input-list">
+              <div id="statusCondition" style="display:flex;">
+                  <li><label>Bet Status:</label></li>
+                  <li>
+                      <select name="betStatus" onchange="changeStatus()" id="betStatus">
+                          <option value="2">Settled</option>
+                          <option value="3">Cancelled</option>
+                          <option value="4">Voided</option>
+                      </select>
+                  </li>
+              </div>
+              <li><label>Period</label></li>
+              <li>
+                  <input id="startDate" class="cal-input" type="date" placeholder="YYYY-MM-DD">
+                  <input id="startTime" class="time-input " type="text" placeholder="09:00" maxlength="5">
+                  to
+                  <input id="endDate" class="cal-input" type="date" placeholder="YYYY-MM-DD">
+                  <input id="endTime" class="time-input " type="text" placeholder="08:59" maxlength="5">
+              </li>
+              <li style="display: none;">(TimeZone:IST)</li>
+          </ul>
+          <ul class="input-list">
+              <li><a id="today" onclick="changeDate('today')" class="btn">Just For Today</a></li>
+              <li><a id="yesterday" onclick="changeDate('yesterday')" class="btn">From Yesterday</a></li>
+              <li style="display: none;"><a id="last7days" href="#" class="btn">Last 7 days</a></li>
+              <li style="display: none;"><a id="last30days" href="#" class="btn">Last 30 days</a></li>
+              <li style="display: none;"><a id="last2months" href="#" class="btn">Last 2 Months</a></li>
+              <li style="display: none;"><a id="last3months" href="#" class="btn">Last 3 Months</a></li>
+              <li><a id="getPL" onclick="changeDate('all')" class="btn-send">Get History</a></li>
+          </ul>
+      </div>
+      <div id="noReportMessage" class="history-p" style="">
+          <p>Betting History enables you to review the bets you have placed. <br>Specify the time period during which your bets were placed, the type of markets on which the bets were placed, and the sport.</p>
+          <p>Betting History is available online for the past 30 days.</p>
+      </div>
+
+      <div id="report" style="">
+<table id="matchTableTemplate" class="table-s" style="display: none">
+  <tbody>
+      <tr>
+          <th width="9%" class="align-L">Bet ID
+          </th>
+          <th width="9%" class="align-L">PL ID
+          </th>
+          <th width="7%" class="align-L" id="siteTitle" style="display: none;">Site
+          </th>
+          <th width="" class="align-L">Market
+          </th>
+          <th width="12%">Selection
+          </th>
+          <th width="4%">Type
+          </th>
+          <th width="8%">Bet placed
+          </th>
+          <th width="7%">Odds req.
+          </th>
+          <th width="8%">Stake
+          </th>
+          <th width="8%">Avg. odds matched
+          </th>
+          <th width="10%">Profit/Loss
+          </th>
+          <th width="10%" id="userCancelTitle" style="display: none;">User Cancel
+          </th>
+      </tr>
+
+      <tr id="matchRowTemplate" style="display: none">
+          <td class="align-L"><a id="betID" href="javascript: void(0);"></a></td>
+          <td class="align-L" id="playerID"></td>
+          <td class="align-L" id="siteName" style="display: none;"></td>
+          <td id="matchTitle" class="align-L"></td>
+          <td id="matchSelection"></td>
+          <td><span id="matchType"></span></td>
+          <td><span id="betPlaced" class="small-date"></span></td>
+          <td id="matchOddsReq"></td>
+          <td id="matchStake"></td>
+          <td id="matchAvgOdds"></td>
+          <td><span id="pol" class="small-date"></span></td>
+          <td id="userCancel"></td>
+      </tr>
+
+      <tr id="expandReductionRowTemplate" class="expand" style="display: none">
+          <td colspan="11">
+              <img class="expand-arrow" src="../../assets/desktopfile/img/transparent.gif">
+              <table id="txTableTemplate">
+                  <tbody>
+                      <tr>
+                          <th>Bet taken
+                          </th>
+                          <th width="14%">Odds req.
+                          </th>
+                          <th width="14%">Stake
+                          </th>
+                          <th width="14%">Liability
+                          </th>
+                          <th width="14%">Odds matched
+                          </th>
+                          <th width="14%">Reduction
+                          </th>
+                          <th width="14%">Actual Odds.
+                          </th>
+                      </tr>
+
+                      <tr id="txRowTemplate" style="display: none">
+                          <td><span id="betTaken" class="small-date"></span></td>
+                          <td id="txOddsReq"></td>
+                          <td id="txStake"></td>
+                          <td id="txLiability"></td>
+                          <td id="txOddsMatched"></td>
+                          <td id="reduction"></td>
+                          <td id="actualOdds"></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </td>
+      </tr>
+
+      <tr id="expandRowTemplate" class="expand" style="display: none">
+          <td colspan="2"></td>
+          <td colspan="9">
+              <img class="expand-arrow" src="../../assets/desktopfile/img/transparent.gif">
+              <table id="txTableTemplate">
+                  <tbody>
+                      <tr>
+                          <th>Bet taken
+                          </th>
+                          <th width="16%">Odds req.
+                          </th>
+                          <th width="17%">Stake
+                          </th>
+                          <th width="24%">Liability
+                          </th>
+                          <th width="24%">Odds matched
+                          </th>
+                      </tr>
+
+                      <tr id="txRowTemplate" style="display: none">
+                          <td><span id="betTaken" class="small-date"></span></td>
+                          <td id="txOddsReq"></td>
+                          <td id="txStake"></td>
+                          <td id="txLiability"></td>
+                          <td id="txOddsMatched"></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </td>
+      </tr>
+  </tbody>
+</table>
+
+<table id="matchTable" class="table-s" style="display: table;">
+<thead>
+<tr>
+          <th width="9%" class="align-L">Bet ID
+          </th>
+          <th width="9%" class="align-L">PL ID
+          </th>
+          <th width="7%" class="align-L" id="siteTitle" style="display: none;">Site
+          </th>
+          <th width="" class="align-L">Market
+          </th>
+          <th width="12%">Selection
+          </th>
+          <th width="4%">Type
+          </th>
+          <th width="8%">Bet placed
+          </th>
+          <th width="7%">Odds req.
+          </th>
+          <th width="8%">Stake
+          </th>
+          <th width="8%">Avg. odds matched
+          </th>
+          <th width="10%">Profit/Loss
+          </th>
+          <th width="10%" id="userCancelTitle" style="display: none;">User Cancel
+          </th>
+      </tr>
+</thead>
+  <tbody id="matchedBetsList"><tr id="noDataTemplate" style="display: table-row;"><td class="no-data" colspan="9"><p>You have no bets in this time period.</p></td></tr></tbody>
+</table>
+
+<p class="table-other">
+
+</p>
+
+
+<div>
+  <ul id="pageNumberContent" class="pages"><li id="prev"><a class="disable" style="pointer-events: none;">Prev</a></li><li id="pageNumber"><a class="select" style="pointer-events: none;">1</a></li><li id="next"><a class="disable" style="pointer-events: none;">Next</a></li></ul>
+</div>
+
+</div>
+      <!-- bets history end  -->
+  </div>
+</div>

@@ -1,1 +1,64 @@
-<p>balancetransfer works!</p>
+<app-navigation></app-navigation>
+
+<div class="main_wrap skyexchange ">
+
+  <!-- Center Column -->
+  <div id="report" class="report">
+      <!-- Loading Wrap -->
+      <div id="loading" class="loading-wrap" style="display: none;">
+          <ul class="loading">
+              <li><img src="/desktopfile/img/loading40.gif"></li>
+              <li>Loading...</li>
+          </ul>
+      </div>
+      <!-- Message -->
+      <div id="message" class="message-wrap success">
+          <a class="btn-close">Close</a>
+          <p></p>
+      </div>
+      <h2 class="act-details">
+      </h2>
+      <!-- Report Table -->
+     <div class="full-wrap">
+     <div class="profile-wrap">
+  <h3 style="margin:0;line-height:35px;border-top: 1px solid;background-color: #2b2b2b;">BALANCE TRANSFER</h3>
+</div>
+  <div class="submit-wrap">
+      <ul style="display:flex;padding:0;place-content: center;align-items: center;justify-content: center;">
+
+            <li><a style="margin-bottom:0;padding:0;background:none;border:none;color:#000;cursor: not-allowed !important;" class="btn">TO USER: </a></li>
+          <li class="submit-payment">
+              <input style="margin-bottom:0;" id="userIdT" type="text" placeholder="ENTER USERID" onkeyup="removeSpecialCharNoSpace('userIdT');">
+
+          </li>
+
+           <li><a style="margin-bottom:0;padding:0;background:none;border:none;color:#000;cursor: not-allowed !important;" class="btn">TRANSFER AMOUNT: </a></li>
+          <li class="submit-payment">
+              <input style="margin-bottom:0;" id="depoAmt" type="number" placeholder="ENTER AMOUNT" onkeyup="removeSpecialCharNoSpace('depoAmt');">
+
+          </li>
+
+          <li> <a class="btn-send" style="text-align:center;;background:green !important;color:#fff;border-color:#fff;" onclick="showPopup()">TRANSFER AMOUNT</a></li>
+      </ul>
+  </div>
+
+   <div class="submit-wrap">
+      <ul style="display:flex;padding:0">
+
+      </ul>
+  </div>
+
+
+
+
+</div>
+      <!-- Pages List -->
+      <!-- <script type="text/javascript" src="/js/util/PageUtil.js?v=20210914_1631606400000"></script> -->
+      <div>
+          <ul id="pageNumberContent" class="pages">
+
+          </ul>
+
+      </div>
+  </div>
+</div>

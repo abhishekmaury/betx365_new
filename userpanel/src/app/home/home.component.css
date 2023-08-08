@@ -604,7 +604,7 @@ input[type=range]::-webkit-slider-thumb {
 {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
       max-width: 1140px;
-      padding: 0px;
+      /* padding: 0px; */
   }
 }
 
@@ -834,3 +834,30 @@ input[type=range]::-webkit-slider-thumb {
 .bnMmodal .modal-footer {
     border-top: none;
 }
+
+.marquee-box {
+  color: #fff;
+  line-height: 25px;
+  height: 26px;
+  margin-bottom: 1px;
+  background-repeat: repeat-x;
+  background-image: linear-gradient( 180deg, #2A3A43 27%, #1C282D 83%);
+  border-top: 1px solid #fff;
+  padding-right: 0;
+}
+
+.marquee-box h4, .marquee-box .tc-content h5, .tc-content .marquee-box h5 {
+  position: relative;
+  flex-basis: 58px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.marquee-box .marquee {
+  flex: 1;
+  overflow: hidden;
+  z-index: 1;
+}
+
