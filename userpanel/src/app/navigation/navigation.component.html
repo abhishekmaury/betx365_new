@@ -210,27 +210,27 @@
 
       <div class="container-fluid top">
           <div class="left">
-              <h1><a href="/"><img src="../../assets/desktopfile/img/logo.png"></a></h1>
-       <div id="searchWrap" class="search-wrap" style="">
-        <div>
-          <input id="searchInput" class="search-input" type="text" onkeyup="searchEvent()" placeholder="Search Events">
-          <button id="searchClear" class="search-clear" onclick="clearSearch()" style="display:none;"></button>
-        </div>
-        <div id="searchResult" class="suggestion-wrap" style="display:none;">
-          <ul id="searchList">
+            <h1><a routerLink="/"><img src="../../assets/desktopfile/img/logo.png" alt=""></a></h1>
+            <div id="searchWrap" class="search-wrap">
+              <div>
+                <input id="searchInput" class="search-input" type="text" onkeyup="searchEvent()" placeholder="Search Events">
+                <button id="searchClear" class="search-clear" onclick="clearSearch()" style="display:none;"></button>
+              </div>
+              <div id="searchResult" class="suggestion-wrap" style="display:none;">
+                <ul id="searchList">
 
-          </ul>
-        </div>
-      </div>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div class="right right-login" style="display:flex">
-          <li class="main-wallet" style="display:flex">
-              <a routerLink="#" class="balance dropdown-toggle" id="main_Bal" data-bs-toggle="dropdown">
+            <li class="main-wallet" style="display:flex">
+                <a routerLink="#" class="balance dropdown-toggle" id="main_Bal" data-bs-toggle="dropdown">
                   main balance <span>PBU <span class="mainBalance">69.46</span></span>
-                  exposure <span id="exposure" style="">0.00</span>
+                  exposure <span id="exposure">0.00</span>
                   <span class="four-d">+4</span>
-              </a>
+                </a>
 
               <p class="loading-bar" id="menuRefreshLoading" style="display:none;">
                   <span></span>
@@ -243,16 +243,16 @@
                   <span></span>
               </p>
               <a class="img-cricle balance" id="menuRefresh" onclick="loadBalance()">
-                  <img src="../../assets/desktopfile/img/transparent.gif">
+                <img src="../../assets/desktopfile/img/transparent.gif" alt="">
               </a>
-              </li>
+            </li>
 
               <div class="dropdown-menu wallet-detail" id=" top_menu_popup multiBalancePop">
                   <div class="wallet-detail-group">
                       <dl class="wallet-detail-content">
                           <dt>Main Balance</dt>
                           <dd class="wallet-balance-num"> <span class="badge-currency" id="currency">PBU</span><span id="mainBalanceD1">69.46</span></dd>
-                          <dd class="wallet-exposure">Exposure <span id="mainExposureD1" style="">0.00</span></dd>
+                          <dd class="wallet-exposure">Exposure <span id="mainExposureD1">0.00</span></dd>
                       </dl>
                   </div>
                   <div id="walletContent" class="wallet-detail-group">
@@ -295,12 +295,12 @@
                   </div>
               </div>
 
-              <a style="border:1px solid rgb(255 255 255 / 30%) !important;margin-left:2%" class="login1 balance  dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+              <a style="border:1px solid rgb(255 255 255 / 30%) !important;margin-left:2%" class="dropdown-toggle login1 balance" id="dropdownMenuButton1" data-bs-toggle="dropdown">
                   <i class="fa fa-user"></i>my account
               </a>
 
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="padding: 0;">
-                  <li class="li-hover pro-span"><a class="dropdown-item" href="#">demo3</a><span id="timeZoneViewAccount">GMT+5:30</span></li>
+                  <li class="li-hover pro-span"><a class="dropdown-item" routerLink="#">demo3</a><span id="timeZoneViewAccount">GMT+5:30</span></li>
                   <li class="li-hover"><a class="dropdown-item" routerLink="/myprofile">my profile</a></li>
                   <li class="li-hover"><a class="dropdown-item" routerLink="/balanceoverview">balance overview</a></li>
                   <li class="li-hover"><a class="dropdown-item" routerLink="/accountstatement">account statement</a></li>
@@ -311,7 +311,7 @@
                   <li class="li-hover"><a class="dropdown-item" routerLink="/checksportwiseresult">Check Sport Wise Result</a></li>
                   <li class="li-hover"><a class="dropdown-item" routerLink="/balancetransfer">Balance Transfer</a></li>
                   <li class="li-hover"><a class="dropdown-item" routerLink="/viewwinners">Check Lottery Winners</a></li>
-                  <li class="logout-li"><a class="logout" routerLink="/logout">logout<img src=""></a></li>
+                  <li class="logout-li"><a class="logout" routerLink="/logout">logout</a></li>
               </ul>
           </div>
       </div>
