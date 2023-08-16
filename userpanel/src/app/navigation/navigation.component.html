@@ -295,7 +295,7 @@
                   </div>
               </div>
 
-              <a style="border:1px solid rgb(255 255 255 / 30%) !important;margin-left:2%" class="dropdown-toggle login1 balance" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+              <a style="border:1px solid rgb(255 255 255 / 30%) !important;margin-left:2%" data-bs-toggle="dropdown" class="dropdown-toggle login1 balance" id="dropdownMenuButton1">
                   <i class="fa fa-user"></i>my account
               </a>
 
@@ -333,7 +333,7 @@
                                               <circle cx="6.8" cy="4.4" r="1.6"></circle>
                                           </g>
                                       </svg>
-                                  </strong><span id="cricketInplayCount">17</span>
+                                  </strong><span id="cricketInplayCount">20</span>
                               </span>
                           </a>
                       </li>
@@ -347,7 +347,7 @@
                                           </g>
                                       </svg>
                                   </strong>
-                                  <span id="soccerInplayCount">48</span>
+                                  <span id="soccerInplayCount">60</span>
                               </span>
                           </a>
                       </li>
@@ -361,12 +361,12 @@
                                           </g>
                                       </svg>
                                   </strong>
-                                  <span id="tennisInplayCount">40</span>
+                                  <span id="tennisInplayCount">30</span>
                               </span>
                           </a>
                       </li>
 
-                      <li><a style="color:#222" id="menu_user_d_casino" routerLink="/#">casino</a></li>
+                      <li><a style="color:#222" data-toggle="modal" data-target="#myModalForLogin">casino</a></li>
 
                       <li><a style="color:#222" id="menu_user_d_casino" routerLink="/checksportwiseresult">Result</a></li>
 
@@ -382,100 +382,17 @@
                           </a>
                       </li>
                       <li>
-                          <a href="#" id="setting-drop" onclick="checkLogin()" class="dropdown-toggle">setting
+                          <a id="setting-drop" data-toggle="modal" data-target="#settingPopUP">Setting
                               <i class="fa fa-cog" aria-hidden="true"></i>
                           </a>
-                          <!-- setting toggle start  -->
-                          <div id="set_pop" class="dropdown-menu slip_set-pop" style="margin: 6px; padding-top: 0; padding-bottom: 0;">
-                              <div id="coinList" class="set-content">
-                                  <dl class="odds-set">
-                                      <dd class="col-defult">
-                                          <label for="defult_stake"><strong>Default stake</strong></label>
-                                          <input id="userCoin" class="stake-input" type="text" maxlength="7" value="">
-                                      </dd>
-                                  </dl>
-                                  <dl id="stakeSet" class="stake-set">
-                                      <dt>Stake</dt>
-                                      <dd><a id="coin_1" onclick="addStakes('1')" style="cursor:pointer;" class="btn select">10</a></dd>
-                                      <dd><a id="coin_2" onclick="addStakes('2')" style="cursor:pointer;" class="btn select">30</a></dd>
-                                      <dd><a id="coin_3" onclick="addStakes('3')" style="cursor:pointer;" class="btn select">50</a></dd>
-                                      <dd><a id="coin_4" onclick="addStakes('4')" style="cursor:pointer;" class="btn select">100</a></dd>
-                                      <dd><a id="coin_5" onclick="addStakes('5')" style="cursor:pointer;" class="btn select">200</a></dd>
-                                      <dd><a id="coin_6" onclick="addStakes('6')" style="cursor:pointer;" class="btn select">500</a></dd>
-                                      <dd><a id="coin_7" onclick="addStakes('7')" style="cursor:pointer;" class="btn">1000</a></dd>
-                                      <dd><a id="coin_8" onclick="addStakes('8')" style="cursor:pointer;" class="btn">2000</a></dd>
-                                      <dd class="col-edit"><a id="editStakeButton" class="btn-edit">Edit<i class="fas fa-pencil-alt"></i></a></dd>
-                                  </dl>
-                                  <dl id="editCustomizeStakeList" class="stake-set" style="display: none;">
-                                      <dt>Stake</dt>
-                                      <dd><input id="stakeEdit_1" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
-                                      <dd><input id="stakeEdit_2" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
-                                      <dd><input id="stakeEdit_3" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
-                                      <dd><input id="stakeEdit_4" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
-                                      <dd><input id="stakeEdit_5" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
-                                      <dd><input id="stakeEdit_6" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
-                                      <dd><input id="stakeEdit_7" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
-                                      <dd><input id="stakeEdit_8" class="stake_edit-input" type="text" value="" maxlength="7"></dd>
-                                      <dd class="col-edit"><a id="setStakeButton" onclick="setStakes()" class="btn-send">OK</a></dd>
-                                  </dl>
-                                  <dl class="odds-set">
-                                      <dt>Odds</dt>
-                                      <dd>
-                                          <input id="enableSparkCheck" checked="" type="checkbox"><label for="enableSparkCheck">Highlight when odds change</label>
-                                      </dd>
-                                  </dl>
-                                  <dl class="odds-set">
-                                      <dt>FancyBet</dt>
-                                      <dd>
-                                          <input id="fancyBetAcceptAnyOddsCheckBox" type="checkbox"><label for="fancy_odd">Accept Any Odds</label>
-                                      </dd>
-                                  </dl>
-                                  <dl class="odds-set">
-                                      <dt>SportsBook</dt>
-                                      <dd>
-                                          <input id="sportsBookAcceptAnyOddsCheckBox" type="checkbox"><label>Accept Any Odds</label>
-                                      </dd>
-                                  </dl>
-                                  <dl class="odds-set">
-                                      <dt>Binary</dt>
-                                      <dd>
-                                          <input id="financialAcceptAnyOddsCheckBox" type="checkbox"><label>Accept Any Price</label>
-                                      </dd>
-                                  </dl>
-
-                                  <ul class="btn-wrap">
-                                      <li><a id="closeSet" class="cancel cancel" style="cursor:pointer;">Cancel</a></li>
-                                      <li class="col-send"><a id="coinSave" class="btn-send save" onclick="setStakes()" style="cursor:pointer;">Save</a></li>
-                                  </ul>
-                              </div>
-                          </div>
-                          <!-- setting toggle end  -->
                       </li>
                   </ul>
               </div>
           </div>
       </div>
-    <div id="loginBox" class="overlay" style="display:none;">
-        <div class="dialog-wrap-w login_to_go">
-            <div class="kv"></div>
-            <form name="loginModalForm" onsubmit="return validateModalForm()" action="/exchange/Account/Loggedin" method="post" accept-charset="utf-8" autocomplete="off">
-            <dl class="login-panel">
-              <dt>Please login to continue</dt>
-              <dd><input id="loginBoxLoginName" type="text" name="userid" placeholder="userid">
-              <input type="text" class="input" id="addressBox" style="display:none;" placeholder="ip" name="adminId"></dd>
-              <dd><input id="loginBoxPassword" type="password" name="password" placeholder="Password"></dd>
-              <dd class="valid-code"><input name="codeModal" type="number" placeholder="Validation Code" maxlength="4">
-              <canvas id="canvas2" style="position:absolute;width:70px;right:-15px;top:7px;"></canvas></dd>
-              <dd><input id="loginBoxValid" type="hidden" value="f4e0146b-e657-437b-b66c-7056f103f6fb" maxlength="4"></dd>
-              <dd><button id="loginBoxLoginBtn" style="cursor: pointer" type="submit" class="btn-send">Login <img class="icon-login" src="/desktopfile/img/transparent.gif"></button></dd>
-              <dd id="loginBoxErrorMsg" class="error"></dd>
-            </dl>
-            </form>
-          <a id="closeLoginForm" style="cursor: pointer" class="close"></a>
-        </div>
-    </div>
 
   </div>
 
-
+<app-loginmodel></app-loginmodel>
+<app-settingpopup></app-settingpopup>
 

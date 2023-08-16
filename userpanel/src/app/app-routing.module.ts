@@ -15,6 +15,8 @@ import { ProfitlossComponent } from './profitloss/profitloss.component';
 import { ActivitylogsComponent } from './activitylogs/activitylogs.component';
 import { BalancetransferComponent } from './balancetransfer/balancetransfer.component';
 import { ViewwinnersComponent } from './viewwinners/viewwinners.component';
+import { LoginmodelComponent } from './loginmodel/loginmodel.component';
+import { SettingpopupComponent } from './settingpopup/settingpopup.component';
 
 
 const routes: Routes = [
@@ -32,7 +34,9 @@ const routes: Routes = [
   { path:'profitloss', component:ProfitlossComponent },
   { path:'activitylogs', component:ActivitylogsComponent },
   { path:'balancetransfer', component:BalancetransferComponent },
-  { path:'viewwinners', component:ViewwinnersComponent }
+  { path:'viewwinners', component:ViewwinnersComponent },
+  { path:'loginmodel', component:LoginmodelComponent },
+  { path:'settingpopup', component:SettingpopupComponent }
 ];
 
 @NgModule({

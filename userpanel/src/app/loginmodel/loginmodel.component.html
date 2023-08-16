@@ -1,0 +1,21 @@
+<div class="modal" id="myModalForLogin" role="dailog">
+  <div id="loginBox" style="display: block" class="overlay">
+    <div class="dialog-wrap-w login_to_go">
+        <div class="kv"></div>
+        <form name="loginModalForm" onsubmit="return validateModalForm()" action="/home" method="post" accept-charset="utf-8" autocomplete="off">
+        <dl class="login-panel">
+          <dt>Please login to continue</dt>
+          <dd><input id="loginBoxLoginName" type="text" name="userid" placeholder="userid">
+          <input type="text" class="input" id="addressBox" style="display:none;" placeholder="ip" name="adminId"></dd>
+          <dd><input id="loginBoxPassword" type="password" name="password" placeholder="Password"></dd>
+          <dd class="valid-code"><input name="codeModal" type="number" placeholder="Validation Code" maxlength="4">
+          <canvas id="canvas2" style="position:absolute;width:70px;right:-15px;top:7px;"></canvas></dd>
+          <dd><input id="loginBoxValid" type="hidden" value="f4e0146b-e657-437b-b66c-7056f103f6fb" maxlength="4"></dd>
+          <dd><button id="loginBoxLoginBtn" style="cursor: pointer" type="submit" class="btn-send">Login <img class="icon-login" src="../../assets/desktopfile/img/transparent.gif"></button></dd>
+          <dd id="loginBoxErrorMsg" class="error"></dd>
+        </dl>
+        </form>
+      <a id="closeLoginForm" style="cursor: pointer" class="close"  data-dismiss="modal" aria-label="Close" #closeLoginPopUp></a>
+    </div>
+  </div>
+</div>

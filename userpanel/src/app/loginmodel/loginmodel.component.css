@@ -1,0 +1,176 @@
+.pop-warp, .log-wrap, .streaming-pop, .account-wrap ul, .more_drop-list, .selection-list, .slip_set-pop, .oneclick_set-pop, .path-pop, .tips-popup, .full-amount, .stake-popup, .message-wrap, .dialog-wrap-w, .score-pop, .score-pop-last, .horse_info-hover, .rules-wrap, .pop_box, .filter-pop, .calendarPanel {
+  box-shadow: 0 4px 5px rgb(0 0 0 / 50%);
+}
+
+
+.dialog-wrap, .dialog-wrap-w {
+  top: 340px;
+  background-color: rgba(0,0,0,0.85);
+  border-radius: 8px;
+  color: #fff;
+  z-index: 20;
+  position: absolute;
+  left: 50%;
+  width: 320px;
+  margin-left: -160px;
+}
+
+.dialog-wrap-w {
+  background-color: #fff;
+  color: #1e1e1e;
+}
+
+.login_to_go {
+  top: 18%;
+  width: 540px;
+  height: 408px;
+  position: absolute;
+  left: 50%;
+  width: 540px;
+  margin-left: -270px;
+}
+
+.login_to_go {
+  background-color: #ffb80c;
+}
+
+.kv {
+  width: 250px;
+  height: 100%;
+  background: #ffb80c url(../../assets/desktopfile/img/bg-login_wrap.png) no-repeat;
+  border-radius: 8px 0 0 8px;
+  float: left;
+}
+
+.login-panel {
+  color: #243a48;
+  margin: 100px 0 0 25px;
+      float: left;
+
+}
+
+.login-panel {
+  color: #000;
+}
+
+.login-panel dt {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 15px;
+      font-weight: normal;
+}
+
+.login-panel dd {
+  position: relative;
+  width: 220px;
+  margin-bottom: 7px;
+}
+
+.login-panel input, .login-panel textarea {
+  width: 100%;
+  height: 33px;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  box-shadow: inset 0px 2px 0px 0px rgb(0 0 0 / 10%);
+  margin: 0;
+}
+
+.login-panel .valid-code img {
+  position: absolute;
+  width: 70px;
+  height: 19px;
+  right: 5px;
+  top: 7px;
+}
+
+.login-panel .btn-send, .login-panel .nova88exch .total_all .search-but, .nova88exch .total_all .login-panel .search-but {
+  width: 218px;
+  height: 36px;
+  line-height: 33px;
+  font-size: 15px;
+  margin: 15px 0 0;
+  text-align: center;
+  border-radius: 4px;
+}
+
+ .btn-send, .skyexchange .nova88exch .total_all .search-but, .nova88exch .total_all .skyexchange .search-but {
+  background: #121212;
+  color: #f8d61c;
+  border-color: #000;
+}
+
+.icon-login {
+  width: 10px;
+  height: 11px;
+  background: url('data:image/svg+xml,<svg width="10" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M5.71 7.706l1.432-1.604H1.778V4.898h5.39L5.71 3.294l.781-.86L9.278 5.5 6.49 8.565l-.78-.86zM1.12 0C.825 0 .564.124.339.372a1.24 1.24 0 0 0-.339.86v8.536c0 .325.113.611.339.86.225.248.486.372.78.372H8.88c.295 0 .556-.124.781-.372a1.24 1.24 0 0 0 .339-.86V7.333H8.88v2.435H1.12V1.232h7.76v2.435H10V1.232a1.24 1.24 0 0 0-.339-.86C9.436.124 9.175 0 8.881 0H1.12z" fill="%23F8D61C" fill-rule="evenodd"/></svg>') no-repeat;
+}
+
+.login-sprite, .power-wrap h3 img, .power-wrap-b img, .browser-wrap img, .mysports247 .icon-login, .icon-login, .skyinplay .icon-login, .bigexch .icon-login, .masterexchange .icon-login, .fairenter .icon-login, .qexch .icon-login, .skyexchange247 .icon-login, .oceanexch1 .icon-login, .probetx .icon-login, .maxexch9 .icon-login, .cftbet365 .icon-login, .crickzoom .icon-login, .crickzoomlive .icon-login, .betbarter .icon-login, .probet247 .icon-login, .kingfair24 .icon-login, .kingfair24 .menu .logout img, .kingfair24 .setting-wrap .logout img, .sgexch247 .icon-login, .sixball .icon-login, .sixballio .icon-login, .wickets247 .icon-login, .iceEX .icon-login, .iceinplay .icon-login, .baji .icon-login, .baji365 .icon-login, .sportsexchlive .icon-login, .sharet365 .icon-login, .baazi365 .icon-login, .sevenexch .icon-login, .hmsbet .icon-login, .jeetbuzz .icon-login, .skyexchange247com .icon-login, .enterfair .icon-login {
+  background-repeat: no-repeat;
+}
+
+.icon-login {
+  background-position: 0 -533px;
+  height: 12px;
+  width: 12px;
+      vertical-align: baseline;
+
+}
+
+/* dd a:hover {
+    color: #f8d61c;
+  background: #464646 url(/desktopfile/img/bg-send_hover-skyEX.png) repeat-x
+
+} */
+
+.login_to_go .error {
+  background-color: transparent;
+  color: #d0021b;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.login_to_go .close {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-position: -394px -1320px;
+  height: 20px;
+  width: 20px;
+}
+
+
+.dialog-wrap-w {
+  background-color:#ffb80c;
+  color: #1e1e1e;
+}
+
+.btn-send, .nova88exch .total_all .search-but {
+  /* background: #121212 url(/desktopfile/img/bg-send-skyfair.png) repeat-x !important; */
+  border-color: #cb8009;
+  color:#f8d61c !important;
+}
+
+.btn-send:hover,.nova88exch .total_all .search-but:hover {
+  /* background: #ffb80c url(/desktopfile/img/bg-send_hover.gif) repeat-x; */
+  color:black
+}
+
+.btn-send.disable,.nova88exch .total_all .disable.search-but {
+  /* background: #ffe2b6 url(/desktopfile/img/bg-send_no.gif) repeat-x; */
+  border-color: #efd9b5;
+  color:black;
+}
+
+.icon-login {
+  width: 10px;
+  height: 11px;
+  background: url('data:image/svg+xml,<svg width="10" height="11" xmlns="http://www.w3.org/2000/svg"><path d="M5.71 7.706l1.432-1.604H1.778V4.898h5.39L5.71 3.294l.781-.86L9.278 5.5 6.49 8.565l-.78-.86zM1.12 0C.825 0 .564.124.339.372a1.24 1.24 0 0 0-.339.86v8.536c0 .325.113.611.339.86.225.248.486.372.78.372H8.88c.295 0 .556-.124.781-.372a1.24 1.24 0 0 0 .339-.86V7.333H8.88v2.435H1.12V1.232h7.76v2.435H10V1.232a1.24 1.24 0 0 0-.339-.86C9.436.124 9.175 0 8.881 0H1.12z" fill="%23F8D61C" fill-rule="evenodd"/></svg>') no-repeat;
+}
+
+
+/* end login model */
+

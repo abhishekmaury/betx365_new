@@ -20,6 +20,8 @@ import { ProfitlossComponent } from './profitloss/profitloss.component';
 import { ActivitylogsComponent } from './activitylogs/activitylogs.component';
 import { BalancetransferComponent } from './balancetransfer/balancetransfer.component';
 import { ViewwinnersComponent } from './viewwinners/viewwinners.component';
+import { LoginmodelComponent } from './loginmodel/loginmodel.component';
+import { SettingpopupComponent } from './settingpopup/settingpopup.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { ViewwinnersComponent } from './viewwinners/viewwinners.component';
     ProfitlossComponent,
     ActivitylogsComponent,
     BalancetransferComponent,
-    ViewwinnersComponent
+    ViewwinnersComponent,
+    LoginmodelComponent,
+    SettingpopupComponent
   ],
   imports: [
     BrowserModule,
