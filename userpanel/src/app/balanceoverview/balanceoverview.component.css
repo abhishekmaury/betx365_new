@@ -2141,7 +2141,7 @@ p {
 .btn-send,
 .nova88exch .total_all .search-but,
 .nova88exch .total_all .search-but {
-  /* background: #121212 url(../../assets/desktopfile/img/bg-send-skyEX.png) repeat-x; */
+  background: #121212 url(../../assets/desktopfile/img/bg-send-skyEX.png) repeat-x;
   color: #f8d61c;
   border-color: #000;
 }

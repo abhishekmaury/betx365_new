@@ -1639,7 +1639,7 @@ header li.main-wallet span:first-of-type {
 }
 
 .skyexchange .btn-send {
-  /* background: #121212 url(../img/skyexchange/bg-send-skyEX.png) repeat-x; */
+  background: #121212 url(../../assets/desktopfile/img/bg-send-skyEX.png) repeat-x;
   color: #F8D61C;
   border-color: #000;
   margin-bottom: 0;
@@ -1927,7 +1927,7 @@ select {
 }
 
 .skyexchange .btn-send {
-  /* background: #121212 url(../images/skyexchange/bg-send-skyEX.png) repeat-x; */
+  background: #121212 url(../../assets/desktopfile/img/bg-send-skyEX.png) repeat-x;
   color: #F8D61C;
   border-color: #000;
 }
@@ -2141,7 +2141,7 @@ p {
 .btn-send,
 .nova88exch .total_all .search-but,
 .nova88exch .total_all .search-but {
-  /* background: #121212 url(../../assets/desktopfile/img/bg-send-skyEX.png) repeat-x; */
+  background: #121212 url(../../assets/desktopfile/img/bg-send-skyEX.png) repeat-x;
   color: #f8d61c;
   border-color: #000;
 }
@@ -2157,7 +2157,7 @@ p {
   margin: 0 auto;
   display: block;
   text-align: center;
-  /* background: #121212 url(../img/bg-send-skyEX.png) repeat-x; */
+  background: #121212 url(../../assets/desktopfile/img/bg-send-skyEX.png) repeat-x;
   color: #f8d61c;
   border-color: #000;
 }
@@ -2898,7 +2898,7 @@ h4 .delete-pin,
 #editOneClickBetStakeBox .btn-send,
 .nova88exch .total_all .search-but,
 .nova88exch .total_all .search-but {
-  /* background: #121212 url(../images/skyexchange/bg-send-skyEX.png) repeat-x; */
+  background: #121212 url(../../assets/desktopfile/img/bg-send-skyEX.png) repeat-x;
   color: #f8d61c;
   border-color: #000;
   text-align: center;
