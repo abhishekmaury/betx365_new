@@ -327,3 +327,14 @@
       padding: 0px;
   }
 }
+
+@media (max-width: 768px){
+   .footer{
+    padding-bottom: 50px;
+   }
+  .policy-link {
+    width: 100%;
+    padding-top: 8px;
+    margin: 8px auto 15px;
+}
+}

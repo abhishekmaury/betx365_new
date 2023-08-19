@@ -2,122 +2,258 @@
 
 <!-- <div class="top-haeder">
   <div class="container-fluid top">
-      <div class="left">
-          <h1><a href="/exchange/UserHome"><img src="../../assets/desktopfile/img/logo.png"></a></h1>
-          <div id="searchWrap" class="search-wrap" style="">
-            <div>
-              <input id="searchInputMob" class="search-input" type="text" onkeyup="searchEventLogout()" placeholder="Search Events">
-              <button id="searchClearMob" class="search-clear" onclick="clearSearch()" style="display:none;"></button>
-            </div>
-            <div id="searchResultMob" class="suggestion-wrap" style="display:none;">
-              <ul id="searchListMob">
-
-              </ul>
-            </div>
-          </div>
+    <div class="left">
+      <h1>
+        <a href="/exchange/UserHome"
+          ><img src="../../assets/desktopfile/img/logo.png"
+        /></a>
+      </h1>
+      <div id="searchWrap" class="search-wrap">
+        <div>
+          <input
+            id="searchInputMob"
+            class="search-input"
+            type="text"
+            onkeyup="searchEventLogout()"
+            placeholder="Search Events"
+          />
+          <button
+            id="searchClearMob"
+            class="search-clear"
+            onclick="clearSearch()"
+            style="display: none"
+          ></button>
         </div>
-
-      <form name="loginForm" onsubmit="return validateForm()" action="/exchange/Account/Loggedin" method="post" accept-charset="utf-8" autocomplete="off">
-      <div class="right right-signup">
-          <i class="fa fa-user"></i>
-          <input type="text" class="input" placeholder="Username" name="userid">
-          <input type="text" class="input" id="addressBox" style="display:none;" placeholder="ip" name="adminId">
-          <span style="display: inline-flex;place-content:end;">
-          <input type="password" id="password" class="input" placeholder="Password" name="password">
-          <i onclick="showpwd()" style="margin-right:8px;line-height:25px;position:absolute;color:#000;font-size:16px;" class="fa fa-eye-slash" aria-hidden="true"></i>
-          </span>
-          <span id="loginBoxAuthenticateImage">
-          <canvas id="canvas" style="width:64px;height:auto;position:absolute;top:16px;margin-left:82px;color:#000;font-weight:bold;" width="100" height="40"></canvas></span>
-          <input type="text" class="input" placeholder="Validation" name="code">
-
-          <button type="submit" class="login">Login
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          </button>
-
-          <br>
-          <span class="error" style="position:absolute;margin-left:20px;background:none;color:#d0021b" id="dheaderError"></span>
-
-      <h6 style="color:#fff;font-weight:bold;text-align:center;" id="loginMessage">Note - This Website is not for Indian Territories.</h6>
+        <div id="searchResultMob" class="suggestion-wrap" style="display: none">
+          <ul id="searchListMob"></ul>
+        </div>
+      </div>
     </div>
+
+    <form
+      name="loginForm"
+      onsubmit="return validateForm()"
+      action="/exchange/Account/Loggedin"
+      method="post"
+      accept-charset="utf-8"
+      autocomplete="off"
+    >
+      <div class="right right-signup">
+        <i class="fa fa-user"></i>
+        <input type="text" class="input" placeholder="Username" name="userid" />
+        <input
+          type="text"
+          class="input"
+          id="addressBox"
+          style="display: none"
+          placeholder="ip"
+          name="adminId"
+        />
+        <span style="display: inline-flex; place-content: end">
+          <input
+            type="password"
+            id="password"
+            class="input"
+            placeholder="Password"
+            name="password"
+          />
+          <i
+            onclick="showpwd()"
+            style="
+              margin-right: 8px;
+              line-height: 25px;
+              position: absolute;
+              color: #000;
+              font-size: 16px;
+            "
+            class="fa fa-eye-slash"
+            aria-hidden="true"
+          ></i>
+        </span>
+        <span id="loginBoxAuthenticateImage">
+          <canvas
+            id="canvas"
+            style="
+              width: 64px;
+              height: auto;
+              position: absolute;
+              top: 16px;
+              margin-left: 82px;
+              color: #000;
+              font-weight: bold;
+            "
+            width="100"
+            height="40"
+          ></canvas
+        ></span>
+        <input type="text" class="input" placeholder="Validation" name="code" />
+
+        <button type="submit" class="login">
+          Login
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </button>
+
+        <br />
+        <span
+          class="error"
+          style="
+            position: absolute;
+            margin-left: 20px;
+            background: none;
+            color: #d0021b;
+          "
+          id="dheaderError"
+        ></span>
+
+        <h6
+          style="color: #fff; font-weight: bold; text-align: center"
+          id="loginMessage"
+        >
+          Note - This Website is not for Indian Territories.
+        </h6>
+      </div>
     </form>
   </div>
 
   <div class="container-fluid">
-      <div class="row top-two">
-          <div class="col-md-8 col-8" style="padding:0">
-              <ul class="menu" id="desktopHeaderMenu">
-                  <li><a id="menu_user_d_home" routerLink="/" class="">home</a></li>
-                  <li><a id="menu_user_d_inplay" routerLink="/inplay">In-Play</a></li>
-                  <li><a id="menu_user_d_mm" routerLink="/multimarkets">multi markets</a></li>
-                  <li>
-                      <a id="menu_user_d_cr_inplay" routerLink="/highlights">cricket
-                          <span id="tagLive" class="tag-live">
-                              <strong>
-                                  <svg width="14" height="8" xmlns="http://www.w3.org/2000/svg">
-                                      <g fill="rgb(255,0,0)" fill-rule="evenodd">
-                                          <path d="M12.012 0l-.698.727c1.734 1.808 1.734 4.738 0 6.546l.698.727c2.117-2.207 2.117-5.79 0-8zM10.3 1.714l-.7.735c.967 1.014.967 2.66 0 3.673l.7.735c1.352-1.418 1.352-3.721 0-5.143zM1.588 0l.698.727c-1.734 1.808-1.734 4.738 0 6.546L1.588 8c-2.117-2.207-2.117-5.79 0-8zM3.3 1.714l.7.735c-.967 1.014-.967 2.66 0 3.673l-.7.735c-1.352-1.418-1.352-3.721 0-5.143z"></path>
-                                          <circle cx="6.8" cy="4.4" r="1.6"></circle>
-                                      </g>
-                                  </svg>
-                              </strong><span id="cricketInplayCount">20</span>
-                          </span>
-                      </a>
-                  </li>
-                  <li><a id="menu_user_d_sc_inplay" routerLink="/highlights">soccer
-                          <span id="tagLive" class="tag-live2">
-                              <strong>
-                                  <svg width="14" height="8" xmlns="http://www.w3.org/2000/svg">
-                                      <g fill="rgb(255,0,0)" fill-rule="evenodd">
-                                          <path d="M12.012 0l-.698.727c1.734 1.808 1.734 4.738 0 6.546l.698.727c2.117-2.207 2.117-5.79 0-8zM10.3 1.714l-.7.735c.967 1.014.967 2.66 0 3.673l.7.735c1.352-1.418 1.352-3.721 0-5.143zM1.588 0l.698.727c-1.734 1.808-1.734 4.738 0 6.546L1.588 8c-2.117-2.207-2.117-5.79 0-8zM3.3 1.714l.7.735c-.967 1.014-.967 2.66 0 3.673l-.7.735c-1.352-1.418-1.352-3.721 0-5.143z"></path>
-                                          <circle cx="6.8" cy="4.4" r="1.6"></circle>
-                                      </g>
-                                  </svg>
-                              </strong>
-                              <span id="soccerInplayCount">61</span>
-                          </span>
-                      </a>
-                  </li>
-                  <li><a id="menu_user_d_tn_inplay" routerLink="/highlights">tennis
-                          <span id="tagLive" class="tag-live3">
-                              <strong>
-                                  <svg width="14" height="8" xmlns="http://www.w3.org/2000/svg">
-                                      <g fill="rgb(255,0,0)" fill-rule="evenodd">
-                                          <path d="M12.012 0l-.698.727c1.734 1.808 1.734 4.738 0 6.546l.698.727c2.117-2.207 2.117-5.79 0-8zM10.3 1.714l-.7.735c.967 1.014.967 2.66 0 3.673l.7.735c1.352-1.418 1.352-3.721 0-5.143zM1.588 0l.698.727c-1.734 1.808-1.734 4.738 0 6.546L1.588 8c-2.117-2.207-2.117-5.79 0-8zM3.3 1.714l.7.735c-.967 1.014-.967 2.66 0 3.673l-.7.735c-1.352-1.418-1.352-3.721 0-5.143z"></path>
-                                          <circle cx="6.8" cy="4.4" r="1.6"></circle>
-                                      </g>
-                                  </svg>
-                              </strong>
-                              <span id="tennisInplayCount">32</span>
-                          </span>
-                      </a>
-                  </li>
+    <div class="row top-two">
+      <div class="col-md-8 col-8" style="padding: 0">
+        <ul class="menu" id="desktopHeaderMenu">
+          <li><a id="menu_user_d_home" routerLink="/" class="">home</a></li>
+          <li><a id="menu_user_d_inplay" routerLink="/inplay">In-Play</a></li>
+          <li>
+            <a id="menu_user_d_mm" routerLink="/multimarkets">multi markets</a>
+          </li>
+          <li>
+            <a id="menu_user_d_cr_inplay" routerLink="/highlights"
+              >cricket
+              <span id="tagLive" class="tag-live">
+                <strong>
+                  <svg width="14" height="8" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="rgb(255,0,0)" fill-rule="evenodd">
+                      <path
+                        d="M12.012 0l-.698.727c1.734 1.808 1.734 4.738 0 6.546l.698.727c2.117-2.207 2.117-5.79 0-8zM10.3 1.714l-.7.735c.967 1.014.967 2.66 0 3.673l.7.735c1.352-1.418 1.352-3.721 0-5.143zM1.588 0l.698.727c-1.734 1.808-1.734 4.738 0 6.546L1.588 8c-2.117-2.207-2.117-5.79 0-8zM3.3 1.714l.7.735c-.967 1.014-.967 2.66 0 3.673l-.7.735c-1.352-1.418-1.352-3.721 0-5.143z"
+                      ></path>
+                      <circle cx="6.8" cy="4.4" r="1.6"></circle>
+                    </g>
+                  </svg> </strong
+                ><span id="cricketInplayCount">20</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a id="menu_user_d_sc_inplay" routerLink="/highlights"
+              >soccer
+              <span id="tagLive" class="tag-live2">
+                <strong>
+                  <svg width="14" height="8" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="rgb(255,0,0)" fill-rule="evenodd">
+                      <path
+                        d="M12.012 0l-.698.727c1.734 1.808 1.734 4.738 0 6.546l.698.727c2.117-2.207 2.117-5.79 0-8zM10.3 1.714l-.7.735c.967 1.014.967 2.66 0 3.673l.7.735c1.352-1.418 1.352-3.721 0-5.143zM1.588 0l.698.727c-1.734 1.808-1.734 4.738 0 6.546L1.588 8c-2.117-2.207-2.117-5.79 0-8zM3.3 1.714l.7.735c-.967 1.014-.967 2.66 0 3.673l-.7.735c-1.352-1.418-1.352-3.721 0-5.143z"
+                      ></path>
+                      <circle cx="6.8" cy="4.4" r="1.6"></circle>
+                    </g>
+                  </svg>
+                </strong>
+                <span id="soccerInplayCount">61</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a id="menu_user_d_tn_inplay" routerLink="/highlights"
+              >tennis
+              <span id="tagLive" class="tag-live3">
+                <strong>
+                  <svg width="14" height="8" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="rgb(255,0,0)" fill-rule="evenodd">
+                      <path
+                        d="M12.012 0l-.698.727c1.734 1.808 1.734 4.738 0 6.546l.698.727c2.117-2.207 2.117-5.79 0-8zM10.3 1.714l-.7.735c.967 1.014.967 2.66 0 3.673l.7.735c1.352-1.418 1.352-3.721 0-5.143zM1.588 0l.698.727c-1.734 1.808-1.734 4.738 0 6.546L1.588 8c-2.117-2.207-2.117-5.79 0-8zM3.3 1.714l.7.735c-.967 1.014-.967 2.66 0 3.673l-.7.735c-1.352-1.418-1.352-3.721 0-5.143z"
+                      ></path>
+                      <circle cx="6.8" cy="4.4" r="1.6"></circle>
+                    </g>
+                  </svg>
+                </strong>
+                <span id="tennisInplayCount">32</span>
+              </span>
+            </a>
+          </li>
 
-                  <li><a style="color:#222" id="menu_user_d_casino" data-toggle="modal" data-target="#myModalForLogin">casino</a></li>
+          <li>
+            <a
+              style="color: #222"
+              id="menu_user_d_casino"
+              data-toggle="modal"
+              data-target="#myModalForLogin"
+              >casino</a
+            >
+          </li>
 
-                  <li><a style="color:#222" id="menu_user_d_casino" routerLink="/checksportwiseresult">Result</a></li>
+          <li>
+            <a
+              style="color: #222"
+              id="menu_user_d_casino"
+              routerLink="/checksportwiseresult"
+              >Result</a
+            >
+          </li>
 
-                  <li><a style="color:#222" href="/exchange/Match/Inner/4/29510526">The Hundred</a></li></ul>
-          </div>
-          <div class="col-md-4 col-4 right">
-              <ul>
-              <li class="time_zone" id="timeZoneView"><span>Time Zone :</span> GMT+5:30</li>
-                  <li>
-                      <a id="one_click_bet" class="bet one_click ">
-                          <img src="../../assets/desktopfile/img/transparent.gif">
-                          one click bet
-                      </a>
-                  </li>
-                  <li>
-                      <a id="setting-drop" data-toggle="modal" data-target="#myModalForLogin">Setting
-                          <i class="fa fa-cog" aria-hidden="true"></i>
-                      </a>
-                  </li>
-              </ul>
-          </div>
+          <li>
+            <a style="color: #222" href="/exchange/Match/Inner/4/29510526"
+              >The Hundred</a
+            >
+          </li>
+        </ul>
       </div>
+      <div class="col-md-4 col-4 right">
+        <ul>
+          <li class="time_zone" id="timeZoneView">
+            <span>Time Zone :</span> GMT+5:30
+          </li>
+          <li>
+            <a id="one_click_bet" class="bet one_click">
+              <img src="../../assets/desktopfile/img/transparent.gif" />
+              one click bet
+            </a>
+          </li>
+          <li>
+            <a
+              id="setting-drop"
+              data-toggle="modal"
+              data-target="#myModalForLogin"
+              >Setting
+              <i class="fa fa-cog" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div> -->
 
+<!-- Mobile -->
+<header>
+  <h1 class="top-logo"></h1>
+  <a class="login-index ui-link" routerLink="/">Login</a>
+  <ul class="d-none">
+    <li class="li-tv_bet">
+      <a id="openBetsBtn" class="a-open_bets ui-link"><img src="../../assets/desktopfile/img/transparent.gif" />Bets</a>
+    </li>
+    <li class="main-wallet">
+      <a id="multiWallet" href="#" class="a-wallet ui-link"
+        ><ul id="accountCredit">
+          <li><span>Main</span> <span id="mainBalanceMob">PBU 0.46</span></li>
+          <li><span>Exposure</span> <span id="exposureMob">0.00</span></li>
+          <li class="nums">+<span id="vendorQuantity">4</span></li>
+        </ul></a
+      ><a class="a-refresh ui-link"
+        ><img src="../../assets/desktopfile/img/transparent.gif"
+      /></a>
+    </li>
+    <li>
+      <a class="a-setting ui-link" href="#" title="Setting"><img src="../../assets/desktopfile/img/transparent.gif"/></a>
+    </li>
+  </ul>
+</header>
 
 <!-- <span>After Login Code</span> -->
 
@@ -306,6 +442,6 @@
   </div>
 </div>
 
+<app-mobilefooter></app-mobilefooter>
 <app-loginmodel></app-loginmodel>
 <app-settingpopup></app-settingpopup>
-

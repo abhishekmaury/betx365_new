@@ -861,3 +861,81 @@ input[type=range]::-webkit-slider-thumb {
   z-index: 1;
 }
 
+@media(max-width:768px){
+  section[_ngcontent-ng-c2761226903] {
+    min-width: 100% !important;
+ }
+ .gamehall-wrap-simple{
+    display: block;
+    padding-bottom: 5px;
+ }
+ .gamehall-wrap-simple a img{
+    margin-bottom: 7px;
+ }
+ .carousel-indicators{
+    display: none;
+ }
+}
+
+@media (max-width:430px) {
+  .entrance-title dd{
+      position: absolute;
+      right: 0px;
+  }
+  .entrance-title .dd-left{
+      right: 0 !important;
+  }
+  nav {
+      height: 57px;
+  }
+}
+
+
+@media (max-width:380px){
+  .entrance-title dd {
+      right: 0;
+  }
+  nav {
+      height: 50px;
+      bottom: -1px;
+   }
+  .pop_box {
+    width: 340px !important;
+  }
+   .pop_box dt {
+    font-size: 10px !important;
+    width: 9rem !important;
+  }
+}
+
+
+
+@media (max-width:336px) {
+.pop_box dt {
+  font-size: 10px !important;
+  width: 10rem !important;
+  margin-right: 0 !important;
+}
+
+.pop_box dd input {
+      width: 135px !important;
+  }
+}
+
+@media (max-width:325px) {
+
+  nav {
+      height: auto;
+      bottom: -1px;
+  }
+  nav a {
+      padding: 2.86667vw 2.66667vw 7px;
+  }
+  nav .main-nav a {
+      padding-top: 7.13333vw;
+  }
+  .pop_box {
+      width: 306px !important;
+    }
+
+}

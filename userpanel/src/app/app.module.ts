@@ -22,6 +22,7 @@ import { BalancetransferComponent } from './balancetransfer/balancetransfer.comp
 import { ViewwinnersComponent } from './viewwinners/viewwinners.component';
 import { LoginmodelComponent } from './loginmodel/loginmodel.component';
 import { SettingpopupComponent } from './settingpopup/settingpopup.component';
+import { MobilefooterComponent } from './mobilefooter/mobilefooter.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { SettingpopupComponent } from './settingpopup/settingpopup.component';
     BalancetransferComponent,
     ViewwinnersComponent,
     LoginmodelComponent,
-    SettingpopupComponent
+    SettingpopupComponent,
+    MobilefooterComponent
   ],
   imports: [
     BrowserModule,
