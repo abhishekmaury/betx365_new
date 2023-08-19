@@ -23,6 +23,7 @@ import { ViewwinnersComponent } from './viewwinners/viewwinners.component';
 import { LoginmodelComponent } from './loginmodel/loginmodel.component';
 import { SettingpopupComponent } from './settingpopup/settingpopup.component';
 import { MobilefooterComponent } from './mobilefooter/mobilefooter.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { MobilefooterComponent } from './mobilefooter/mobilefooter.component';
     ViewwinnersComponent,
     LoginmodelComponent,
     SettingpopupComponent,
-    MobilefooterComponent
+    MobilefooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -18,6 +18,7 @@ import { ViewwinnersComponent } from './viewwinners/viewwinners.component';
 import { LoginmodelComponent } from './loginmodel/loginmodel.component';
 import { SettingpopupComponent } from './settingpopup/settingpopup.component';
 import { MobilefooterComponent } from './mobilefooter/mobilefooter.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
@@ -38,7 +39,8 @@ const routes: Routes = [
   { path:'viewwinners', component:ViewwinnersComponent },
   { path:'loginmodel', component:LoginmodelComponent },
   { path:'settingpopup', component:SettingpopupComponent },
-  { path:'mobilefooter', component:MobilefooterComponent }
+  { path:'mobilefooter', component:MobilefooterComponent },
+  { path:'login', component:LoginComponent }
 ];
 
 @NgModule({

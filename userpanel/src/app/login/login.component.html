@@ -1,0 +1,75 @@
+<section class="body-section">
+  <header class="login-head">
+    <a routerLink="/" class="close ui-link"></a>
+    <h1>Betx365</h1>
+    <div id="powerWrap" class="betfair-wrap">
+        <p>Powered by</p>
+        <span>
+        </span>
+    </div>
+  </header>
+
+  <form name="loginForm" onsubmit="return validateForm()" action="/" method="post" accept-charset="utf-8" autocomplete="off">
+    <dl class="form-login">
+        <dd id="loginNameErrorClass">
+            <input type="username" name="userid" id="loginName" data-role="none" placeholder="Username">
+            <input type="hidden" name="adminId" id="addressBox" data-role="none" placeholder="address">
+        </dd>
+        <dd id="passwordErrorClass" style="display:flex;align-items:center;">
+            <input type="password" name="password" id="password" data-role="none" placeholder="Password">
+            <i onclick="showpwd()" style="position:absolute;color:#000;right:5px;font-size:20px;" class="fa fa-eye-slash" aria-hidden="true"></i>
+        </dd>
+        <dd id="validCodeErrorClass" style="display:flex;align-items:center">
+            <input type="text" name="code" pattern="[0-9]*" data-role="none" placeholder="Validation Code" autocomplete="off" inputmode="numeric">
+                <canvas id="canvas" style="position:absolute;right:-30px;" width="100" height="30"></canvas>
+        </dd>
+        <dd><input name="valid" type="hidden" id="valid" value="8fca3c80-8f4d-40d8-8740-63d819dda9dc"></dd>
+        <dd>
+            <button class="btn-send ui-link" id="loginBtn" type="submit" style="width:100%">Login</button>
+        </dd>
+        <dd id="errorMsg" class="state" style="color:red;font-size:12px;"></dd>
+    </dl>
+    <h3 style="color:#000;font-weight:bold;text-align:center;" id="loginMessage">Note - This Website is not for Indian Territories.</h3>
+  </form>
+
+  <ul class="policy-link" style="display: block">
+    <li><a class="ui-link">Privacy Policy</a></li>
+    <li><a class="ui-link">Terms and Conditions</a></li>
+    <li><a class="ui-link">Rules and Regulations</a></li>
+    <li><a class="ui-link">KYC</a></li>
+    <li><a class="ui-link">Responsible Gaming</a></li>
+    <li><a class="ui-link">About Us</a></li>
+    <li><a class="ui-link">Self-Exclusion Policy</a></li>
+    <li><a class="ui-link">Underage Policy</a></li>
+  </ul>
+
+  <div id="supportWrap" class="support-wrap">
+    <div class="support-service">
+        <a id="support_email" routerLink="#" class="support-mail ui-link"><img src="../../assets/desktopfile/img/transparent.gif" title="Email"></a>
+        <a id="support_whatsapp" routerLink="#" class="support-whatsapp ui-link"><img src="../../assets/desktopfile/img/transparent.gif" title="WhatsApp"></a>
+        <a id="support_telegram" routerLink="#" class="support-telegram ui-link open"><img src="../../assets/desktopfile/img/transparent.gif" title="Telegram"></a>
+        <a id="support_skype" routerLink="#" class="support-skype ui-link"><img src="../../assets/desktopfile/img/transparent.gif" title="Skype"></a>
+        <a id="support_instagram" routerLink="#" class="support-ig ui-link"><img src="../../assets/desktopfile/img/transparent.gif" title="Instagram"></a>
+        <a id="support_facebook" routerLink="#" class="support-fb ui-link"><img src="../../assets/desktopfile/img/transparent.gif" title="Facebook"></a>
+    </div>
+    <div class="support-info">
+        <div id="supportDetail_email" class="support-detail"><a id="emailContent" class="ui-link" target="_blank" routerLink="mailto:"></a></div>
+        <div id="supportDetail_whatsapp" class="support-detail">
+            <a id="whatsappContent" target="_blank" class="ui-link" routerLink="http://wa.me/"></a>
+        </div>
+        <div id="supportDetail_telegram" class="support-detail open">
+            <a id="telegramContent" target="_blank" class="ui-link" routerLink="https://t.me/"></a>
+        </div>
+        <div id="supportDetail_skype" class="support-detail">
+            <a id="skypeContent" class="ui-link" target="_blank" routerLink="skype:?chat"></a>
+        </div>
+        <div id="supportDetail_instagram" class="support-detail">
+            <a id="instagramContent" class="ui-link" target="_blank" routerLink="https://www.instagram.com//"></a>
+        </div>
+        <div id="supportDetail_facebook" class="support-detail">
+            <a id="facebookContent" class="ui-link" target="_blank" routerLink="https://www.facebook.com/"></a>
+        </div>
+    </div>
+  </div>
+</section>
+

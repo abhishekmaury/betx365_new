@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body-section {
+    min-height: 100vh;
+    background-attachment: fixed;
+    color: #222;
+    background-color: #FFB80C;
+    background-image:linear-gradient(56deg, #ffcc2e 4%, #ffb80c 42%);
+}
+
+.login-head {
+    background-image: url(../../assets/desktopfile/img/KV-pic-skyEX.webp);
+}
+
+.login-head, .pass-head{
+    position: relative;
+    height: 74.66667vw;
+    background-size: 100% 100%;
+    margin-bottom: 12vw;
+}
+
+.login-head .close{
+    display: flex;
+}
+
+.login-head .close {
+    position: fixed;
+    right: 7vw;
+    justify-content: center;
+    align-items: center;
+    width: 9.33333vw;
+    height: 9.33333vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    margin-top: 1.86667vw;
+    z-index: 2;
+}
+
+.login-head h1, .login-head .close , .pass-head h1, .pass-head .close {
+    font-size: 0;
+    text-indent: -99999px;
+}
+
+.login-head .close:before {
+    content: '';
+    width: 3.46667vw;
+    height: 3.46667vw;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="9" height="9"><path fill="rgb(255,255,255)" fill-rule="evenodd" d="M9 .912L5.412 4.5 9 8.088 8.088 9 4.5 5.412.912 9 0 8.088 3.588 4.5 0 .912.912 0 4.5 3.588 8.088 0z"/></svg>') no-repeat;
+    background-size: contain;
+}
+
+.login-head h1, .pass-head h1 {
+    position: absolute;
+    left: 50%;
+    top: 37.86667vw;
+    width: 65.33333vw;
+    height: 15.46667vw;
+    background-size: contain;
+    margin-left: -32.53333vw;
+}
+
+.login-head h1 {
+    top: 34.66667vw;
+    width: 65.86667vw;
+    height: 22.13333vw;
+    background-image: url(../../assets/desktopfile/img/logo-login-skyEX.png);
+    margin-left: -33.06667vw;
+    background-repeat: no-repeat;
+}
+
+.login-head .betfair-wrap {
+    position: absolute;
+    left: 50%;
+    bottom: 4vw;
+    width: 26.66667vw;
+    margin-left: -13.33333vw;
+    opacity: 0.5;
+    color: #000;
+}
+ .login-head .betfair-wrap {
+    color: #fff;
+}
+
+.login-head .betfair-wrap p {
+    text-align: center;
+    font-size: 2.66667vw;
+}
+
+.login-head .betfair-wrap span {
+    display: block;
+    width: 100%;
+    height: 4.8vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-head .betfair-wrap span {
+   background-image: url(../../assets/desktopfile/img/betfair_white.png);
+   filter: invert(1);
+}
+
+.form-login {
+    width: 84vw;
+    margin: 0 auto;
+    color: #fff;
+}
+.form-login dd {
+    position: relative;
+    margin-bottom: 3.2vw;
+}
+
+
+input {
+    position: relative;
+    background: #fff;
+    border: 1px solid #aaa;
+    box-shadow: inset 0 0.53333vw 0 0 rgb(0 0 0 / 10%);
+    border-radius: 1.6vw;
+    color: #1E1E1E;
+    font-size: 4vw;
+    font-family: Helvetica, Tahoma, sans-serif;
+    padding: 2.66667vw 1.86667vw;
+    margin-bottom: 1.86667vw;
+    -webkit-appearance: none;
+}
+
+.form-login input {
+    width: calc(100% - 2 * (0vw));
+    margin-bottom: 0;
+}
+ input {
+    border: 1px solid #666;
+}
+
+img {
+    background-size: contain !important;
+}
+
+
+.form-login img {
+    position: absolute;
+    background-color: #fff;
+    width: 18.66667vw;
+    height: 5.06667vw;
+    right: 1.86667vw;
+    top: 2.13333vw;
+    padding-top: 1.33333vw;
+    border-radius: 1.06667vw;
+}
+
+
+.btn, .btn-send, .login{
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, #EEEEEE 89%);
+    border: 1px solid #aaa;
+    border-radius: 1.6vw;
+    font-size: 4vw;
+    font-weight: bold;
+    line-height: 2.6;
+    color: #1E1E1E;
+}
+
+ .btn-send,  .login {
+    display: block;
+    background-image:linear-gradient(-180deg, #464646 15%, #121212 100%);
+    border-color: #bf7809;
+    color:#ffb80c;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn, .btn-send, .login, .form-select, .form-login dt {
+    text-align: center;
+}
+
+.state {
+    font-size: 3.2vw;
+    color: #F8E71C;
+}
+
+.form-login dd:last-of-type {
+    margin-bottom: 0;
+}
+
+ .state {
+    color: #222;
+}
+
+ .policy-link{
+    color: rgba(0, 0, 0, 0.5);
+}
+.policy-link {
+    width: 100vw;
+    margin: 4.26667vw auto 5.86667vw;
+    text-align: center;
+}
+
+.policy-link li {
+    display: inline-block;
+}
+
+ .policy-link a{
+    color:rgba(0, 0, 0, 0.7);
+}
+.policy-link a {
+    text-decoration: underline;
+}
+
+.policy-link li:before {
+    margin: 0 0.4vw;
+    content: "|";
+}
+.policy-link li:first-child:before {
+    margin: 0 0.4vw;
+    content: "";
+}
+
+.support-wrap {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.support-wrap .support-service {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13.33333vw;
+    border-top: 0.26667vw solid rgba(255, 255, 255, 0.3);
+}
+.support-wrap .support-service::before, .support-wrap .support-service::after {
+    content: "";
+    display: block;
+    flex: 1;
+    align-self: flex-end;
+    height: 0.26667vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-bottom: -0.26667vw;
+}
+.support-wrap .support-service a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10.66667vw;
+}
+
+img {
+    background-size: contain !important;
+}
+
+[class^="support-"] img {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.support-mail img {
+    background-image: url('data:image/svg+xml,<svg width="22" height="22" xmlns="http://www.w3.org/2000/svg"><g fill="rgba(255,255,255,0.6)" fill-rule="nonzero"><path d="M8.292 15.677v3.865a.626.626 0 001.128.37l2.26-3.077-3.388-1.158zM20.738 1.116a.625.625 0 00-.652-.045l-18.75 9.792a.627.627 0 00.087 1.145l5.212 1.782 11.1-9.492-8.59 10.35 8.737 2.985a.628.628 0 00.82-.5l2.291-15.416a.626.626 0 00-.255-.601z"/></g></svg>');
+}
+
+.support-wrap .support-service img {
+    width: 6.66667vw;
+    height: 100%;
+}
+
+.support-wrap .support-service a::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    display: block;
+    width: 10.66667vw;
+    height: 0.26667vw;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.support-wrap .support-service a.open::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    height: 2.66667vw;
+    background-image: url(../../assets/desktopfile/img/support_arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: initial;
+    pointer-events: none;
+}
+
+.support-whatsapp img {
+    background-image: url('data:image/svg+xml,<svg width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M11.002 1h-.005C5.485 1 1 5.485 1 11c0 2.188.705 4.215 1.904 5.861l-1.246 3.715L5.5 19.347A9.913 9.913 0 0011.002 21C16.517 21 21 16.514 21 11S16.516 1 11.002 1zm5.82 14.121c-.242.681-1.2 1.246-1.963 1.412-.523.11-1.205.2-3.503-.753-2.938-1.218-4.831-4.204-4.978-4.398-.142-.193-1.188-1.58-1.188-3.016 0-1.435.729-2.134 1.022-2.434.242-.246.64-.358 1.023-.358.124 0 .235.006.335.011.294.012.441.03.635.494.241.581.829 2.016.899 2.163.071.148.142.348.042.542-.094.2-.176.288-.324.458-.147.17-.287.3-.434.483-.136.159-.288.329-.118.622.17.288.758 1.247 1.623 2.017 1.116.993 2.02 1.311 2.345 1.446.24.1.528.076.705-.111.223-.242.5-.642.78-1.035.2-.283.453-.318.718-.218.27.094 1.699.8 1.993.946.293.148.487.218.558.342.07.123.07.705-.17 1.387z" fill="rgba(255,255,255,0.6)" fill-rule="nonzero"/></svg>');
+}
+
+.support-telegram img {
+    background-image: url('data:image/svg+xml,<svg width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M11 21c5.524 0 10-4.476 10-10S16.524 1 11 1 1 5.476 1 11s4.476 10 10 10zM5.576 10.783l9.642-3.717c.447-.162.838.109.693.786V7.85l-1.641 7.734c-.122.548-.447.682-.903.423l-2.5-1.842-1.206 1.162c-.133.133-.246.245-.504.245l.177-2.544 4.633-4.186c.202-.177-.045-.277-.31-.1L7.93 12.346l-2.468-.77c-.536-.17-.548-.535.113-.794z" fill="rgba(255,255,255,0.6)" fill-rule="nonzero"/></svg>');
+}
+
+.support-skype img {
+    background-image: url('data:image/svg+xml,<svg width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M20.425 13.123c.145-.652.22-1.327.22-2.02 0-5.193-4.27-9.404-9.539-9.404-.555 0-1.1.047-1.631.137A5.567 5.567 0 006.533 1C3.475 1 1 3.441 1 6.455c0 1.006.278 1.947.76 2.759a9.32 9.32 0 00-.194 1.89c0 5.195 4.272 9.406 9.539 9.406.598 0 1.181-.055 1.747-.158A5.58 5.58 0 0015.47 21C18.524 21 21 18.558 21 15.546c0-.871-.207-1.692-.575-2.423zm-4.426 2.476c-.442.616-1.093 1.104-1.939 1.448-.836.344-1.838.52-2.98.52-1.37 0-2.519-.238-3.416-.708a4.434 4.434 0 01-1.57-1.375c-.407-.575-.61-1.146-.61-1.699 0-.344.133-.643.397-.886.261-.244.596-.365.997-.365.327 0 .61.096.84.287.218.184.407.457.558.805.169.383.353.705.547.957.188.246.457.45.8.612.347.16.813.244 1.386.244.789 0 1.436-.166 1.921-.494.476-.319.706-.704.706-1.174 0-.37-.121-.662-.367-.891-.26-.24-.603-.426-1.018-.555a20.235 20.235 0 00-1.75-.427c-.991-.21-1.832-.457-2.5-.738-.683-.287-1.236-.685-1.638-1.183-.41-.506-.618-1.14-.618-1.885 0-.71.218-1.35.648-1.902.426-.549 1.048-.977 1.852-1.269.791-.288 1.733-.435 2.799-.435.851 0 1.6.098 2.226.29.629.193 1.159.453 1.575.774.42.325.733.669.928 1.029.197.362.298.724.298 1.072 0 .337-.131.643-.391.908a1.32 1.32 0 01-.98.404c-.352 0-.63-.087-.821-.253-.179-.156-.365-.4-.57-.747-.238-.445-.526-.797-.856-1.045-.322-.242-.857-.362-1.594-.362-.683 0-1.24.135-1.653.403-.397.256-.591.551-.591.901 0 .214.063.393.191.546.135.165.327.306.569.426.25.124.509.224.768.294.265.073.708.181 1.32.32.772.163 1.48.347 2.108.545a6.759 6.759 0 011.634.734c.456.294.818.669 1.075 1.119.258.454.388 1.01.388 1.657a3.54 3.54 0 01-.67 2.098z" fill="rgba(255,255,255,0.6)" fill-rule="nonzero"/></svg>');
+}
+
+.support-ig img {
+    background-image: url('data:image/svg+xml,<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><path d="M29.172 0C35.142 0 40 4.857 40 10.828v18.345C40 35.143 35.143 40 29.173 40H10.828C4.858 40 0 35.143 0 29.173V10.828C0 4.858 4.857 0 10.828 0zM20 9.063C13.97 9.063 9.063 13.969 9.063 20c0 6.03 4.906 10.937 10.937 10.937 6.03 0 10.937-4.906 10.937-10.937 0-6.03-4.906-10.937-10.937-10.937zm0 2.345c4.738 0 8.592 3.854 8.592 8.592S24.738 28.592 20 28.592 11.408 24.738 11.408 20s3.854-8.592 8.592-8.592zm11.199-6.23a3.235 3.235 0 00-3.232 3.232 3.235 3.235 0 003.232 3.232A3.235 3.235 0 0034.43 8.41a3.236 3.236 0 00-3.232-3.232zm0 2.345a.888.888 0 010 1.774.888.888 0 010-1.774z" fill="rgba(255,255,255,0.6)" fill-rule="nonzero"/></svg>');
+}
+
+.support-wrap .support-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.46667vw 0 2.66667vw;
+}
+
+.support-wrap .support-detail {
+    display: none;
+}
+.support-wrap .support-detail.open {
+    display: block;
+}
+
+.support-wrap .support-detail a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vw;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.policy-link{
+    box-sizing: border-box;
+}
+
+
+/* password change */
+
+.pass-head {
+    height: 21.33333vw;
+}
+
+.skyexchange .pass-head {
+    background-image: linear-gradient(-180deg, #414141 0%, #000 100%);
+}
+
+.pass-head h1 {
+    top: 4vw;
+    width: 59.2vw;
+    height: 14.13333vw;
+    margin-left: -29.6vw;
+    background-repeat: no-repeat;
+}
+
+.skyexchange .pass-head h1 {
+    top: 2.66667vw;
+    width: 47.46667vw;
+    height: 16vw;
+    background-image: url(../../assets/desktopfile/img/logo-login-skyEX.png);
+    margin-left: -23.73333vw;
+}
+
+.pass-wrap {
+    padding-bottom: 5.33333vw;
+}
+
+.pass-wrap .form-login {
+    margin-bottom: 5.33333vw;
+}
+
+.skyexchange .form-login dt {
+    color: #000;
+}
+
+.form-login dt {
+    font-size: 5.86667vw;
+    margin-bottom: 8vw;
+}
+
+
+.txt-wrap {
+    width: 84vw;
+    margin: 0 auto;
+    color: #7e97a7;
+    line-height: 4.8vw;
+    background: rgba(0,0,0,0.2);
+    border-radius: 1.6vw;
+    padding: 2.66667vw 1.86667vw;
+        box-sizing: border-box;
+
+}
+
+.skyexchange .txt-wrap {
+    background: rgba(0,0,0,0.8);
+    color: rgba(255,255,255,0.6);
+}
+
+.txt-wrap ul {
+    margin-left: 4.26667vw;
+}
+
+h3 {
+  font-size: 12px;
+}
